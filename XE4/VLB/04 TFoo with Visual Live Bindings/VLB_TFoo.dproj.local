@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/08/09 20:04:09.000.246,=C:\Users\embt\Documents\RAD Studio\Projects\GridPaneView1.pas</Transaction>
+    <Transaction>2012/08/09 20:04:09.000.926,=C:\Users\embt\Documents\RAD Studio\Projects\SplitPaneView1.pas</Transaction>
+    <Transaction>2012/08/09 20:07:32.000.235,=C:\Users\embt\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2012/08/10 08:06:03.000.073,=C:\Users\embt\Documents\RAD Studio\Projects\groupedItems1.pas</Transaction>
+    <Transaction>2012/08/10 08:06:03.000.188,=C:\Users\embt\Documents\RAD Studio\Projects\ItemDetail1.pas</Transaction>
+    <Transaction>2012/08/13 09:34:18.000.631,=C:\Users\embt\Documents\RAD Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2012/08/13 09:35:21.000.608,C:\Users\embt\Documents\RAD Studio\Projects\Unit3.pas=C:\Users\embt\Documents\RAD Studio\Projects\Spikes\VisualLiveBindings\04 TFoo with Visual Live Bindings\frmFoo.pas</Transaction>
+    <Transaction>2012/08/13 09:35:21.000.608,C:\Users\embt\Documents\RAD Studio\Projects\Unit3.fmx=C:\Users\embt\Documents\RAD Studio\Projects\Spikes\VisualLiveBindings\04 TFoo with Visual Live Bindings\frmFoo.fmx</Transaction>
+    <Transaction>2012/08/13 09:36:09.000.631,C:\Users\embt\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\embt\Documents\RAD Studio\Projects\Spikes\VisualLiveBindings\04 TFoo with Visual Live Bindings\VLB_TFoo.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

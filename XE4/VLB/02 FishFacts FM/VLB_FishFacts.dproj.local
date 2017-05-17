@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/08/09 20:04:09.000.246,=C:\Users\embt\Documents\RAD Studio\Projects\GridPaneView1.pas</Transaction>
+    <Transaction>2012/08/09 20:04:09.000.926,=C:\Users\embt\Documents\RAD Studio\Projects\SplitPaneView1.pas</Transaction>
+    <Transaction>2012/08/09 20:07:32.000.235,=C:\Users\embt\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2012/08/10 08:06:03.000.073,=C:\Users\embt\Documents\RAD Studio\Projects\groupedItems1.pas</Transaction>
+    <Transaction>2012/08/10 08:06:03.000.188,=C:\Users\embt\Documents\RAD Studio\Projects\ItemDetail1.pas</Transaction>
+    <Transaction>2012/08/10 15:13:15.000.791,=C:\Users\embt\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2012/08/10 17:49:22.000.011,C:\Users\embt\Documents\RAD Studio\Projects\Spikes\VisualLiveBindings\02 FishFacts FM\Unit1.fmx=C:\Users\embt\Documents\RAD Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2012/08/10 17:49:22.000.011,C:\Users\embt\Documents\RAD Studio\Projects\Spikes\VisualLiveBindings\02 FishFacts FM\Unit1.pas=C:\Users\embt\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2012/08/10 17:49:33.000.128,C:\Users\embt\Documents\RAD Studio\Projects\Spikes\VisualLiveBindings\02 FishFacts FM\VLB_FishFacts.dproj=C:\Users\embt\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2012/08/13 15:02:14.000.310,C:\Users\embt\Documents\RAD Studio\Projects\Spikes\VisualLiveBindings\02 FishFacts FM\frmFishmain.pas=C:\Users\embt\Documents\RAD Studio\Projects\Spikes\VisualLiveBindings\02 FishFacts FM\Unit1.pas</Transaction>
+    <Transaction>2012/08/13 15:02:14.000.310,C:\Users\embt\Documents\RAD Studio\Projects\Spikes\VisualLiveBindings\02 FishFacts FM\frmFishmain.fmx=C:\Users\embt\Documents\RAD Studio\Projects\Spikes\VisualLiveBindings\02 FishFacts FM\Unit1.fmx</Transaction>
+  </Transactions>
+</BorlandProject>

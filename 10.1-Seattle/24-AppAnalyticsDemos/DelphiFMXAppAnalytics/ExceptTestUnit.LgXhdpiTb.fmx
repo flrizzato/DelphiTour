@@ -1,0 +1,46 @@
+inherited Form2_LgXhdpiTb: TForm2_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 0
+  inherited Button1: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 40.000000000000000000
+  end
+  inherited Button2: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 40.000000000000000000
+  end
+  inherited Button3: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 40.000000000000000000
+  end
+  inherited Button4: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    OnClick = Button4Click
+  end
+  inherited Edit1: TEdit
+    Position.X = 184.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Position.X = 48.000000000000000000
+    Position.Y = 304.000000000000000000
+    Viewport.Width = 313.000000000000000000
+    Viewport.Height = 256.000000000000000000
+  end
+  inherited AppAnalytics1: TAppAnalytics
+    Left = 32
+    Top = 200
+  end
+end

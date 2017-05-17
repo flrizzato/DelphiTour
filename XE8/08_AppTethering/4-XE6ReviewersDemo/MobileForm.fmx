@@ -1,0 +1,72 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Button1: TButton
+    Align = Top
+    Height = 44.000000000000000000
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 20.000000000000000000
+    TabOrder = 2
+    Text = 'Hello'
+    TintColor = claKhaki
+    Width = 344.000000000000000000
+    OnClick = Button1Click
+  end
+  object Button3: TButton
+    Align = Top
+    Enabled = False
+    Height = 44.000000000000000000
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 148.000000000000000000
+    TabOrder = 3
+    Text = 'Add To List'
+    Width = 344.000000000000000000
+    OnClick = Button3Click
+  end
+  object Button2: TButton
+    Align = Top
+    Height = 44.000000000000000000
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 84.000000000000000000
+    TabOrder = 1
+    Text = 'Pair'
+    Width = 344.000000000000000000
+    OnClick = Button2Click
+  end
+  object TetheringManager1: TTetheringManager
+    OnEndAutoConnect = TetheringManager1EndAutoConnect
+    Text = 'TetheringManager1'
+    Left = 56
+    Top = 168
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Manager = TetheringManager1
+    Text = 'TetheringAppProfile1'
+    Group = 'PressButtonProfile'
+    Actions = <>
+    Resources = <>
+    Left = 56
+    Top = 240
+  end
+end

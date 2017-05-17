@@ -1,0 +1,32 @@
+inherited MainForm_NmXhdpiPh: TMainForm_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 400.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited butStart: TButton
+      Size.Height = 48.000000000000000000
+    end
+    inherited butStop: TButton
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited panArea: TColorBox
+    Size.Width = 400.000000000000000000
+    Size.Height = 467.000000000000000000
+  end
+  inherited labelArea: TLabel
+    Size.Width = 400.000000000000000000
+    Size.Height = 467.000000000000000000
+  end
+  inherited memArea: TMemo
+    StyledSettings = [Family, Size, Style]
+    TextSettings.FontColor = claBlue
+    TextSettings.WordWrap = True
+    Position.Y = 515.000000000000000000
+    Size.Width = 400.000000000000000000
+    Viewport.Width = 392.000000000000000000
+    Viewport.Height = 92.000000000000000000
+  end
+end

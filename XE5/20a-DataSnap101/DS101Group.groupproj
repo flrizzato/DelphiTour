@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{888A92D1-5F79-4457-B181-8F895B205E27}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DS101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DSMobileClient.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DS101">
+        <MSBuild Projects="DS101.dproj"/>
+    </Target>
+    <Target Name="DS101:Clean">
+        <MSBuild Projects="DS101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DS101:Make">
+        <MSBuild Projects="DS101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DSMobileClient">
+        <MSBuild Projects="DSMobileClient.dproj"/>
+    </Target>
+    <Target Name="DSMobileClient:Clean">
+        <MSBuild Projects="DSMobileClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DSMobileClient:Make">
+        <MSBuild Projects="DSMobileClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DS101;DSMobileClient"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DS101:Clean;DSMobileClient:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DS101:Make;DSMobileClient:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

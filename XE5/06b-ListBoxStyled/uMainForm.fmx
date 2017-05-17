@@ -1,0 +1,122 @@
+object Form11: TForm11
+  Left = 0
+  Top = 0
+  Caption = 'Form11'
+  ClientHeight = 359
+  ClientWidth = 598
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 598
+  DesignerHeight = 384
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 1
+  DesignerOSVersion = ''
+  object ListBox1: TListBox
+    Align = alClient
+    Height = 359.000000000000000000
+    TabOrder = 0
+    Width = 598.000000000000000000
+    ItemIndex = 0
+    ItemHeight = 50.000000000000000000
+    DefaultItemStyles.ItemStyle = 'fernandolistboxitem'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object StyleBook1: TStyleBook
+    Left = 160
+    Top = 48
+    ResourcesBin = {
+      464D585F5354594C4520322E350106134665726E616E646F4C697374626F7849
+      74656D031E03005450463007544C61796F757400095374796C654E616D650613
+      4665726E616E646F4C697374626F784974656D06486569676874050000000000
+      00008605400A506F736974696F6E2E5805000000000000008E07400A506F7369
+      74696F6E2E5905000000000000009606400557696474680500000000000080E0
+      07400007544C61796F757400095374796C654E616D6506066C7974546F700541
+      6C69676E0705616C546F70064865696768740500000000000000B80340055769
+      6474680500000000000080E007400006544C6162656C00095374796C654E616D
+      6506056C626C494405416C69676E0706616C4C6566740A466F6E742E5374796C
+      650B066673426F6C64000E5374796C656453657474696E67730B08737346616D
+      696C7906737353697A650B7373466F6E74436F6C6F7200064865696768740500
+      000000000000B803400557696474680500000000000000EE054008576F726457
+      72617008000006544C6162656C00095374796C654E616D6506096C626C416D6F
+      756E7405416C69676E0707616C52696768740648656967687405000000000000
+      00B803400A506F736974696F6E2E580500000000000080A40740095465787441
+      6C69676E070A7461547261696C696E670557696474680500000000000000F005
+      4008576F72645772617008000006544C6162656C00095374796C654E616D6506
+      076C626C4461746505416C69676E0708616C436C69656E740648656967687405
+      00000000000000B803400954657874416C69676E0708746143656E7465720557
+      696474680500000000000000D2064008576F7264577261700800000007544C61
+      796F757400095374796C654E616D6506096C7974426F74746F6D05416C69676E
+      0708616C436C69656E74064865696768740500000000000000B0044005576964
+      74680500000000000080E007400006544C6162656C00095374796C654E616D65
+      06096C626C44657461696C05416C69676E0708616C436C69656E740648656967
+      68740500000000000000B004400D5665727454657874416C69676E070974614C
+      656164696E670557696474680500000000000080E0074008576F726457726170
+      0800000000}
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'Field1'
+        Generator = 'LoremIpsum'
+        ReadOnly = False
+      end
+      item
+        Name = 'DateField1'
+        FieldType = ftDate
+        Generator = 'Date'
+        ReadOnly = False
+      end
+      item
+        Name = 'CurrencyField1'
+        FieldType = ftCurrency
+        Generator = 'Currency'
+        ReadOnly = False
+      end
+      item
+        Name = 'Details'
+        Generator = 'LoremIpsum'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 160
+    Top = 96
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 156
+    Top = 5
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Field1'
+      Control = ListBox1
+      FillExpressions = <
+        item
+          SourceMemberName = 'Field1'
+          ControlMemberName = 'StylesData["lblid"]'
+        end
+        item
+          SourceMemberName = 'DateField1'
+          ControlMemberName = 'StylesData["lbldate"]'
+        end
+        item
+          SourceMemberName = 'CurrencyField1'
+          ControlMemberName = 'StylesData["lblamount"]'
+        end
+        item
+          SourceMemberName = 'Details'
+          ControlMemberName = 'StylesData["lbldetail"]'
+        end>
+      AutoBufferCount = False
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

@@ -1,0 +1,187 @@
+object FormFoo: TFormFoo
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 253
+  ClientWidth = 416
+  FormFactor.Width = 1384
+  FormFactor.Height = 1048
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object EditFooString: TEdit
+    TabOrder = 0
+    Text = 
+      'ipsum mi vehicula purus, eu congue sapien orci eu est. Morbi bla' +
+      'ndit volutpat ante, non ultrices eros semper at. Fusce leo leo, ' +
+      'mollis id viverra a, pulvinar non diam. Praesent ornare mauris a' +
+      'c magna placerat rutrum.Curabitur volutpat urna fermentum sem ia' +
+      'culis ultrices. Maecenas adipiscing sapien risus, nec consectetu' +
+      'r arcu. Sed in arcu iaculis felis placerat elementum vitae porta' +
+      ' libero. Donec quis purus nisi, ac ultrices lorem. Proin vitae d' +
+      'iam id turpis rhoncus vestibulum scelerisque vel leo. Nulla quis' +
+      ' scelerisque sem. Etiam imperdiet lacinia nulla sit amet varius.' +
+      ' Aliquam in interdum mauris. Praesent placerat, libero vel biben' +
+      'dum malesuada, velit libero vestibulum erat, vel porttitor diam ' +
+      'urna et nibh. Nullam fringilla cursus tempor. Cras eleifend male' +
+      'suada lacus quis consectetur. Cum sociis natoque penatibus et ma' +
+      'gnis dis parturient montes, nascetur ridiculus mus. Sed vestibul' +
+      'um bibendum sodales.Mauris consectetur ipsum ac turpis aliquam i' +
+      'd placerat justo ornare. Donec nisl arcu, faucibus vel dictum vi' +
+      'tae, dapibus vel mauris. Sed lacinia, elit ut commodo tempor, ma' +
+      'uris felis consequat nisl, sit amet laoreet est quam et tortor. ' +
+      'Proin mattis interdum tempus. Etiam ac vehicula neque. Donec tem' +
+      'por, velit sit'
+    Position.X = 64.000000000000000000
+    Position.Y = 88.000000000000000000
+    Width = 161.000000000000000000
+    Height = 22.000000000000000000
+    KillFocusByReturn = False
+    object Label1: TLabel
+      Height = 15.000000000000000000
+      Position.Y = -14.000000000000000000
+      Text = 'FooString'
+      Width = 120.000000000000000000
+      WordWrap = False
+    end
+  end
+  object SpinBoxFooInteger: TSpinBox
+    TabOrder = 1
+    Cursor = crIBeam
+    KeyboardType = vktDefault
+    Position.X = 240.000000000000000000
+    Position.Y = 88.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    object Label2: TLabel
+      Height = 15.000000000000000000
+      Position.Y = -14.000000000000000000
+      Text = 'FooInteger'
+      Width = 120.000000000000000000
+      WordWrap = False
+    end
+  end
+  object EditAsString: TEdit
+    TabOrder = 2
+    Text = 
+      'ipsum mi vehicula purus, eu congue sapien orci eu est. Morbi bla' +
+      'ndit volutpat ante, non ultrices eros semper at. Fusce leo leo, ' +
+      'mollis id viverra a, pulvinar non diam. Praesent ornare mauris a' +
+      'c magna placerat rutrum.Curabitur volutpat urna fermentum sem ia' +
+      'culis ultrices. Maecenas adipiscing sapien risus, nec consectetu' +
+      'r arcu. Sed in arcu iaculis felis placerat elementum vitae porta' +
+      ' libero. Donec quis purus nisi, ac ultrices lorem. Proin vitae d' +
+      'iam id turpis rhoncus vestibulum scelerisque vel leo. Nulla quis' +
+      ' scelerisque sem. Etiam imperdiet lacinia nulla sit amet varius.' +
+      ' Aliquam in interdum mauris. Praesent placerat, libero vel biben' +
+      'dum malesuada, velit libero vestibulum erat, vel porttitor diam ' +
+      'urna et nibh. Nullam fringilla cursus tempor. Cras eleifend male' +
+      'suada lacus quis consectetur. Cum sociis natoque penatibus et ma' +
+      'gnis dis parturient montes, nascetur ridiculus mus. Sed vestibul' +
+      'um bibendum sodales.Mauris consectetur ipsum ac turpis aliquam i' +
+      'd placerat justo ornare. Donec nisl arcu, faucibus vel dictum vi' +
+      'tae, dapibus vel mauris. Sed lacinia, elit ut commodo tempor, ma' +
+      'uris felis consequat nisl, sit amet laoreet est quam et tortor. ' +
+      'Proin mattis interdum tempus. Etiam ac vehicula neque. Donec tem' +
+      'por, velit sit'
+    Position.X = 64.000000000000000000
+    Position.Y = 144.000000000000000000
+    Width = 273.000000000000000000
+    Height = 22.000000000000000000
+    KillFocusByReturn = False
+    object Label3: TLabel
+      Height = 15.000000000000000000
+      Position.Y = -14.000000000000000000
+      Text = 'AsString'
+      Width = 120.000000000000000000
+      WordWrap = False
+    end
+  end
+  object Label4: TLabel
+    Height = 15.000000000000000000
+    Position.X = 64.000000000000000000
+    Position.Y = 184.000000000000000000
+    Text = 
+      'ipsum mi vehicula purus, eu congue sapien orci eu est. Morbi bla' +
+      'ndit volutpat ante, non ultrices eros semper at. Fusce leo leo, ' +
+      'mollis id viverra a, pulvinar non diam. Praesent ornare mauris a' +
+      'c magna placerat rutrum.Curabitur volutpat urna fermentum sem ia' +
+      'culis ultrices. Maecenas adipiscing sapien risus, nec consectetu' +
+      'r arcu. Sed in arcu iaculis felis placerat elementum vitae porta' +
+      ' libero. Donec quis purus nisi, ac ultrices lorem. Proin vitae d' +
+      'iam id turpis rhoncus vestibulum scelerisque vel leo. Nulla quis' +
+      ' scelerisque sem. Etiam imperdiet lacinia nulla sit amet varius.' +
+      ' Aliquam in interdum mauris. Praesent placerat, libero vel biben' +
+      'dum malesuada, velit libero vestibulum erat, vel porttitor diam ' +
+      'urna et nibh. Nullam fringilla cursus tempor. Cras eleifend male' +
+      'suada lacus quis consectetur. Cum sociis natoque penatibus et ma' +
+      'gnis dis parturient montes, nascetur ridiculus mus. Sed vestibul' +
+      'um bibendum sodales.Mauris consectetur ipsum ac turpis aliquam i' +
+      'd placerat justo ornare. Donec nisl arcu, faucibus vel dictum vi' +
+      'tae, dapibus vel mauris. Sed lacinia, elit ut commodo tempor, ma' +
+      'uris felis consequat nisl, sit amet laoreet est quam et tortor. ' +
+      'Proin mattis interdum tempus. Etiam ac vehicula neque. Donec tem' +
+      'por, velit sit'
+    Width = 273.000000000000000000
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'FooString'
+        Generator = 'LoremIpsum'
+        ReadOnly = False
+      end
+      item
+        Name = 'FooInteger'
+        FieldType = ftInteger
+        Generator = 'Integers'
+        ReadOnly = False
+      end
+      item
+        Name = 'AsString'
+        Generator = 'LoremIpsum'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    OnCreateAdapter = LinkToObject
+    Left = 48
+    Top = 16
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 140
+    Top = 5
+    object LinkControlToField1: TLinkControlToField
+      DataSource = PrototypeBindSource1
+      FieldName = 'FooString'
+      Control = EditFooString
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      DataSource = PrototypeBindSource1
+      FieldName = 'FooInteger'
+      Control = SpinBoxFooInteger
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'AsString'
+      Control = EditAsString
+      Track = False
+    end
+    object LinkPropertyToField1: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'AsString'
+      Component = Label4
+      ComponentProperty = 'Text'
+    end
+  end
+end

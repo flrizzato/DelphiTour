@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/09/04 09:25:23.000.640,=C:\Users\Fernando Rizzato\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/09/04 09:28:11.000.428,C:\DTourXE5\4-WebBrowser\Unit1.fmx=C:\Users\Fernando Rizzato\Documents\RAD Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2013/09/04 09:28:11.000.428,C:\DTourXE5\4-WebBrowser\Unit1.pas=C:\Users\Fernando Rizzato\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/09/04 09:28:14.000.284,C:\DTourXE5\4-WebBrowser\WebBrowser.dproj=C:\Users\Fernando Rizzato\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+</BorlandProject>

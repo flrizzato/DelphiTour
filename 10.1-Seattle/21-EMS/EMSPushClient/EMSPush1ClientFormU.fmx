@@ -1,0 +1,167 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form177'
+  ClientHeight = 801
+  ClientWidth = 645
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 645.000000000000000000
+    Size.Height = 464.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    object ButtonClear: TButton
+      Align = Top
+      Size.Width = 645.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'ButtonClear'
+      OnClick = ButtonClearClick
+    end
+    object Memo2: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Client
+      Size.Width = 645.000000000000000000
+      Size.Height = 420.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 637.000000000000000000
+      Viewport.Height = 412.000000000000000000
+    end
+  end
+  object Layout2: TLayout
+    Align = Top
+    Size.Width = 645.000000000000000000
+    Size.Height = 337.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    object Layout3: TLayout
+      Align = Top
+      Size.Width = 645.000000000000000000
+      Size.Height = 185.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object ButtonRegister: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 48.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Register Installation'
+        OnClick = ButtonRegisterClick
+      end
+      object ButtonTestConnection: TButton
+        Position.X = 192.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Test Connection'
+        OnClick = ButtonTestConnectionClick
+      end
+      object ButtonUnregister: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Unregister Installation'
+        OnClick = ButtonUnregisterClick
+      end
+      object CheckBoxListen: TCheckBox
+        Position.X = 8.000000000000000000
+        Position.Y = 144.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'CheckBoxListen'
+        OnChange = CheckBoxListenChange
+      end
+      object EditDeviceToken: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Position.X = 360.000000000000000000
+        Position.Y = 153.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object EditHost: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 5
+        Text = '192.168.0.22'
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object EditInstallationID: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 6
+        Position.X = 360.000000000000000000
+        Position.Y = 153.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan]
+      DataDetectorTypes = []
+      TextSettings.WordWrap = True
+      Align = Client
+      Cursor = crDefault
+      Size.Width = 645.000000000000000000
+      Size.Height = 152.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 637.000000000000000000
+      Viewport.Height = 144.000000000000000000
+    end
+  end
+  object EMSProvider1: TEMSProvider
+    AndroidPush.GCMAppID = '853135111526'
+    ApiVersion = '1'
+    MasterSecret = 'SampleMasterSecret'
+    URLHost = 'localhost'
+    URLPort = 8080
+    Left = 448
+    Top = 24
+  end
+  object PushEvents1: TPushEvents
+    Provider = EMSProvider1
+    AutoActivate = False
+    AutoRegisterDevice = False
+    OnDeviceTokenReceived = PushEvents1DeviceTokenReceived
+    OnDeviceTokenRequestFailed = PushEvents1DeviceTokenRequestFailed
+    OnPushReceived = PushEvents1PushReceived
+    OnDeviceRegistered = PushEvents1DeviceRegistered
+    Left = 448
+    Top = 72
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 452
+    Top = 133
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PushEvents1
+      FieldName = 'JSONResult'
+      Control = Memo2
+      Track = False
+    end
+  end
+end

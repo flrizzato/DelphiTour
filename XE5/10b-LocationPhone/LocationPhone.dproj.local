@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+	<Transactions>
+    <Transaction>2013/09/15 15:02:13.000.124,C:\DTOURXE5\10b-LocationPhone\Location.dproj=C:\DTOURXE5\10b-LocationPhone\LocationPhone.dproj</Transaction>
+    <Transaction>2013/09/15 15:42:15.000.718,C:\DTOURXE5\10b-LocationPhone\uMainForm.pas=C:\DTOURXE5\10b-LocationPhone\uMain.pas</Transaction>
+    <Transaction>2013/09/15 15:42:15.000.718,C:\DTOURXE5\10b-LocationPhone\uMainForm.fmx=C:\DTOURXE5\10b-LocationPhone\uMain.fmx</Transaction>
+  </Transactions>
+</BorlandProject>

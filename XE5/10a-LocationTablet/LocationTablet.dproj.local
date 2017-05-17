@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/05/13 00:10:07.000.309,C:\DTOUR\Mobile\10-LocationDemo\LocationDemoProject.dproj=C:\DTOUR\Mobile\10-LocationDemo\LocationDemo.dproj</Transaction>
+    <Transaction>2013/09/15 15:41:23.000.739,C:\DTOURXE5\10a-LocationTablet\LocationTablet.dproj=C:\DTOURXE5\10a-LocationTablet\LocationDemo.dproj</Transaction>
+    <Transaction>2013/09/15 15:41:36.000.529,C:\DTOURXE5\10a-LocationTablet\uMainForm.fmx=C:\DTOURXE5\10a-LocationTablet\LocationDemoUnit.fmx</Transaction>
+    <Transaction>2013/09/15 15:41:36.000.529,C:\DTOURXE5\10a-LocationTablet\uMainForm.pas=C:\DTOURXE5\10a-LocationTablet\LocationDemoUnit.pas</Transaction>
+  </Transactions>  <MobileDevice>%iosdevice%9423306d1a3afaa2ee710d1d1b3bafd92b577664</MobileDevice>
+</BorlandProject>

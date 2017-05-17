@@ -1,0 +1,12 @@
+﻿[PrototypeBindSource1]
+Coordinates=10,10,125,69
+
+[Edit1]
+Coordinates=215,19,40,51
+
+[LabeledEdit1]
+Coordinates=10,105,78,33
+
+[BindingsList1]
+Visible=False
+

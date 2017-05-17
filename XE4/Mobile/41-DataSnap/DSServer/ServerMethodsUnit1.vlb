@@ -1,0 +1,15 @@
+﻿[ADQuery1]
+Coordinates=10,10,64,51
+
+[ADConnection1]
+Coordinates=83,1,91,33
+
+[ADGUIxWaitCursor1]
+Coordinates=193,1,114,33
+
+[DataSetProvider1]
+Coordinates=193,53,100,33
+
+[ADPhysIBDriverLink1]
+Coordinates=64,70,120,33
+

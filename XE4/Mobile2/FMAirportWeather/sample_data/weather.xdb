@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdb="http://www.borland.com/schemas/delphi/10.0/XMLDataBinding">
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="CurrentWeather" type="CurrentWeatherType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="CurrentWeatherType"><annotation>
+      <appinfo xdb:docElement="CurrentWeather"/>
+    </annotation>
+    <sequence>
+      <element name="Location" type="xs:decimal"/>
+      <element name="Time" type="xs:decimal"/>
+      <element name="Wind" type="xs:integer"><annotation>
+          <appinfo xdb:dataType="UnicodeString"/>
+        </annotation>
+      </element>
+      <element name="Visibility" type="xs:integer"><annotation>
+          <appinfo xdb:dataType="UnicodeString"/>
+        </annotation>
+      </element>
+      <element name="SkyConditions" type="xs:integer"><annotation>
+          <appinfo xdb:dataType="UnicodeString"/>
+        </annotation>
+      </element>
+      <element name="Temperature" type="xs:integer"><annotation>
+          <appinfo xdb:dataType="UnicodeString"/>
+        </annotation>
+      </element>
+      <element name="DewPoint" type="xs:integer"><annotation>
+          <appinfo xdb:dataType="UnicodeString"/>
+        </annotation>
+      </element>
+      <element name="RelativeHumidity" type="xs:integer"><annotation>
+          <appinfo xdb:dataType="UnicodeString"/>
+        </annotation>
+      </element>
+      <element name="Pressure" type="xs:integer"><annotation>
+          <appinfo xdb:dataType="UnicodeString"/>
+        </annotation>
+      </element>
+      <element name="Status" type="xs:integer"><annotation>
+          <appinfo xdb:dataType="UnicodeString"/>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+</xs:schema>

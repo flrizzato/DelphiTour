@@ -1,0 +1,101 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 1
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object butStart: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 85.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Start'
+      OnClick = butStartClick
+    end
+    object butStop: TButton
+      Align = Left
+      Enabled = False
+      Margins.Left = 5.000000000000000000
+      Position.X = 95.000000000000000000
+      Size.Width = 85.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Stop'
+      OnClick = butStopClick
+    end
+  end
+  object TimerArea: TTimer
+    Enabled = False
+    OnTimer = TimerAreaTimer
+    Left = 40
+    Top = 112
+  end
+  object panArea: TColorBox
+    Align = Client
+    Color = claAqua
+    Size.Width = 640.000000000000000000
+    Size.Height = 340.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+  object labelArea: TLabel
+    Align = Client
+    AutoSize = True
+    StyledSettings = [Family, FontColor]
+    Size.Width = 640.000000000000000000
+    Size.Height = 340.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.Style = [fsBold]
+    TextSettings.HorzAlign = Center
+    TextSettings.WordWrap = False
+    Text = 'Area #1'
+  end
+  object memArea: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Bottom
+    Position.Y = 380.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    TabStop = False
+    Viewport.Width = 632.000000000000000000
+    Viewport.Height = 92.000000000000000000
+  end
+  object BeaconArea: TBeacon
+    Enabled = True
+    Mode = Alternative
+    MonitorizedRegions = <
+      item
+        UUID = '{B9407F30-F5F8-466E-AFF9-25556B57FE6D}'
+      end
+      item
+        UUID = '{2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6}'
+      end
+      item
+        UUID = '{699EBC80-E1F3-11E3-9A0F-0CF3EE3BC012}'
+      end
+      item
+        UUID = '{BFC8442B-819F-40C9-B56A-8B37FB9421E0}'
+      end>
+    SPC = 0.500000000000000000
+    OnBeaconEnter = BeaconAreaBeaconEnter
+    OnBeaconProximity = BeaconAreaBeaconProximity
+    Left = 40
+    Top = 56
+  end
+end

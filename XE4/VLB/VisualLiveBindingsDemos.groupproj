@@ -1,0 +1,120 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{514DC33E-B854-413E-AAFA-04277DB98305}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="01 Edit Label CheckBox\VLB_EditLabelCheckBox.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02 FishFacts FM\VLB_FishFacts.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02 FishFacts FM Grid\VLB_FishFactsGrid.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03 ProtoTypeBindSource\VLB_ProtoTypeBindSource.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="04 TFoo with Visual Live Bindings\VLB_TFoo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="08 DataModule\VLB_DataModuleWithDataSet.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="09 CustomFormat\VLB_CustomFormat.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="06 SampleAdapter\SampleAdapterPackage.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="VLB_EditLabelCheckBox">
+        <MSBuild Projects="01 Edit Label CheckBox\VLB_EditLabelCheckBox.dproj"/>
+    </Target>
+    <Target Name="VLB_EditLabelCheckBox:Clean">
+        <MSBuild Projects="01 Edit Label CheckBox\VLB_EditLabelCheckBox.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLB_EditLabelCheckBox:Make">
+        <MSBuild Projects="01 Edit Label CheckBox\VLB_EditLabelCheckBox.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VLB_FishFacts">
+        <MSBuild Projects="02 FishFacts FM\VLB_FishFacts.dproj"/>
+    </Target>
+    <Target Name="VLB_FishFacts:Clean">
+        <MSBuild Projects="02 FishFacts FM\VLB_FishFacts.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLB_FishFacts:Make">
+        <MSBuild Projects="02 FishFacts FM\VLB_FishFacts.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VLB_FishFactsGrid">
+        <MSBuild Projects="02 FishFacts FM Grid\VLB_FishFactsGrid.dproj"/>
+    </Target>
+    <Target Name="VLB_FishFactsGrid:Clean">
+        <MSBuild Projects="02 FishFacts FM Grid\VLB_FishFactsGrid.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLB_FishFactsGrid:Make">
+        <MSBuild Projects="02 FishFacts FM Grid\VLB_FishFactsGrid.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VLB_ProtoTypeBindSource">
+        <MSBuild Projects="03 ProtoTypeBindSource\VLB_ProtoTypeBindSource.dproj"/>
+    </Target>
+    <Target Name="VLB_ProtoTypeBindSource:Clean">
+        <MSBuild Projects="03 ProtoTypeBindSource\VLB_ProtoTypeBindSource.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLB_ProtoTypeBindSource:Make">
+        <MSBuild Projects="03 ProtoTypeBindSource\VLB_ProtoTypeBindSource.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VLB_TFoo">
+        <MSBuild Projects="04 TFoo with Visual Live Bindings\VLB_TFoo.dproj"/>
+    </Target>
+    <Target Name="VLB_TFoo:Clean">
+        <MSBuild Projects="04 TFoo with Visual Live Bindings\VLB_TFoo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLB_TFoo:Make">
+        <MSBuild Projects="04 TFoo with Visual Live Bindings\VLB_TFoo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VLB_DataModuleWithDataSet">
+        <MSBuild Projects="08 DataModule\VLB_DataModuleWithDataSet.dproj"/>
+    </Target>
+    <Target Name="VLB_DataModuleWithDataSet:Clean">
+        <MSBuild Projects="08 DataModule\VLB_DataModuleWithDataSet.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLB_DataModuleWithDataSet:Make">
+        <MSBuild Projects="08 DataModule\VLB_DataModuleWithDataSet.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VLB_CustomFormat">
+        <MSBuild Projects="09 CustomFormat\VLB_CustomFormat.dproj"/>
+    </Target>
+    <Target Name="VLB_CustomFormat:Clean">
+        <MSBuild Projects="09 CustomFormat\VLB_CustomFormat.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLB_CustomFormat:Make">
+        <MSBuild Projects="09 CustomFormat\VLB_CustomFormat.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SampleAdapterPackage">
+        <MSBuild Projects="06 SampleAdapter\SampleAdapterPackage.dproj"/>
+    </Target>
+    <Target Name="SampleAdapterPackage:Clean">
+        <MSBuild Projects="06 SampleAdapter\SampleAdapterPackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SampleAdapterPackage:Make">
+        <MSBuild Projects="06 SampleAdapter\SampleAdapterPackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="VLB_EditLabelCheckBox;VLB_FishFacts;VLB_FishFactsGrid;VLB_ProtoTypeBindSource;VLB_TFoo;VLB_DataModuleWithDataSet;VLB_CustomFormat;SampleAdapterPackage"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="VLB_EditLabelCheckBox:Clean;VLB_FishFacts:Clean;VLB_FishFactsGrid:Clean;VLB_ProtoTypeBindSource:Clean;VLB_TFoo:Clean;VLB_DataModuleWithDataSet:Clean;VLB_CustomFormat:Clean;SampleAdapterPackage:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="VLB_EditLabelCheckBox:Make;VLB_FishFacts:Make;VLB_FishFactsGrid:Make;VLB_ProtoTypeBindSource:Make;VLB_TFoo:Make;VLB_DataModuleWithDataSet:Make;VLB_CustomFormat:Make;SampleAdapterPackage:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

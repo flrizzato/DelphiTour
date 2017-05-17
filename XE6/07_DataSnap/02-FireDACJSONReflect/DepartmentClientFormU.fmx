@@ -1,0 +1,202 @@
+object DepartmentsClientForm: TDepartmentsClientForm
+  Left = 0
+  Top = 0
+  Caption = 'DepartmentsClientForm'
+  ClientHeight = 418
+  ClientWidth = 659
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Layout1: TLayout
+    Align = Left
+    Height = 418.000000000000000000
+    Width = 209.000000000000000000
+    TabOrder = 0
+    object ButtonDepartments: TButton
+      Align = Top
+      Height = 22.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      TabOrder = 0
+      Text = 'Get Departments'
+      Width = 189.000000000000000000
+      OnClick = ButtonDepartmentsClick
+    end
+    object ListViewDepartments: TListView
+      ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+      ItemEditAppearanceClassName = 'TListItemRightDetailShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      Align = Client
+      Height = 356.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      TabOrder = 1
+      Width = 189.000000000000000000
+      OnChange = ListViewDepartmentsChange
+    end
+  end
+  object Layout2: TLayout
+    Align = Client
+    Height = 418.000000000000000000
+    Width = 450.000000000000000000
+    TabOrder = 1
+    object StringGridDepartment: TStringGrid
+      Align = Top
+      Height = 89.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 50.000000000000000000
+      TabOrder = 0
+      Width = 430.000000000000000000
+      RowCount = 100
+      RowHeight = 21.000000000000000000
+    end
+    object StringGridEmployee: TStringGrid
+      Align = Client
+      Height = 249.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      TabOrder = 1
+      Width = 430.000000000000000000
+      RowCount = 100
+      RowHeight = 21.000000000000000000
+    end
+    object ToolBar1: TToolBar
+      Height = 40.000000000000000000
+      TabOrder = 2
+      Width = 450.000000000000000000
+      object ButtonApplyUpdates: TButton
+        Height = 22.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 0
+        Text = 'Apply Updates'
+        Width = 113.000000000000000000
+        OnClick = ButtonApplyUpdatesClick
+      end
+      object ButtonRefresh: TButton
+        Height = 22.000000000000000000
+        Position.X = 136.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 1
+        Text = 'Refresh'
+        Width = 80.000000000000000000
+        OnClick = ButtonRefreshClick
+      end
+    end
+  end
+  object FDMemTableDepartments: TFDMemTable
+    FieldDefs = <
+      item
+        Name = 'DEPARTMENT'
+      end
+      item
+        Name = 'DEPT_NO'
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 240
+    Top = 40
+  end
+  object BindSourceDBDepartments: TBindSourceDB
+    DataSet = FDMemTableDepartments
+    ScopeMappings = <>
+    Left = 400
+    Top = 208
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkFillControlToFieldDepartments: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListViewDepartments
+      Track = True
+      FillDataSource = BindSourceDBDepartments
+      FillDisplayFieldName = 'DEPARTMENT'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'DEPT_NO'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBDepartment
+      GridControl = StringGridDepartment
+      Columns = <>
+    end
+    object LinkGridToDataSourceBindSourceDB3: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBEmployee
+      GridControl = StringGridEmployee
+      Columns = <>
+    end
+  end
+  object FDMemTableDepartment: TFDMemTable
+    CachedUpdates = True
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    Left = 392
+    Top = 40
+  end
+  object BindSourceDBDepartment: TBindSourceDB
+    DataSet = FDMemTableDepartment
+    ScopeMappings = <>
+    Left = 536
+    Top = 232
+  end
+  object FDMemTableEmployee: TFDMemTable
+    CachedUpdates = True
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    Left = 552
+    Top = 32
+  end
+  object BindSourceDBEmployee: TBindSourceDB
+    DataSet = FDMemTableEmployee
+    ScopeMappings = <>
+    Left = 320
+    Top = 240
+  end
+  object FDStanStorageJSONLink1: TFDStanStorageJSONLink
+    Left = 449
+    Top = 336
+  end
+end

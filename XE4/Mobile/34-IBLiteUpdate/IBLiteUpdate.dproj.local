@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/04/29 02:34:50.000.261,=C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/04/29 02:59:05.000.121,C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.fmx=C:\INEGI\Mobile\13-IBLiteUpdate\uMainForm.fmx</Transaction>
+    <Transaction>2013/04/29 02:59:05.000.121,C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.pas=C:\INEGI\Mobile\13-IBLiteUpdate\uMainForm.pas</Transaction>
+    <Transaction>2013/04/29 02:59:09.000.572,C:\Users\Administrador\Documents\RAD Studio\Projects\Project1.dproj=C:\INEGI\Mobile\13-IBLiteUpdate\IBLiteUpdate.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>iPad</MobileDevice>
+</BorlandProject>

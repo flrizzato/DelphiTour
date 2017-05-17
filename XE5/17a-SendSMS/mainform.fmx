@@ -1,0 +1,74 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  Caption = 'Form8'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object Label3: TLabel
+      Align = alClient
+      Height = 48.000000000000000000
+      Text = 'Send SMS from Delphi XE5 Android phone'
+      TextAlign = taCenter
+      Width = 384.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+  object Button1: TButton
+    Align = alCenter
+    Height = 30.000000000000000000
+    StyleLookup = 'listitemdeletebutton'
+    TabOrder = 1
+    Text = 'Send SMS'
+    Trimming = ttCharacter
+    Width = 265.000000000000000000
+    OnClick = Button1Click
+  end
+  object EditPhoneNr: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 2
+    KeyboardType = vktPhonePad
+    Position.X = 16.000000000000000000
+    Position.Y = 88.000000000000000000
+    Width = 353.000000000000000000
+    Height = 32.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Label1: TLabel
+    Height = 23.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 64.000000000000000000
+    Text = 'Phone number:'
+    Width = 153.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label2: TLabel
+    Height = 23.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 152.000000000000000000
+    Text = 'Text message:'
+    Width = 145.000000000000000000
+    Trimming = ttCharacter
+  end
+  object EditMsg: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 5
+    Position.X = 16.000000000000000000
+    Position.Y = 176.000000000000000000
+    Width = 353.000000000000000000
+    Height = 32.000000000000000000
+    KillFocusByReturn = False
+  end
+end

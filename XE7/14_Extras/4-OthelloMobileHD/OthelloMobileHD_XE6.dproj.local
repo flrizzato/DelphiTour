@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/06/09 15:04:43.000.660,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/06/09 15:09:29.000.607,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/06/09 15:10:25.000.673,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DTOURXE6\14_Extras\4-OthelloMobileHD\OthelloMobileHD_XE6.dproj</Transaction>
+    <Transaction>2014/06/09 15:10:34.000.846,=C:\DTOURXE6\14_Extras\4-OthelloMobileHD\OthelloGame.pas</Transaction>
+    <Transaction>2014/06/09 15:10:34.000.770,=C:\DTOURXE6\14_Extras\4-OthelloMobileHD\OthelloCounterSet.pas</Transaction>
+    <Transaction>2014/06/09 15:10:34.000.758,=C:\DTOURXE6\14_Extras\4-OthelloMobileHD\OthelloCounters.pas</Transaction>
+    <Transaction>2014/06/09 15:10:34.000.745,=C:\DTOURXE6\14_Extras\4-OthelloMobileHD\OthelloBoard.pas</Transaction>
+  </Transactions>  <MobileDevice>04db9f214811d5d3</MobileDevice>
+</BorlandProject>

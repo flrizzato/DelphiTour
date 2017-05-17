@@ -1,0 +1,56 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object ComboBox1: TComboBox
+    DisableFocusEffect = False
+    Height = 31.000000000000000000
+    ItemIndex = 0
+    Position.X = 32.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 0
+    Width = 257.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      Height = 44.000000000000000000
+      IsSelected = True
+      Text = 'ListBoxItem1'
+      Width = 44.000000000000000000
+    end
+    object ListBoxItem2: TListBoxItem
+      Height = 44.000000000000000000
+      Text = 'ListBoxItem2'
+      Width = 44.000000000000000000
+    end
+    object ListBoxItem3: TListBoxItem
+      Height = 44.000000000000000000
+      Text = 'ListBoxItem3'
+      Width = 44.000000000000000000
+    end
+    object ListBoxItem4: TListBoxItem
+      Height = 44.000000000000000000
+      Text = 'ListBoxItem4'
+      Width = 44.000000000000000000
+    end
+    object ListBoxItem5: TListBoxItem
+      Height = 44.000000000000000000
+      Text = 'ListBoxItem5'
+      Width = 44.000000000000000000
+    end
+    object ListBoxItem6: TListBoxItem
+      Height = 44.000000000000000000
+      Text = 'ListBoxItem6'
+      Width = 44.000000000000000000
+    end
+  end
+end

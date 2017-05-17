@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3922F54F-CD21-4C0B-85DE-69ED54E2B246}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="VCLApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MobileAppProj.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="VCLApp">
+        <MSBuild Projects="VCLApp.dproj"/>
+    </Target>
+    <Target Name="VCLApp:Clean">
+        <MSBuild Projects="VCLApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLApp:Make">
+        <MSBuild Projects="VCLApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MobileAppProj">
+        <MSBuild Projects="MobileAppProj.cbproj"/>
+    </Target>
+    <Target Name="MobileAppProj:Clean">
+        <MSBuild Projects="MobileAppProj.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobileAppProj:Make">
+        <MSBuild Projects="MobileAppProj.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="VCLApp;MobileAppProj"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="VCLApp:Clean;MobileAppProj:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="VCLApp:Make;MobileAppProj:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

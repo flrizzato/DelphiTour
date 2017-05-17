@@ -1,0 +1,14 @@
+﻿[Label1]
+Coordinates=0,0,46,51
+
+[Edit1]
+Coordinates=130,0,44,69
+ExplicitSubNodes=Enabled
+Visible=True
+
+[BindingsList1]
+Visible=False
+
+[CheckBox1]
+Coordinates=70,80,70,51
+

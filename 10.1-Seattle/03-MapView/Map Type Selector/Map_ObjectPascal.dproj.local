@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<MobileDevice>04db9f214811d5d3-Android</MobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+	<ActiveMobileDevice>
+		<PRIZZATO iOSSimulator="iPhone5" iOSDevice32="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="04db9f214811d5d3"/>
+	</ActiveMobileDevice>
+</BorlandProject>

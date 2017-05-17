@@ -1,0 +1,16 @@
+Title: IBLite
+
+Brief Description: This code snippet shows you how to populate a listview from an IBLite database using LiveBindings.
+
+
+To deploy this snippet you need to use the IBLite license, following the instructions that were emailed along with the 
+RAD Studio license (or trial license). For more information on deploying the license file along with the application, you can 
+read:
+
+ http://docwiki.embarcadero.com/RADStudio/XE4/en/IOS_Tutorial:_Using_InterBase_ToGo_in_an_iOS_Application#Deploy_InterBase_ToGo.
+2C_dbExpress_Driver.2C_and_the_Database_File_to_iOS
+
+Language: Delphi
+
+Platforms supported: iOS, Android
+

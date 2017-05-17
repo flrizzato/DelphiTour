@@ -1,0 +1,186 @@
+object HeaderFooterForm: THeaderFooterForm
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object Header: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object HeaderLabel: TLabel
+      Align = alCenter
+      Height = 33.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'FireDAC on iOS'
+      TextAlign = taCenter
+      Width = 189.000000000000000000
+    end
+  end
+  object Footer: TToolBar
+    Align = alBottom
+    Height = 44.000000000000000000
+    Position.Y = 416.000000000000000000
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object Button1: TButton
+      Align = alCenter
+      Height = 31.000000000000000000
+      StyleLookup = 'donetoolbutton'
+      TabOrder = 0
+      Text = 'Open'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = Button1Click
+    end
+  end
+  object ListBox1: TListBox
+    Align = alClient
+    Height = 372.000000000000000000
+    TabOrder = 2
+    Width = 320.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitembottomdetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    object SearchBox1: TSearchBox
+      Align = alTop
+      TabOrder = 0
+      Width = 320.000000000000000000
+      Height = 44.000000000000000000
+      KillFocusByReturn = False
+    end
+  end
+  object ADConnection1: TADConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\Public\Documents\RAD Studio\11.0\Samples\Data\' +
+        'EMPLOYEE.GDB'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'CharacterSet=UTF8'
+      'ExtendedMetadata=True'
+      'DriverID=IB')
+    FetchOptions.AssignedValues = [evItems, evCache]
+    FetchOptions.Items = [fiBlobs, fiDetails]
+    FetchOptions.Cache = [fiBlobs, fiDetails]
+    LoginPrompt = False
+    BeforeConnect = ADConnection1BeforeConnect
+    Left = 40
+    Top = 112
+  end
+  object ADQuery1: TADQuery
+    Connection = ADConnection1
+    SQL.Strings = (
+      'SELECT * FROM CUSTOMER')
+    Left = 40
+    Top = 160
+    object ADQuery1CUST_NO: TIntegerField
+      FieldName = 'CUST_NO'
+      Origin = 'CUST_NO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object ADQuery1CUSTOMER: TStringField
+      FieldName = 'CUSTOMER'
+      Origin = 'CUSTOMER'
+      Required = True
+      Size = 25
+    end
+    object ADQuery1CONTACT_FIRST: TStringField
+      FieldName = 'CONTACT_FIRST'
+      Origin = 'CONTACT_FIRST'
+      Size = 15
+    end
+    object ADQuery1CONTACT_LAST: TStringField
+      FieldName = 'CONTACT_LAST'
+      Origin = 'CONTACT_LAST'
+    end
+    object ADQuery1PHONE_NO: TStringField
+      FieldName = 'PHONE_NO'
+      Origin = 'PHONE_NO'
+    end
+    object ADQuery1ADDRESS_LINE1: TStringField
+      FieldName = 'ADDRESS_LINE1'
+      Origin = 'ADDRESS_LINE1'
+      Size = 30
+    end
+    object ADQuery1ADDRESS_LINE2: TStringField
+      FieldName = 'ADDRESS_LINE2'
+      Origin = 'ADDRESS_LINE2'
+      Size = 30
+    end
+    object ADQuery1CITY: TStringField
+      FieldName = 'CITY'
+      Origin = 'CITY'
+      Size = 25
+    end
+    object ADQuery1STATE_PROVINCE: TStringField
+      FieldName = 'STATE_PROVINCE'
+      Origin = 'STATE_PROVINCE'
+      Size = 15
+    end
+    object ADQuery1COUNTRY: TStringField
+      FieldName = 'COUNTRY'
+      Origin = 'COUNTRY'
+      Size = 15
+    end
+    object ADQuery1POSTAL_CODE: TStringField
+      FieldName = 'POSTAL_CODE'
+      Origin = 'POSTAL_CODE'
+      Size = 12
+    end
+    object ADQuery1ON_HOLD: TStringField
+      FieldName = 'ON_HOLD'
+      Origin = 'ON_HOLD'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ADQuery1
+    ScopeMappings = <>
+    Left = 40
+    Top = 264
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 36
+    Top = 213
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListBox1
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'CUSTOMER'
+      AutoFill = True
+      BufferCount = -1
+      AutoBufferCount = False
+      FillExpressions = <
+        item
+          SourceMemberName = 'PHONE_NO'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object ADGUIxWaitCursor1: TADGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 144
+    Top = 116
+  end
+  object ADPhysIBDriverLink1: TADPhysIBDriverLink
+    Left = 144
+    Top = 168
+  end
+end

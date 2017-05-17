@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2013/09/04 08:52:41.710,=C:\Users\Fernando Rizzato\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/09/04 08:54:59.779,C:\DTourXE5\1-FirstApp\Unit1.pas=C:\Users\Fernando Rizzato\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/09/04 08:54:59.779,C:\DTourXE5\1-FirstApp\Unit1.fmx=C:\Users\Fernando Rizzato\Documents\RAD Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2013/09/04 08:55:03.064,C:\DTourXE5\1-FirstApp\FirstApp.dproj=C:\Users\Fernando Rizzato\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+  <MobileDevice>emulator-5554</MobileDevice>
+</BorlandProject>

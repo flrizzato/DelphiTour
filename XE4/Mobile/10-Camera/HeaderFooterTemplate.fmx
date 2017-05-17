@@ -1,0 +1,77 @@
+object HeaderFooterForm: THeaderFooterForm
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object Header: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object Button1: TButton
+      Action = TakePhotoFromCameraAction1
+      Height = 31.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 6.000000000000000000
+      StyleLookup = 'cameratoolbuttonbordered'
+      TabOrder = 0
+      Trimming = ttCharacter
+      Width = 40.000000000000000000
+    end
+    object Button2: TButton
+      Action = TakePhotoFromLibraryAction1
+      Height = 31.000000000000000000
+      Position.X = 56.000000000000000000
+      Position.Y = 6.000000000000000000
+      StyleLookup = 'searchtoolbuttonbordered'
+      TabOrder = 1
+      Trimming = ttCharacter
+      Width = 40.000000000000000000
+    end
+  end
+  object Footer: TToolBar
+    Align = alBottom
+    Height = 44.000000000000000000
+    Position.Y = 416.000000000000000000
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object Button3: TButton
+      Action = ShowShareSheetAction1
+      Anchors = [akTop, akRight]
+      Height = 31.000000000000000000
+      Position.X = 265.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'actiontoolbuttonbordered'
+      TabOrder = 0
+      Trimming = ttCharacter
+      Width = 47.000000000000000000
+    end
+  end
+  object Image1: TImage
+    Align = alClient
+    Height = 372.000000000000000000
+    Width = 320.000000000000000000
+  end
+  object ActionList1: TActionList
+    Left = 248
+    Top = 72
+    object TakePhotoFromCameraAction1: TTakePhotoFromCameraAction
+      OnDidFinishTaking = TakePhotoFromCameraAction1DidFinishTaking
+    end
+    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
+      OnDidFinishTaking = TakePhotoFromLibraryAction1DidFinishTaking
+    end
+    object ShowShareSheetAction1: TShowShareSheetAction
+      OnBeforeExecute = ShowShareSheetAction1BeforeExecute
+    end
+  end
+end

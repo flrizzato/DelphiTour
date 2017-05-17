@@ -1,0 +1,13 @@
+﻿[ClientDataSet1]
+Coordinates=300,40,92,195
+Visible=False
+
+[BindSourceDB1]
+Coordinates=300,40,92,195
+
+[GridBindSourceDB1]
+Coordinates=480,60,113,177
+
+[BindingsList1]
+Visible=False
+

@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E156D30A-1596-4D89-9FD4-C5658FAE36D4}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="41-DataSnap\DSServer\DSServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="41-DataSnap\ClientWin\ClientWin.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="41-DataSnap\ClientMobile\ClientMobile.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="41-DataSnap\ClientOSX\ClientOSX.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DSServer">
+        <MSBuild Projects="41-DataSnap\DSServer\DSServer.dproj"/>
+    </Target>
+    <Target Name="DSServer:Clean">
+        <MSBuild Projects="41-DataSnap\DSServer\DSServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DSServer:Make">
+        <MSBuild Projects="41-DataSnap\DSServer\DSServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClientWin">
+        <MSBuild Projects="41-DataSnap\ClientWin\ClientWin.dproj"/>
+    </Target>
+    <Target Name="ClientWin:Clean">
+        <MSBuild Projects="41-DataSnap\ClientWin\ClientWin.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientWin:Make">
+        <MSBuild Projects="41-DataSnap\ClientWin\ClientWin.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClientMobile">
+        <MSBuild Projects="41-DataSnap\ClientMobile\ClientMobile.dproj"/>
+    </Target>
+    <Target Name="ClientMobile:Clean">
+        <MSBuild Projects="41-DataSnap\ClientMobile\ClientMobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientMobile:Make">
+        <MSBuild Projects="41-DataSnap\ClientMobile\ClientMobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClientOSX">
+        <MSBuild Projects="41-DataSnap\ClientOSX\ClientOSX.dproj"/>
+    </Target>
+    <Target Name="ClientOSX:Clean">
+        <MSBuild Projects="41-DataSnap\ClientOSX\ClientOSX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientOSX:Make">
+        <MSBuild Projects="41-DataSnap\ClientOSX\ClientOSX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DSServer;ClientWin;ClientMobile;ClientOSX"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DSServer:Clean;ClientWin:Clean;ClientMobile:Clean;ClientOSX:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DSServer:Make;ClientWin:Make;ClientMobile:Make;ClientOSX:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

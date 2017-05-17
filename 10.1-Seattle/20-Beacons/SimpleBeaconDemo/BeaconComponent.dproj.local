@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<MobileDevice>04db9f214811d5d3-Android</MobileDevice>
+	<Transactions>
+    <Transaction>2015/05/18 15:18:39.000.728,C:\DTOURXE8\10-Beacons\SimpleBeaconDemo\Unit1.fmx=C:\DTOURXE8\10-Beacons\SimpleBeaconDemo\uMainForm.fmx</Transaction>
+    <Transaction>2015/05/18 15:18:39.000.727,C:\DTOURXE8\10-Beacons\SimpleBeaconDemo\Unit1.pas=C:\DTOURXE8\10-Beacons\SimpleBeaconDemo\uMainForm.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PRIZZATO iOSSimulator="_iossimulator_CFC2B974-8ABE-4659-B804-2B98229C831D" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="04db9f214811d5d3"/>
+	</ActiveMobileDevice>
+</BorlandProject>

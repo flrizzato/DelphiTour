@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{CE17D66B-E629-470F-B952-E697E82218CB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="customcontrol_desktop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="customcontrol_mobile.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="customcontrol_desktop">
+        <MSBuild Projects="customcontrol_desktop.dproj"/>
+    </Target>
+    <Target Name="customcontrol_desktop:Clean">
+        <MSBuild Projects="customcontrol_desktop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="customcontrol_desktop:Make">
+        <MSBuild Projects="customcontrol_desktop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="customcontrol_mobile">
+        <MSBuild Projects="customcontrol_mobile.dproj"/>
+    </Target>
+    <Target Name="customcontrol_mobile:Clean">
+        <MSBuild Projects="customcontrol_mobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="customcontrol_mobile:Make">
+        <MSBuild Projects="customcontrol_mobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="customcontrol_desktop;customcontrol_mobile"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="customcontrol_desktop:Clean;customcontrol_mobile:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="customcontrol_desktop:Make;customcontrol_mobile:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

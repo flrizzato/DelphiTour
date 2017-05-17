@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/05/13 01:44:16.000.669,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/05/13 01:55:51.000.283,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\baas1\Unit1.pas</Transaction>
+    <Transaction>2014/05/13 01:55:51.000.283,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\baas1\Unit1.fmx</Transaction>
+    <Transaction>2014/05/13 01:55:52.000.260,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\baas1\Project1.dproj</Transaction>
+    <Transaction>2014/05/27 10:47:35.000.576,C:\DTOURXE6\09_BAAS_Client\0-BaaS_Basic\Project1.dproj=C:\DTOURXE6\09_BAAS_Client\0-BaaS_Basic\BaaS_Basic.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+</BorlandProject>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CurrentWeather>
+  <Location>Amsterdam Airport Schiphol, Netherlands (EHAM) 52-18N 004-46E -2M</Location>
+  <Time>Jul 11, 2013 - 07:25 AM EDT / 2013.07.11 1125 UTC</Time>
+  <Wind> from the NNW (330 degrees) at 10 MPH (9 KT):0</Wind>
+  <Visibility> greater than 7 mile(s):0</Visibility>
+  <SkyConditions> mostly cloudy</SkyConditions>
+  <Temperature> 62 F (17 C)</Temperature>
+  <DewPoint> 50 F (10 C)</DewPoint>
+  <RelativeHumidity> 63%</RelativeHumidity>
+  <Pressure> 30.21 in. Hg (1023 hPa)</Pressure>
+  <Status>Success</Status>
+</CurrentWeather>

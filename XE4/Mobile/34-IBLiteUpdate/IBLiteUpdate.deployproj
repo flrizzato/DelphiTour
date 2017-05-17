@@ -1,0 +1,479 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice'">
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\license.txt">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg_iblite.slip">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>reg_iblite.slip</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\interbase.msg">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\admin.ib">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\ibconfig">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>ibconfig</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\RAD Studio\11.0\Samples\Data\EMPLOYEE.GDB">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>EMPLOYEE.GDB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg3952_1367420867000.txt">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>reg3952_1367420867000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\oss_license_notice.txt">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg_ibtogo.slip">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>reg_ibtogo.slip</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\interbase.msg">
+            <RemoteDir>IBLiteUpdate\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg_iblite.slip">
+            <RemoteDir>IBLiteUpdate\</RemoteDir>
+            <RemoteName>reg_iblite.slip</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\RAD Studio\11.0\Samples\Data\EMPLOYEE.GDB">
+            <RemoteDir>IBLiteUpdate\</RemoteDir>
+            <RemoteName>EMPLOYEE.GDB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\ibtogo.dll">
+            <RemoteDir>IBLiteUpdate\</RemoteDir>
+            <RemoteName>ibtogo.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg3952_1367420867000.txt">
+            <RemoteDir>IBLiteUpdate\</RemoteDir>
+            <RemoteName>reg3952_1367420867000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\oss_license_notice.txt">
+            <RemoteDir>IBLiteUpdate\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\intl\gdsintl.dll">
+            <RemoteDir>IBLiteUpdate\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\license.txt">
+            <RemoteDir>IBLiteUpdate\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt">
+            <RemoteDir>IBLiteUpdate\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\ADMIN.IB">
+            <RemoteDir>IBLiteUpdate\interbase\</RemoteDir>
+            <RemoteName>ADMIN.IB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg_ibtogo.slip">
+            <RemoteDir>IBLiteUpdate\</RemoteDir>
+            <RemoteName>reg_ibtogo.slip</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\oss_license_notice.txt">
+            <RemoteDir>IBLiteUpdate\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\ibtogo64.dll">
+            <RemoteDir>IBLiteUpdate\</RemoteDir>
+            <RemoteName>ibtogo64.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt">
+            <RemoteDir>IBLiteUpdate\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\ADMIN.IB">
+            <RemoteDir>IBLiteUpdate\interbase\</RemoteDir>
+            <RemoteName>ADMIN.IB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\interbase.msg">
+            <RemoteDir>IBLiteUpdate\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\license.txt">
+            <RemoteDir>IBLiteUpdate\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\intl\gdsintl.dll">
+            <RemoteDir>IBLiteUpdate\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\admin.ib">
+            <RemoteDir>IBLiteUpdate.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\libibtogo.dylib">
+            <RemoteDir>IBLiteUpdate.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libibtogo.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\license.txt">
+            <RemoteDir>IBLiteUpdate.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\interbase.msg">
+            <RemoteDir>IBLiteUpdate.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\oss_license_notice.txt">
+            <RemoteDir>IBLiteUpdate.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>IBLiteUpdate.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt">
+            <RemoteDir>IBLiteUpdate.app\Contents\MacOS\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\intl\gdsintl">
+            <RemoteDir>IBLiteUpdate.app\Contents\MacOS\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="iOSSimulator\Debug\IBLiteUpdate.rsm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>IBLiteUpdate.rsm</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\IBLiteUpdate" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>IBLiteUpdate</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg_iblite.slip">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.slip</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\libibtogo.dylib">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>libibtogo.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\IBLiteUpdate.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\RAD Studio\11.0\Samples\Data\EMPLOYEE.GDB">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>EMPLOYEE.GDB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\oss_license_notice.txt">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg3952_1367420867000.txt">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg3952_1367420867000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\interbase.msg">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\license.txt">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\ibconfig">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>ibconfig</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\IBLiteUpdate.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg_ibtogo.slip">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.slip</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\admin.ib">
+            <RemoteDir>IBLiteUpdate.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLiteUpdate.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+    </ItemGroup>
+</Project>

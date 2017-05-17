@@ -1,0 +1,308 @@
+object SettingBadgeNumberForm: TSettingBadgeNumberForm
+  Left = 0
+  Top = 0
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object TabControl1: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 460.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = tpBottom
+    Width = 320.000000000000000000
+    object TabItem1: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 0
+      Text = 'Pickers'
+      Trimming = ttCharacter
+      Width = 160.000000000000000000
+      object ListBox2: TListBox
+        Anchors = [akLeft, akTop, akRight]
+        Height = 137.000000000000000000
+        Margins.Top = -30.000000000000000000
+        Position.Y = 168.000000000000000000
+        ShowScrollBars = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 0
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = gsGrouped
+        object ListBoxGroupHeader2: TListBoxGroupHeader
+          Height = 31.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          Text = 'Date Picker'
+          Width = 304.000000000000000000
+        end
+        object ListBoxItem5: TListBoxItem
+          Selectable = False
+          Height = 44.000000000000000000
+          Position.Y = 31.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Pick a Date'
+          Width = 304.000000000000000000
+          object CalendarEdit1: TCalendarEdit
+            TabOrder = 0
+            Cursor = crIBeam
+            Date = 41379.000000000000000000
+            Height = 31.000000000000000000
+            Position.X = 144.000000000000000000
+            Position.Y = 8.000000000000000000
+            Width = 154.000000000000000000
+            OnChange = CalendarEdit1Change
+          end
+        end
+        object ListBoxItem6: TListBoxItem
+          Selectable = False
+          Height = 44.000000000000000000
+          Position.Y = 75.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Picked:'
+          Width = 304.000000000000000000
+        end
+      end
+      object ListBox3: TListBox
+        Align = alTop
+        Height = 132.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Position.Y = 47.000000000000000000
+        ShowScrollBars = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 1
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = gsGrouped
+        object ListBoxGroupHeader3: TListBoxGroupHeader
+          Height = 31.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          Text = 'Custom Picker'
+          Width = 304.000000000000000000
+        end
+        object ListBoxItem2: TListBoxItem
+          Selectable = False
+          Height = 44.000000000000000000
+          Position.Y = 31.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Pick an Item'
+          Width = 304.000000000000000000
+          object ComboBox1: TComboBox
+            DisableFocusEffect = False
+            Height = 31.000000000000000000
+            ItemIndex = 0
+            Position.X = 144.000000000000000000
+            Position.Y = 7.000000000000000000
+            TabOrder = 0
+            Width = 153.000000000000000000
+            OnChange = ComboBox1Change
+            object ListBoxItem3: TListBoxItem
+              Height = 19.000000000000000000
+              IsSelected = True
+              Text = 'Item One'
+              Width = 19.000000000000000000
+            end
+            object ListBoxItem4: TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Item Two'
+              Width = 19.000000000000000000
+            end
+            object ListBoxItem7: TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Item Three'
+              Width = 19.000000000000000000
+            end
+            object ListBoxItem8: TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Item Four'
+              Width = 19.000000000000000000
+            end
+          end
+        end
+        object ListBoxItem9: TListBoxItem
+          Selectable = False
+          Height = 44.000000000000000000
+          Position.Y = 75.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Picked: '
+          Width = 304.000000000000000000
+        end
+      end
+      object ToolBar2: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 2
+        Width = 320.000000000000000000
+        object Label2: TLabel
+          Align = alCenter
+          Height = 29.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Native Controls'
+          TextAlign = taCenter
+          Width = 273.000000000000000000
+          Trimming = ttCharacter
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 160.000000000000000000
+      StyleLookup = 'tabitemfavorites'
+      TabOrder = 1
+      Text = 'Alerts'
+      Trimming = ttCharacter
+      Width = 160.000000000000000000
+      object ListBox4: TListBox
+        Align = alTop
+        Height = 114.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Position.Y = 47.000000000000000000
+        ShowScrollBars = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 0
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = gsGrouped
+        object ListBoxGroupHeader1: TListBoxGroupHeader
+          Height = 31.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          Text = 'Notifications'
+          Width = 304.000000000000000000
+        end
+        object ListBoxItem10: TListBoxItem
+          Selectable = False
+          Height = 44.000000000000000000
+          Position.Y = 31.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Badge Number'
+          Width = 304.000000000000000000
+          object nbBadgeNumber: TNumberBox
+            Anchors = [akTop, akRight]
+            TabOrder = 0
+            Cursor = crIBeam
+            TextAlign = taCenter
+            Position.X = 145.000000000000000000
+            Position.Y = 5.000000000000000000
+            Width = 49.000000000000000000
+            Height = 31.000000000000000000
+            VertIncrement = 5.000000000000000000
+          end
+          object Button1: TButton
+            Anchors = [akTop, akRight]
+            Height = 28.000000000000000000
+            Position.X = 200.000000000000000000
+            Position.Y = 8.000000000000000000
+            StyleLookup = 'stepperbuttonleft'
+            TabOrder = 1
+            Text = 'btnBadgeNumberDown'
+            Trimming = ttCharacter
+            Width = 47.000000000000000000
+            OnClick = btnBadgeNumberDownClick
+          end
+          object Button2: TButton
+            Anchors = [akTop, akRight]
+            Height = 28.000000000000000000
+            Position.X = 247.000000000000000000
+            Position.Y = 8.000000000000000000
+            StyleLookup = 'stepperbuttonright'
+            TabOrder = 2
+            Text = 'btnBadgeNumberUp'
+            Trimming = ttCharacter
+            Width = 47.000000000000000000
+            OnClick = btnBadgeNumberUpClick
+          end
+        end
+        object ListBoxGroupHeader4: TListBoxGroupHeader
+          Height = 31.000000000000000000
+          Position.Y = 75.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          Text = 'Message Alerts'
+          Width = 304.000000000000000000
+        end
+      end
+      object btnOneButtonAlert: TButton
+        Align = alTop
+        Height = 44.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 225.000000000000000000
+        TabOrder = 1
+        Text = 'Standard One Button Alert'
+        Trimming = ttCharacter
+        Width = 300.000000000000000000
+        OnClick = btnOneButtonAlertClick
+      end
+      object Button4: TButton
+        Align = alTop
+        Height = 44.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 171.000000000000000000
+        TabOrder = 2
+        Text = 'Multi Button Alert'
+        Trimming = ttCharacter
+        Width = 300.000000000000000000
+        OnClick = Button4Click
+      end
+      object ToolBar1: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 3
+        Width = 320.000000000000000000
+        object Label1: TLabel
+          Align = alClient
+          Height = 44.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Set Badge Number'
+          TextAlign = taCenter
+          Width = 320.000000000000000000
+          Trimming = ttCharacter
+        end
+        object btnSetBadgeNumber: TButton
+          Anchors = [akTop, akRight]
+          Height = 31.000000000000000000
+          Position.X = 272.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'organizetoolbuttonbordered'
+          TabOrder = 1
+          Text = 'Set Badge Number'
+          Width = 39.000000000000000000
+          OnClick = btnSetBadgeNumberClick
+        end
+        object btnResetBadgeNumber: TButton
+          Height = 31.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'refreshtoolbuttonbordered'
+          TabOrder = 2
+          Text = 'Reset Badge Number'
+          Trimming = ttCharacter
+          Width = 34.000000000000000000
+          OnClick = btnResetBadgeNumberClick
+        end
+      end
+    end
+  end
+end

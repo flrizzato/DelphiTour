@@ -1,0 +1,376 @@
+object FormWeatherMobile3: TFormWeatherMobile3
+  Left = 0
+  Top = 0
+  Caption = 'Form15'
+  ClientHeight = 460
+  ClientWidth = 320
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object TabControlMain: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 460.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = tpNone
+    Width = 320.000000000000000000
+    object TabItemOverview: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = True
+      Position.X = 146.000000000000000000
+      Position.Y = 441.000000000000000000
+      TabOrder = 0
+      Text = 'TabItemOverview'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object ToolBar1: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        object LabelTitle1: TLabel
+          Align = alClient
+          Height = 44.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Airport Weather'
+          TextAlign = taCenter
+          Width = 320.000000000000000000
+          Trimming = ttCharacter
+        end
+      end
+      object ToolBar2: TToolBar
+        Align = alBottom
+        Height = 44.000000000000000000
+        Position.Y = 416.000000000000000000
+        TabOrder = 1
+        Width = 320.000000000000000000
+        object SpeedButtonInfo: TSpeedButton
+          Anchors = [akRight, akBottom]
+          Height = 41.000000000000000000
+          Position.X = 280.000000000000000000
+          StyleLookup = 'infotoolbutton'
+          Text = 'SpeedButtonInfo'
+          Trimming = ttCharacter
+          Width = 41.000000000000000000
+          OnClick = SpeedButtonInfoClick
+        end
+        object LabelUpdated: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          Font.Size = 12.000000000000000000
+          StyledSettings = [ssFamily, ssStyle, ssFontColor]
+          Height = 21.000000000000000000
+          Position.X = 40.000000000000000000
+          Position.Y = 12.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Updated'
+          Width = 241.000000000000000000
+          Trimming = ttCharacter
+        end
+        object SpeedButtonRefresh: TSpeedButton
+          Height = 41.000000000000000000
+          StyleLookup = 'refreshtoolbutton'
+          Text = 'SpeedButtonRefresh'
+          Trimming = ttCharacter
+          Width = 41.000000000000000000
+          OnClick = SpeedButtonRefreshClick
+        end
+      end
+      object ListBoxOverview: TListBox
+        Align = alClient
+        Height = 372.000000000000000000
+        TabOrder = 2
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+      end
+    end
+    object TabItemFavs: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = False
+      Position.X = 156.000000000000000000
+      Position.Y = 441.000000000000000000
+      TabOrder = 1
+      Text = 'TabItemFavs'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object ToolBar4: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        object SpeedButtonGoToOverview: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'arrowlefttoolbuttonbordered'
+          Text = 'Go to TabItemOverview'
+          Trimming = ttCharacter
+          Width = 33.000000000000000000
+          OnClick = SpeedButtonGoToOverviewClick
+        end
+        object Label2: TLabel
+          Height = 21.000000000000000000
+          Position.X = 104.000000000000000000
+          Position.Y = 12.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Favorites'
+          Width = 129.000000000000000000
+          Trimming = ttCharacter
+        end
+        object SpeedButtonFavAdd: TSpeedButton
+          Anchors = [akTop, akRight]
+          Height = 31.000000000000000000
+          Position.X = 280.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'addtoolbuttonbordered'
+          Text = 'SpeedButtonFavAdd'
+          Trimming = ttCharacter
+          Width = 33.000000000000000000
+          OnClick = SpeedButtonFavAddClick
+        end
+        object SpeedButtonFavDel: TSpeedButton
+          Anchors = [akTop, akRight]
+          Height = 31.000000000000000000
+          Position.X = 239.000000000000000000
+          Position.Y = 5.000000000000000000
+          StyleLookup = 'trashtoolbuttonbordered'
+          Text = 'SpeedButton2'
+          Trimming = ttCharacter
+          Width = 36.000000000000000000
+          OnClick = SpeedButtonFavDelClick
+        end
+      end
+      object Panel1: TPanel
+        Align = alTop
+        Height = 100.000000000000000000
+        Position.Y = 44.000000000000000000
+        Width = 320.000000000000000000
+        TabOrder = 1
+        object ListBoxSel: TListBox
+          Align = alClient
+          Height = 100.000000000000000000
+          TabOrder = 0
+          Width = 320.000000000000000000
+          DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          object ListBoxItem8: TListBoxItem
+            Height = 44.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            Text = 'Country'
+            Width = 320.000000000000000000
+            object ComboBoxCountry: TComboBox
+              Anchors = [akLeft, akTop, akRight]
+              DisableFocusEffect = False
+              Height = 31.000000000000000000
+              Position.X = 96.000000000000000000
+              Position.Y = 5.000000000000000000
+              TabOrder = 0
+              Width = 217.000000000000000000
+              OnChange = ComboBoxCountryChange
+            end
+          end
+          object ListBoxItem9: TListBoxItem
+            Height = 44.000000000000000000
+            Position.Y = 44.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            Text = 'City'
+            Width = 320.000000000000000000
+            object ComboBoxCity: TComboBox
+              Anchors = [akLeft, akTop, akRight]
+              DisableFocusEffect = False
+              Height = 31.000000000000000000
+              Position.X = 95.000000000000000000
+              Position.Y = 5.000000000000000000
+              TabOrder = 0
+              Width = 217.000000000000000000
+            end
+          end
+        end
+      end
+      object ListBoxFavs: TListBox
+        Align = alClient
+        Height = 316.000000000000000000
+        TabOrder = 2
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        object ListBoxHeader2: TListBoxHeader
+          Height = 44.000000000000000000
+          TabOrder = 0
+          Width = 320.000000000000000000
+          object Label3: TLabel
+            Height = 21.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 10.000000000000000000
+            StyleLookup = 'toollabel'
+            Text = 'Cities and Countries'
+            Width = 273.000000000000000000
+            Trimming = ttCharacter
+          end
+        end
+      end
+    end
+    object TabItemPleaseWait: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = False
+      Position.X = 166.000000000000000000
+      Position.Y = 441.000000000000000000
+      TabOrder = 2
+      Text = 'TabItemPleaseWait'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object PanelPleaseWait: TPanel
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Height = 217.000000000000000000
+        Position.X = 31.000000000000000000
+        Position.Y = 80.000000000000000000
+        Width = 258.000000000000000000
+        TabOrder = 0
+        object Label4: TLabel
+          Font.Size = 18.000000000000000000
+          StyledSettings = [ssFamily, ssStyle, ssFontColor]
+          Height = 81.000000000000000000
+          Position.X = 32.000000000000000000
+          Position.Y = 32.000000000000000000
+          Text = 'Updating weather information. Please wait'
+          Width = 113.000000000000000000
+          Trimming = ttCharacter
+        end
+        object AniIndicator2: TAniIndicator
+          Align = alCenter
+          Enabled = True
+          Height = 113.000000000000000000
+          StyleLookup = 'labelstyle'
+          Margins.Bottom = -300.000000000000000000
+          Width = 105.000000000000000000
+        end
+      end
+      object ToolBar5: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 1
+        Width = 320.000000000000000000
+        object Label5: TLabel
+          Align = alClient
+          Height = 44.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Airport Weather'
+          TextAlign = taCenter
+          Width = 320.000000000000000000
+          Trimming = ttCharacter
+        end
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Left = 144
+    Top = 216
+    ResourcesBin = {
+      464D585F5354594C4520322E3501060B776561746865726974656D032A080054
+      50463007544C61796F757400095374796C654E616D65060B7765617468657269
+      74656D0648656967687405000000000000009605400A506F736974696F6E2E58
+      0500000000000000A807400A506F736974696F6E2E590500000000000000A007
+      400557696474680500000000000000A007400005545465787400095374796C65
+      4E616D65060D74787457696E6444697256616C05436F6C6F720708636C61426C
+      61636B09466F6E742E53697A650500000000000000E002400648656967687405
+      00000000000000E002400D486F727A54657874416C69676E070974614C656164
+      696E670A506F736974696F6E2E5805000000000000008707400A506F73697469
+      6F6E2E590500000000000000B404400454657874060877696E642076616C0D56
+      65727454657874416C69676E070974614C656164696E67055769647468050000
+      0000000000C80440000005545465787400095374796C654E616D65060B747874
+      6C6F636174696F6E05436F6C6F720706636C6152656409466F6E742E53697A65
+      0500000000000000800340064865696768740500000000000000A003400D486F
+      727A54657874416C69676E070974614C656164696E670A506F736974696F6E2E
+      5805000000000000008001400A506F736974696F6E2E59050000000000000080
+      0040045465787406086C6F636174696F6E0D5665727454657874416C69676E07
+      0974614C656164696E670557696474680500000000000000B406400000055454
+      65787400095374796C654E616D65060774787474696D6505436F6C6F72070863
+      6C61426C61636B064865696768740500000000000000E002400D486F727A5465
+      7874416C69676E070974614C656164696E670A506F736974696F6E2E58050000
+      0000000000BE06400A506F736974696F6E2E590500000000000000C001400454
+      657874060574696D653A0D5665727454657874416C69676E070974614C656164
+      696E670557696474680500000000000000800640000005545465787400095374
+      796C654E616D65060874787474656D706305436F6C6F720708636C61426C6163
+      6B064865696768740500000000000000E002400D486F727A54657874416C6967
+      6E070974614C656164696E670A506F736974696F6E2E58050000000000000080
+      01400A506F736974696F6E2E590500000000000000C803400454657874060474
+      656D700D5665727454657874416C69676E070974614C656164696E6705576964
+      74680500000000000000C80540000005545465787400095374796C654E616D65
+      060B74787468756D696469747905436F6C6F720708636C61426C61636B064865
+      696768740500000000000000E002400D486F727A54657874416C69676E070974
+      614C656164696E670A506F736974696F6E2E5805000000000000008001400A50
+      6F736974696F6E2E590500000000000000A004400454657874060868756D6964
+      6974790D5665727454657874416C69676E070974614C656164696E6705576964
+      74680500000000000000C80540000005545465787400095374796C654E616D65
+      060E747874707265737375726568706105436F6C6F720708636C61426C61636B
+      064865696768740500000000000000E002400D486F727A54657874416C69676E
+      070974614C656164696E670A506F736974696F6E2E5805000000000000008001
+      400A506F736974696F6E2E590500000000000000DC0440045465787406087072
+      6573737572650D5665727454657874416C69676E070974614C656164696E6705
+      57696474680500000000000000C80540000005545465787400095374796C654E
+      616D65060D7478747669736962696C69747905436F6C6F720708636C61426C61
+      636B064865696768740500000000000000E002400D486F727A54657874416C69
+      676E070974614C656164696E670A506F736974696F6E2E580500000000000000
+      DC05400A506F736974696F6E2E590500000000000000C803400454657874060A
+      7669736962696C6974790D5665727454657874416C69676E070974614C656164
+      696E670557696474680500000000000000960640000005545465787400095374
+      796C654E616D650610747874736B79636F6E646974696F6E7305436F6C6F7207
+      08636C61426C61636B064865696768740500000000000000E002400D486F727A
+      54657874416C69676E070974614C656164696E670A506F736974696F6E2E5805
+      00000000000000DC05400A506F736974696F6E2E590500000000000000A00440
+      0454657874060E736B7920636F6E646974696F6E730D5665727454657874416C
+      69676E070974614C656164696E67055769647468050000000000000096064000
+      0005545465787400095374796C654E616D65060C74787477696E647370656564
+      05436F6C6F720708636C61426C61636B064865696768740500000000000000E0
+      02400D486F727A54657874416C69676E070974614C656164696E670A506F7369
+      74696F6E2E580500000000000000DC05400A506F736974696F6E2E5905000000
+      00000000DC04400454657874060A77696E642073706565640D56657274546578
+      74416C69676E070974614C656164696E67055769647468050000000000000096
+      0640000005545465787400095374796C654E616D65060F74787477696E646469
+      726C6162656C05436F6C6F720708636C61426C61636B06486569676874050000
+      0000000000E002400D486F727A54657874416C69676E070974614C656164696E
+      670A506F736974696F6E2E5805000000000000008707400A506F736974696F6E
+      2E590500000000000000C803400454657874060877696E64206469720D566572
+      7454657874416C69676E070974614C656164696E670557696474680500000000
+      000000C80440000000}
+  end
+  object ActionList1: TActionList
+    Left = 256
+    Top = 368
+    object ChangeTabActionOverview: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItemOverview
+      Transition = ttSlide
+    end
+    object ChangeTabActionFavs: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItemFavs
+      Transition = ttSlide
+    end
+    object LiveBindingsBindNavigatePrior1: TFMXBindNavigatePrior
+      Category = 'LiveBindings'
+      Text = 'Prior'
+    end
+    object LiveBindingsBindNavigateNext1: TFMXBindNavigateNext
+      Category = 'LiveBindings'
+      Text = 'Next'
+    end
+    object ChangeTabActionPleaseWait: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItemPleaseWait
+      Transition = ttSlide
+    end
+  end
+end

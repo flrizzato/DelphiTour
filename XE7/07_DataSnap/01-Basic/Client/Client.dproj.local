@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/05/12 17:17:28.000.887,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2014/05/12 17:17:28.000.412,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2014/05/12 17:17:30.000.906,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2014/05/12 18:29:02.000.079,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/05/12 18:29:24.000.411,C:\DTOURXE6\07_DataSnap\01-Basic\Client\Unit1.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/05/12 18:29:24.000.411,C:\DTOURXE6\07_DataSnap\01-Basic\Client\Unit1.dfm=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2014/05/12 18:29:27.000.268,C:\DTOURXE6\07_DataSnap\01-Basic\Client\Client.dproj=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2014/05/12 18:38:14.000.687,=C:\DTOURXE6\07_DataSnap\01-Basic\Client\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2014/05/12 18:38:14.000.559,=C:\DTOURXE6\07_DataSnap\01-Basic\Client\ClientClassesUnit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

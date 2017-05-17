@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/08/22 17:14:14.000.152,Z:\Source\RADStudioXE5\Demos\DataSnap\EmployeeDirectory\EmpDirectoryPG.groupproj=C:\Users\Steve\Documents\RAD Studio\Projects\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\DTOURXE5\20b-EmployeeDirectory\FireMonkey Example Mobile\EmployeeDirectoryFMXMobile.dproj"/>
+	</Default.Personality>
+</BorlandProject>

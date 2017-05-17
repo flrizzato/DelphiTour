@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/09/16 19:15:44.000.827,=C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/09/16 19:21:12.000.683,C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.fmx=C:\DTOURXE5\19b-IBLiteFireDAC\uMainForm.fmx</Transaction>
+    <Transaction>2013/09/16 19:21:12.000.683,C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.pas=C:\DTOURXE5\19b-IBLiteFireDAC\uMainForm.pas</Transaction>
+    <Transaction>2013/09/16 19:21:16.000.231,C:\Users\Administrador\Documents\RAD Studio\Projects\Project1.dproj=C:\DTOURXE5\19b-IBLiteFireDAC\IBLiteFD.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+</BorlandProject>

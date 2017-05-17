@@ -1,0 +1,162 @@
+object TabbedForm: TTabbedForm
+  Left = 0
+  Top = 0
+  Caption = 'Form51'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  object HeaderToolBar: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object ToolBarLabel: TLabel
+      Align = alCenter
+      Height = 27.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Strings Basics'
+      TextAlign = taCenter
+      Width = 169.000000000000000000
+    end
+  end
+  object TabControl1: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 504.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 3
+    TabOrder = 1
+    TabPosition = tpBottom
+    Width = 320.000000000000000000
+    object TabItem1: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      StyleLookup = 'tabitemfavorites'
+      TabOrder = 0
+      Text = 'TabItem1'
+      Width = 80.000000000000000000
+      object btnRefCount: TButton
+        Height = 44.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 24.000000000000000000
+        TabOrder = 0
+        Text = 'Reference Counting'
+        Width = 289.000000000000000000
+        OnClick = btnRefCountClick
+      end
+      object Memo1: TMemo
+        Height = 193.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 248.000000000000000000
+        TabOrder = 1
+        Width = 297.000000000000000000
+      end
+      object btnCopy: TButton
+        Height = 44.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 80.000000000000000000
+        TabOrder = 2
+        Text = 'Copy (on Write)'
+        Width = 289.000000000000000000
+        OnClick = btnCopyClick
+      end
+    end
+    object TabItem2: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 80.000000000000000000
+      StyleLookup = 'tabitemcontacts'
+      TabOrder = 1
+      Text = 'TabItem2'
+      Width = 80.000000000000000000
+      object btnConcatenate: TButton
+        Height = 44.000000000000000000
+        Position.X = 32.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 0
+        Text = 'btnConcatenate'
+        Width = 257.000000000000000000
+        OnClick = btnConcatenateClick
+      end
+      object Memo2: TMemo
+        Height = 345.000000000000000000
+        Position.X = 32.000000000000000000
+        Position.Y = 80.000000000000000000
+        TabOrder = 1
+        Width = 257.000000000000000000
+      end
+    end
+    object TabItem3: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 160.000000000000000000
+      StyleLookup = 'tabitemsearch'
+      TabOrder = 2
+      Text = 'TabItem3'
+      Width = 80.000000000000000000
+      object Button1: TButton
+        Height = 44.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 0
+        Text = 'ZeroB'
+        Width = 113.000000000000000000
+        OnClick = Button1Click
+      end
+      object ListBox1: TListBox
+        Height = 233.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 104.000000000000000000
+        TabOrder = 1
+        Width = 281.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+      end
+      object Button3: TButton
+        Height = 44.000000000000000000
+        Position.X = 184.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 2
+        Text = '1 byte'
+        Width = 113.000000000000000000
+        OnClick = Button3Click
+      end
+    end
+    object TabItem4: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      Position.X = 240.000000000000000000
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 3
+      Text = 'TabItem4'
+      Width = 80.000000000000000000
+      object Button2: TButton
+        Height = 44.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 0
+        Text = 'Replace Chars'
+        Width = 297.000000000000000000
+        OnClick = Button2Click
+      end
+      object Memo3: TMemo
+        Height = 225.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 80.000000000000000000
+        TabOrder = 1
+        Width = 297.000000000000000000
+      end
+    end
+  end
+end

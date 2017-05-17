@@ -1,0 +1,107 @@
+object SettingBadgeNumberForm: TSettingBadgeNumberForm
+  Left = 0
+  Top = 0
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object Label1: TLabel
+      Align = alClient
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Set Badge Number'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+      Trimming = ttCharacter
+    end
+    object btnSetBadgeNumber: TButton
+      Anchors = [akTop, akRight]
+      Height = 31.000000000000000000
+      Position.X = 272.000000000000000000
+      Position.Y = 6.000000000000000000
+      StyleLookup = 'organizetoolbuttonbordered'
+      TabOrder = 1
+      Text = 'Set Badge Number'
+      Width = 39.000000000000000000
+      OnClick = btnSetBadgeNumberClick
+    end
+    object btnResetBadgeNumber: TButton
+      Height = 31.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 6.000000000000000000
+      StyleLookup = 'refreshtoolbuttonbordered'
+      TabOrder = 2
+      Text = 'Reset Badge Number'
+      Trimming = ttCharacter
+      Width = 34.000000000000000000
+      OnClick = btnResetBadgeNumberClick
+    end
+  end
+  object ListBox1: TListBox
+    Align = alTop
+    Height = 43.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Position.Y = 54.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    Width = 320.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = gsGrouped
+    object ListBoxItem1: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Badge Number'
+      Width = 304.000000000000000000
+      object nbBadgeNumber: TNumberBox
+        Anchors = [akTop, akRight]
+        TabOrder = 0
+        Cursor = crIBeam
+        TextAlign = taCenter
+        Position.X = 143.000000000000000000
+        Position.Y = 6.000000000000000000
+        Width = 49.000000000000000000
+        Height = 31.000000000000000000
+        VertIncrement = 5.000000000000000000
+      end
+      object btnBadgeNumberDown: TButton
+        Anchors = [akTop, akRight]
+        Height = 28.000000000000000000
+        Position.X = 200.000000000000000000
+        Position.Y = 8.000000000000000000
+        StyleLookup = 'stepperbuttonleft'
+        TabOrder = 1
+        Text = 'btnBadgeNumberDown'
+        Trimming = ttCharacter
+        Width = 47.000000000000000000
+        OnClick = btnBadgeNumberDownClick
+      end
+      object btnBadgeNumberUp: TButton
+        Anchors = [akTop, akRight]
+        Height = 28.000000000000000000
+        Position.X = 247.000000000000000000
+        Position.Y = 8.000000000000000000
+        StyleLookup = 'stepperbuttonright'
+        TabOrder = 2
+        Text = 'btnBadgeNumberUp'
+        Trimming = ttCharacter
+        Width = 47.000000000000000000
+        OnClick = btnBadgeNumberUpClick
+      end
+    end
+  end
+end

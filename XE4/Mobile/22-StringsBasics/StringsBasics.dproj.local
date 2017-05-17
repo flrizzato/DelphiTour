@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/02/04 16:17:07.000.340,\\vmware-host\Shared Folders\Documents\RAD Studio\Projects\MobileLanguageDemos\StringsBasics\StringsBasics.dproj=\\vmware-host\Shared Folders\Documents\RAD Studio\Projects\MobileLanguageDemos\StringsBasics\TabbedBasicApplication.dproj</Transaction>
+    <Transaction>2013/02/04 16:17:19.000.012,\\vmware-host\Shared Folders\Documents\RAD Studio\Projects\MobileLanguageDemos\StringsBasics\StirngsBasicsForm.pas=\\vmware-host\Shared Folders\Documents\RAD Studio\Projects\MobileLanguageDemos\StringsBasics\TabbedFormBasic.pas</Transaction>
+    <Transaction>2013/02/04 16:17:19.000.012,\\vmware-host\Shared Folders\Documents\RAD Studio\Projects\MobileLanguageDemos\StringsBasics\StirngsBasicsForm.fmx=\\vmware-host\Shared Folders\Documents\RAD Studio\Projects\MobileLanguageDemos\StringsBasics\TabbedFormBasic.fmx</Transaction>
+  </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

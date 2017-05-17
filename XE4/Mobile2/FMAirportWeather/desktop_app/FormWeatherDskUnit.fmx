@@ -1,0 +1,140 @@
+object FormWeatherDsk: TFormWeatherDsk
+  Left = 0
+  Top = 0
+  Caption = 'FM Airport Weather'
+  ClientHeight = 480
+  ClientWidth = 864
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Panel1: TPanel
+    Align = alLeft
+    Height = 480.000000000000000000
+    Width = 161.000000000000000000
+    TabOrder = 0
+    object ButtonCountries: TButton
+      Align = alTop
+      Height = 22.000000000000000000
+      TabOrder = 0
+      Text = 'Get Countries'
+      Width = 161.000000000000000000
+      OnClick = ButtonCountriesClick
+    end
+    object ListBoxCountries: TListBox
+      Align = alClient
+      Height = 458.000000000000000000
+      TabOrder = 1
+      Width = 161.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListBoxCountriesChange
+    end
+  end
+  object Panel2: TPanel
+    Align = alLeft
+    Height = 480.000000000000000000
+    Position.X = 161.000000000000000000
+    Width = 176.000000000000000000
+    TabOrder = 1
+    object ButtonCities: TButton
+      Align = alTop
+      Height = 22.000000000000000000
+      TabOrder = 0
+      Text = 'Get Cities'
+      Width = 176.000000000000000000
+      OnClick = ButtonCitiesClick
+    end
+    object ListBoxCities: TListBox
+      Align = alClient
+      Height = 458.000000000000000000
+      TabOrder = 1
+      Width = 176.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListBoxCitiesChange
+    end
+  end
+  object Panel3: TPanel
+    Align = alClient
+    Height = 480.000000000000000000
+    Width = 296.000000000000000000
+    TabOrder = 2
+    object ButtonGetWeather: TButton
+      Align = alTop
+      Height = 22.000000000000000000
+      TabOrder = 0
+      Text = 'Get Weather'
+      Width = 296.000000000000000000
+      OnClick = ButtonGetWeatherClick
+    end
+    object Memo1: TMemo
+      Align = alClient
+      Height = 458.000000000000000000
+      TabOrder = 1
+      Width = 296.000000000000000000
+    end
+  end
+  object Panel4: TPanel
+    Align = alLeft
+    Height = 480.000000000000000000
+    Position.X = 337.000000000000000000
+    Width = 231.000000000000000000
+    TabOrder = 3
+    object Panel5: TPanel
+      Align = alTop
+      Height = 73.000000000000000000
+      Width = 231.000000000000000000
+      TabOrder = 0
+      object ButtonFavsGet: TButton
+        Height = 22.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 40.000000000000000000
+        TabOrder = 0
+        Text = 'Get'
+        Width = 49.000000000000000000
+        OnClick = ButtonFavsGetClick
+      end
+      object Label1: TLabel
+        Height = 17.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 8.000000000000000000
+        Text = 'Favorites'
+        Width = 120.000000000000000000
+      end
+      object ButtonFavsAdd: TButton
+        Height = 22.000000000000000000
+        Position.X = 72.000000000000000000
+        Position.Y = 40.000000000000000000
+        TabOrder = 2
+        Text = 'Add'
+        Width = 49.000000000000000000
+        OnClick = ButtonFavsAddClick
+      end
+      object ButtonFavsDelete: TButton
+        Height = 22.000000000000000000
+        Position.X = 136.000000000000000000
+        Position.Y = 40.000000000000000000
+        TabOrder = 3
+        Text = 'Delete'
+        Width = 49.000000000000000000
+        OnClick = ButtonFavsDeleteClick
+      end
+    end
+    object ListBoxFavs: TListBox
+      Align = alClient
+      Height = 407.000000000000000000
+      TabOrder = 1
+      Width = 231.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+    end
+  end
+end

@@ -1,0 +1,183 @@
+object HeaderFooterForm: THeaderFooterForm
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object Header: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object HeaderLabel: TLabel
+      Align = alCenter
+      Height = 33.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'DBX on iOS'
+      TextAlign = taCenter
+      Width = 204.000000000000000000
+    end
+  end
+  object Footer: TToolBar
+    Align = alBottom
+    Height = 44.000000000000000000
+    Position.Y = 416.000000000000000000
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object Button1: TButton
+      Align = alCenter
+      Height = 31.000000000000000000
+      StyleLookup = 'donetoolbutton'
+      TabOrder = 0
+      Text = 'Open'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = Button1Click
+    end
+  end
+  object ListBox1: TListBox
+    Align = alClient
+    Height = 372.000000000000000000
+    TabOrder = 2
+    Width = 320.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitembottomdetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object SQLQuery1: TSQLQuery
+    MaxBlobSize = -1
+    Params = <>
+    SQL.Strings = (
+      'SELECT * FROM CUSTOMER')
+    SQLConnection = EMPLOYEE
+    Left = 56
+    Top = 128
+    object SQLQuery1CUST_NO: TIntegerField
+      FieldName = 'CUST_NO'
+      Required = True
+    end
+    object SQLQuery1CUSTOMER: TStringField
+      FieldName = 'CUSTOMER'
+      Required = True
+      Size = 25
+    end
+    object SQLQuery1CONTACT_FIRST: TStringField
+      FieldName = 'CONTACT_FIRST'
+      Size = 15
+    end
+    object SQLQuery1CONTACT_LAST: TStringField
+      FieldName = 'CONTACT_LAST'
+    end
+    object SQLQuery1PHONE_NO: TStringField
+      FieldName = 'PHONE_NO'
+    end
+    object SQLQuery1ADDRESS_LINE1: TStringField
+      FieldName = 'ADDRESS_LINE1'
+      Size = 30
+    end
+    object SQLQuery1ADDRESS_LINE2: TStringField
+      FieldName = 'ADDRESS_LINE2'
+      Size = 30
+    end
+    object SQLQuery1CITY: TStringField
+      FieldName = 'CITY'
+      Size = 25
+    end
+    object SQLQuery1STATE_PROVINCE: TStringField
+      FieldName = 'STATE_PROVINCE'
+      Size = 15
+    end
+    object SQLQuery1COUNTRY: TStringField
+      FieldName = 'COUNTRY'
+      Size = 15
+    end
+    object SQLQuery1POSTAL_CODE: TStringField
+      FieldName = 'POSTAL_CODE'
+      Size = 12
+    end
+    object SQLQuery1ON_HOLD: TStringField
+      FieldName = 'ON_HOLD'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object EMPLOYEE: TSQLConnection
+    ConnectionName = 'EMPLOYEE_IOS'
+    DriverName = 'IBToGo'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverUnit=Data.DBXInterbase'
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DBXInterBaseDriver1' +
+        '70.bpl'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXDynalinkDriverLoader,Borla' +
+        'nd.Data.DbxCommonDriver,Version=17.0.0.0,Culture=neutral,PublicK' +
+        'eyToken=91d62ebb5b0d1b1b'
+      
+        'MetaDataPackageLoader=TDBXInterbaseMetaDataCommandFactory,DbxInt' +
+        'erBaseDriver170.bpl'
+      
+        'MetaDataAssemblyLoader=Borland.Data.TDBXInterbaseMetaDataCommand' +
+        'Factory,Borland.Data.DbxInterBaseDriver,Version=17.0.0.0,Culture' +
+        '=neutral,PublicKeyToken=91d62ebb5b0d1b1b'
+      'GetDriverFunc=getSQLDriverINTERBASE'
+      'LibraryName=dbxint.dll'
+      'LibraryNameOsx=libsqlib.dylib'
+      'VendorLib=gds32.dll'
+      'VendorLibWin64=ibtogo64.dll'
+      'VendorLibOsx=libibtogo.dylib'
+      'Database=database.gdb'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'Role=RoleName'
+      'MaxBlobSize=-1'
+      'LocaleCode=0000'
+      'IsolationLevel=ReadCommitted'
+      'SQLDialect=3'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'TrimChar=False'
+      'AutoUnloadDriver=True')
+    BeforeConnect = EMPLOYEEBeforeConnect
+    Left = 56
+    Top = 72
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = SQLQuery1
+    ScopeMappings = <>
+    Left = 144
+    Top = 216
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListBox1
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'CUSTOMER'
+      AutoFill = True
+      BufferCount = -1
+      AutoBufferCount = False
+      FillExpressions = <
+        item
+          SourceMemberName = 'PHONE_NO'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/05/28 09:37:05.000.616,=C:\Users\mgroves\Documents\RAD Studio\Projects\Unit11.pas</Transaction>
+    <Transaction>2013/05/28 09:38:34.000.115,C:\Users\mgroves\Documents\RAD Studio\Projects\Unit11.pas=Z:\code\hacking\ios\listboxstyle\Unit11.pas</Transaction>
+    <Transaction>2013/05/28 09:38:34.000.115,C:\Users\mgroves\Documents\RAD Studio\Projects\Unit11.fmx=Z:\code\hacking\ios\listboxstyle\Unit11.fmx</Transaction>
+    <Transaction>2013/05/28 09:38:35.000.399,C:\Users\mgroves\Documents\RAD Studio\Projects\Project9.dproj=Z:\code\hacking\ios\listboxstyle\Project9.dproj</Transaction>
+    <Transaction>2013/05/29 21:57:45.000.720,C:\DTOUR\Mobile\15-ListBoxStyled\Project9.dproj=C:\DTOUR\Mobile\15-ListBoxStyled\ListBoxStyled.dproj</Transaction>
+    <Transaction>2013/09/16 00:26:36.000.551,C:\DTOURXE5\06b-ListBoxStyled\uMainForm.fmx=C:\DTOURXE5\06b-ListBoxStyled\Unit11.fmx</Transaction>
+    <Transaction>2013/09/16 00:26:36.000.551,C:\DTOURXE5\06b-ListBoxStyled\uMainForm.pas=C:\DTOURXE5\06b-ListBoxStyled\Unit11.pas</Transaction>
+  </Transactions>
+	<MobileDevice>emulator-5554</MobileDevice>
+</BorlandProject>

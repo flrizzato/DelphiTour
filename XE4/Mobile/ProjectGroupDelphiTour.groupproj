@@ -1,0 +1,312 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0080D205-D3CE-4A28-843F-A42A7B8ECAA8}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="1-FirstApp\FirstApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="2-ButtonStyles\ButtonStyles.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="3-ComboBox\ComboBox.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="4-DatePicker\DatePicker.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="5-WebBrowser\WebBrowser.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="6-TabComponent\TabComponent.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="7-ListBox\ListBox.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="8-ListView\ListView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="9-Settings Project\SettingsDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="10-Camera\CameraApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="11-LocationDemo\LocationDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="12a-SendCancelNotification\SendCancelNotifications.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="12b-SetResetBadgeNumber\SettingResettingBadgeNumber.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="13-Forms\Forms.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="14a-ImageZoom\ImageZoom.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="14b-RotatingImage\RotatingImage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="14c-SlidingTabs\SlidingTabs_Swipe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="14c-TapAndHold\TapAndHold.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="21-ClassOperators\ClassOperators.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="22-StringsBasics\StringsBasics.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="31-IBLiteDBX\IBLiteDBX.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="32-IBLiteFireDAC\IBLiteFireDAC.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="33-SQLiteFireDAC\iOS_SQLite.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="34-IBLiteUpdate\IBLiteUpdate.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FirstApp">
+        <MSBuild Projects="1-FirstApp\FirstApp.dproj"/>
+    </Target>
+    <Target Name="FirstApp:Clean">
+        <MSBuild Projects="1-FirstApp\FirstApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FirstApp:Make">
+        <MSBuild Projects="1-FirstApp\FirstApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ButtonStyles">
+        <MSBuild Projects="2-ButtonStyles\ButtonStyles.dproj"/>
+    </Target>
+    <Target Name="ButtonStyles:Clean">
+        <MSBuild Projects="2-ButtonStyles\ButtonStyles.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ButtonStyles:Make">
+        <MSBuild Projects="2-ButtonStyles\ButtonStyles.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ComboBox">
+        <MSBuild Projects="3-ComboBox\ComboBox.dproj"/>
+    </Target>
+    <Target Name="ComboBox:Clean">
+        <MSBuild Projects="3-ComboBox\ComboBox.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ComboBox:Make">
+        <MSBuild Projects="3-ComboBox\ComboBox.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DatePicker">
+        <MSBuild Projects="4-DatePicker\DatePicker.dproj"/>
+    </Target>
+    <Target Name="DatePicker:Clean">
+        <MSBuild Projects="4-DatePicker\DatePicker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DatePicker:Make">
+        <MSBuild Projects="4-DatePicker\DatePicker.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WebBrowser">
+        <MSBuild Projects="5-WebBrowser\WebBrowser.dproj"/>
+    </Target>
+    <Target Name="WebBrowser:Clean">
+        <MSBuild Projects="5-WebBrowser\WebBrowser.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebBrowser:Make">
+        <MSBuild Projects="5-WebBrowser\WebBrowser.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TabComponent">
+        <MSBuild Projects="6-TabComponent\TabComponent.dproj"/>
+    </Target>
+    <Target Name="TabComponent:Clean">
+        <MSBuild Projects="6-TabComponent\TabComponent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TabComponent:Make">
+        <MSBuild Projects="6-TabComponent\TabComponent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ListBox">
+        <MSBuild Projects="7-ListBox\ListBox.dproj"/>
+    </Target>
+    <Target Name="ListBox:Clean">
+        <MSBuild Projects="7-ListBox\ListBox.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ListBox:Make">
+        <MSBuild Projects="7-ListBox\ListBox.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ListView">
+        <MSBuild Projects="8-ListView\ListView.dproj"/>
+    </Target>
+    <Target Name="ListView:Clean">
+        <MSBuild Projects="8-ListView\ListView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ListView:Make">
+        <MSBuild Projects="8-ListView\ListView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SettingsDemo">
+        <MSBuild Projects="9-Settings Project\SettingsDemo.dproj"/>
+    </Target>
+    <Target Name="SettingsDemo:Clean">
+        <MSBuild Projects="9-Settings Project\SettingsDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SettingsDemo:Make">
+        <MSBuild Projects="9-Settings Project\SettingsDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CameraApp">
+        <MSBuild Projects="10-Camera\CameraApp.dproj"/>
+    </Target>
+    <Target Name="CameraApp:Clean">
+        <MSBuild Projects="10-Camera\CameraApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CameraApp:Make">
+        <MSBuild Projects="10-Camera\CameraApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LocationDemo">
+        <MSBuild Projects="11-LocationDemo\LocationDemo.dproj"/>
+    </Target>
+    <Target Name="LocationDemo:Clean">
+        <MSBuild Projects="11-LocationDemo\LocationDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LocationDemo:Make">
+        <MSBuild Projects="11-LocationDemo\LocationDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SendCancelNotifications">
+        <MSBuild Projects="12a-SendCancelNotification\SendCancelNotifications.dproj"/>
+    </Target>
+    <Target Name="SendCancelNotifications:Clean">
+        <MSBuild Projects="12a-SendCancelNotification\SendCancelNotifications.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SendCancelNotifications:Make">
+        <MSBuild Projects="12a-SendCancelNotification\SendCancelNotifications.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SettingResettingBadgeNumber">
+        <MSBuild Projects="12b-SetResetBadgeNumber\SettingResettingBadgeNumber.dproj"/>
+    </Target>
+    <Target Name="SettingResettingBadgeNumber:Clean">
+        <MSBuild Projects="12b-SetResetBadgeNumber\SettingResettingBadgeNumber.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SettingResettingBadgeNumber:Make">
+        <MSBuild Projects="12b-SetResetBadgeNumber\SettingResettingBadgeNumber.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Forms">
+        <MSBuild Projects="13-Forms\Forms.dproj"/>
+    </Target>
+    <Target Name="Forms:Clean">
+        <MSBuild Projects="13-Forms\Forms.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Forms:Make">
+        <MSBuild Projects="13-Forms\Forms.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImageZoom">
+        <MSBuild Projects="14a-ImageZoom\ImageZoom.dproj"/>
+    </Target>
+    <Target Name="ImageZoom:Clean">
+        <MSBuild Projects="14a-ImageZoom\ImageZoom.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImageZoom:Make">
+        <MSBuild Projects="14a-ImageZoom\ImageZoom.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RotatingImage">
+        <MSBuild Projects="14b-RotatingImage\RotatingImage.dproj"/>
+    </Target>
+    <Target Name="RotatingImage:Clean">
+        <MSBuild Projects="14b-RotatingImage\RotatingImage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RotatingImage:Make">
+        <MSBuild Projects="14b-RotatingImage\RotatingImage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SlidingTabs_Swipe">
+        <MSBuild Projects="14c-SlidingTabs\SlidingTabs_Swipe.dproj"/>
+    </Target>
+    <Target Name="SlidingTabs_Swipe:Clean">
+        <MSBuild Projects="14c-SlidingTabs\SlidingTabs_Swipe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SlidingTabs_Swipe:Make">
+        <MSBuild Projects="14c-SlidingTabs\SlidingTabs_Swipe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TapAndHold">
+        <MSBuild Projects="14c-TapAndHold\TapAndHold.dproj"/>
+    </Target>
+    <Target Name="TapAndHold:Clean">
+        <MSBuild Projects="14c-TapAndHold\TapAndHold.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TapAndHold:Make">
+        <MSBuild Projects="14c-TapAndHold\TapAndHold.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClassOperators">
+        <MSBuild Projects="21-ClassOperators\ClassOperators.dproj"/>
+    </Target>
+    <Target Name="ClassOperators:Clean">
+        <MSBuild Projects="21-ClassOperators\ClassOperators.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClassOperators:Make">
+        <MSBuild Projects="21-ClassOperators\ClassOperators.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StringsBasics">
+        <MSBuild Projects="22-StringsBasics\StringsBasics.dproj"/>
+    </Target>
+    <Target Name="StringsBasics:Clean">
+        <MSBuild Projects="22-StringsBasics\StringsBasics.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StringsBasics:Make">
+        <MSBuild Projects="22-StringsBasics\StringsBasics.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IBLiteDBX">
+        <MSBuild Projects="31-IBLiteDBX\IBLiteDBX.dproj"/>
+    </Target>
+    <Target Name="IBLiteDBX:Clean">
+        <MSBuild Projects="31-IBLiteDBX\IBLiteDBX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IBLiteDBX:Make">
+        <MSBuild Projects="31-IBLiteDBX\IBLiteDBX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IBLiteFireDAC">
+        <MSBuild Projects="32-IBLiteFireDAC\IBLiteFireDAC.dproj"/>
+    </Target>
+    <Target Name="IBLiteFireDAC:Clean">
+        <MSBuild Projects="32-IBLiteFireDAC\IBLiteFireDAC.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IBLiteFireDAC:Make">
+        <MSBuild Projects="32-IBLiteFireDAC\IBLiteFireDAC.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="iOS_SQLite">
+        <MSBuild Projects="33-SQLiteFireDAC\iOS_SQLite.dproj"/>
+    </Target>
+    <Target Name="iOS_SQLite:Clean">
+        <MSBuild Projects="33-SQLiteFireDAC\iOS_SQLite.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="iOS_SQLite:Make">
+        <MSBuild Projects="33-SQLiteFireDAC\iOS_SQLite.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IBLiteUpdate">
+        <MSBuild Projects="34-IBLiteUpdate\IBLiteUpdate.dproj"/>
+    </Target>
+    <Target Name="IBLiteUpdate:Clean">
+        <MSBuild Projects="34-IBLiteUpdate\IBLiteUpdate.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IBLiteUpdate:Make">
+        <MSBuild Projects="34-IBLiteUpdate\IBLiteUpdate.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FirstApp;ButtonStyles;ComboBox;DatePicker;WebBrowser;TabComponent;ListBox;ListView;SettingsDemo;CameraApp;LocationDemo;SendCancelNotifications;SettingResettingBadgeNumber;Forms;ImageZoom;RotatingImage;SlidingTabs_Swipe;TapAndHold;ClassOperators;StringsBasics;IBLiteDBX;IBLiteFireDAC;iOS_SQLite;IBLiteUpdate"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FirstApp:Clean;ButtonStyles:Clean;ComboBox:Clean;DatePicker:Clean;WebBrowser:Clean;TabComponent:Clean;ListBox:Clean;ListView:Clean;SettingsDemo:Clean;CameraApp:Clean;LocationDemo:Clean;SendCancelNotifications:Clean;SettingResettingBadgeNumber:Clean;Forms:Clean;ImageZoom:Clean;RotatingImage:Clean;SlidingTabs_Swipe:Clean;TapAndHold:Clean;ClassOperators:Clean;StringsBasics:Clean;IBLiteDBX:Clean;IBLiteFireDAC:Clean;iOS_SQLite:Clean;IBLiteUpdate:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FirstApp:Make;ButtonStyles:Make;ComboBox:Make;DatePicker:Make;WebBrowser:Make;TabComponent:Make;ListBox:Make;ListView:Make;SettingsDemo:Make;CameraApp:Make;LocationDemo:Make;SendCancelNotifications:Make;SettingResettingBadgeNumber:Make;Forms:Make;ImageZoom:Make;RotatingImage:Make;SlidingTabs_Swipe:Make;TapAndHold:Make;ClassOperators:Make;StringsBasics:Make;IBLiteDBX:Make;IBLiteFireDAC:Make;iOS_SQLite:Make;IBLiteUpdate:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

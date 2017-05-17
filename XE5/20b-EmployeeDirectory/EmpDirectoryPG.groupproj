@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A4759B8E-6FAB-4534-AF67-FA806EEEA533}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="EmployeeDirectory.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FireMonkey Example Desktop\EmployeeDirectoryFMDesktop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VCL Example Desktop\EmployeeDirectoryVCLDesktop.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FireMonkey Example Mobile\EmployeeDirectoryFMXMobile.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="EmployeeDirectory">
+        <MSBuild Projects="EmployeeDirectory.dproj"/>
+    </Target>
+    <Target Name="EmployeeDirectory:Clean">
+        <MSBuild Projects="EmployeeDirectory.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmployeeDirectory:Make">
+        <MSBuild Projects="EmployeeDirectory.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EmployeeDirectoryFMDesktop">
+        <MSBuild Projects="FireMonkey Example Desktop\EmployeeDirectoryFMDesktop.dproj"/>
+    </Target>
+    <Target Name="EmployeeDirectoryFMDesktop:Clean">
+        <MSBuild Projects="FireMonkey Example Desktop\EmployeeDirectoryFMDesktop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmployeeDirectoryFMDesktop:Make">
+        <MSBuild Projects="FireMonkey Example Desktop\EmployeeDirectoryFMDesktop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EmployeeDirectoryVCLDesktop">
+        <MSBuild Projects="VCL Example Desktop\EmployeeDirectoryVCLDesktop.dproj"/>
+    </Target>
+    <Target Name="EmployeeDirectoryVCLDesktop:Clean">
+        <MSBuild Projects="VCL Example Desktop\EmployeeDirectoryVCLDesktop.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmployeeDirectoryVCLDesktop:Make">
+        <MSBuild Projects="VCL Example Desktop\EmployeeDirectoryVCLDesktop.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EmployeeDirectoryFMXMobile">
+        <MSBuild Projects="FireMonkey Example Mobile\EmployeeDirectoryFMXMobile.dproj"/>
+    </Target>
+    <Target Name="EmployeeDirectoryFMXMobile:Clean">
+        <MSBuild Projects="FireMonkey Example Mobile\EmployeeDirectoryFMXMobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmployeeDirectoryFMXMobile:Make">
+        <MSBuild Projects="FireMonkey Example Mobile\EmployeeDirectoryFMXMobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="EmployeeDirectory;EmployeeDirectoryFMDesktop;EmployeeDirectoryVCLDesktop;EmployeeDirectoryFMXMobile"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="EmployeeDirectory:Clean;EmployeeDirectoryFMDesktop:Clean;EmployeeDirectoryVCLDesktop:Clean;EmployeeDirectoryFMXMobile:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="EmployeeDirectory:Make;EmployeeDirectoryFMDesktop:Make;EmployeeDirectoryVCLDesktop:Make;EmployeeDirectoryFMXMobile:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

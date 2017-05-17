@@ -1,0 +1,58 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  Caption = 'Form9'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 6
+    Width = 384.000000000000000000
+    object Button1: TButton
+      Height = 44.000000000000000000
+      Position.X = 8.000000000000000000
+      TabOrder = 1
+      Text = 'Active'
+      Width = 73.000000000000000000
+      OnClick = Button1Click
+    end
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Client
+    Height = 519.000000000000000000
+    TabOrder = 7
+    Width = 384.000000000000000000
+  end
+  object PushEvents1: TPushEvents
+    Provider = KinveyProvider1
+    AutoActivate = False
+    OnDeviceTokenReceived = PushEvents1DeviceTokenReceived
+    OnDeviceTokenRequestFailed = PushEvents1DeviceTokenRequestFailed
+    OnPushReceived = PushEvents1PushReceived
+    OnDeviceRegistered = PushEvents1DeviceRegistered
+    Left = 160
+    Top = 96
+  end
+  object KinveyProvider1: TKinveyProvider
+    ApiVersion = '3'
+    AppKey = 'kid_TVzaJP_2nq'
+    AppSecret = '98e0e8d378ff4f558f4b39b1176a86f5'
+    MasterSecret = '5273d85aa89b4099a953fbf47142460a'
+    UserName = 'testuser'
+    Password = 'testuser'
+    AndroidPush.GCMAppID = '899125331012'
+    Left = 64
+    Top = 96
+  end
+end

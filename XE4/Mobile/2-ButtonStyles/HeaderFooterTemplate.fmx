@@ -1,0 +1,137 @@
+object HeaderFooterForm: THeaderFooterForm
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object Header: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object HeaderLabel: TLabel
+      Align = alCenter
+      Height = 33.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Title'
+      TextAlign = taCenter
+      Width = 120.000000000000000000
+    end
+    object Button1: TButton
+      Height = 31.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 6.000000000000000000
+      StyleLookup = 'backtoolbutton'
+      TabOrder = 1
+      Text = 'Back'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+    end
+    object Button2: TButton
+      Height = 31.000000000000000000
+      Position.X = 240.000000000000000000
+      Position.Y = 5.000000000000000000
+      StyleLookup = 'donetoolbutton'
+      TabOrder = 2
+      Text = 'Done'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+    end
+  end
+  object Footer: TToolBar
+    Align = alBottom
+    Height = 44.000000000000000000
+    Position.Y = 416.000000000000000000
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object Button3: TButton
+      Height = 41.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 2.000000000000000000
+      StyleLookup = 'addtoolbutton'
+      TabOrder = 0
+      Text = 'Button3'
+      Trimming = ttCharacter
+      Width = 41.000000000000000000
+    end
+    object Button4: TButton
+      Height = 41.000000000000000000
+      Position.X = 56.000000000000000000
+      Position.Y = 2.000000000000000000
+      StyleLookup = 'bookmarkstoolbutton'
+      TabOrder = 1
+      Text = 'Button4'
+      Trimming = ttCharacter
+      Width = 41.000000000000000000
+    end
+    object Button5: TButton
+      Height = 41.000000000000000000
+      Position.X = 104.000000000000000000
+      Position.Y = 2.000000000000000000
+      StyleLookup = 'cameratoolbutton'
+      TabOrder = 2
+      Text = 'Button5'
+      Trimming = ttCharacter
+      Width = 41.000000000000000000
+    end
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Height = 77.000000000000000000
+    Position.Y = 44.000000000000000000
+    Width = 320.000000000000000000
+    TabOrder = 2
+    object SpeedButton1: TSpeedButton
+      StaysPressed = True
+      GroupName = 'Segment1'
+      Height = 42.000000000000000000
+      IsPressed = True
+      Position.X = 26.000000000000000000
+      Position.Y = 17.000000000000000000
+      StyleLookup = 'segmentedbuttonleft'
+      Text = 'Left'
+      Trimming = ttCharacter
+      Width = 85.000000000000000000
+    end
+    object SpeedButton2: TSpeedButton
+      StaysPressed = True
+      GroupName = 'Segment1'
+      Height = 42.000000000000000000
+      Position.X = 112.000000000000000000
+      Position.Y = 17.000000000000000000
+      StyleLookup = 'segmentedbuttonmiddle'
+      Text = 'Middle'
+      Trimming = ttCharacter
+      Width = 85.000000000000000000
+    end
+    object SpeedButton3: TSpeedButton
+      StaysPressed = True
+      GroupName = 'Segment1'
+      Height = 42.000000000000000000
+      Position.X = 198.000000000000000000
+      Position.Y = 17.000000000000000000
+      StyleLookup = 'segmentedbuttonright'
+      Text = 'Right'
+      Trimming = ttCharacter
+      Width = 85.000000000000000000
+    end
+  end
+  object Button6: TButton
+    Height = 44.000000000000000000
+    Position.X = 88.000000000000000000
+    Position.Y = 152.000000000000000000
+    TabOrder = 3
+    Text = 'Message'
+    Trimming = ttCharacter
+    Width = 137.000000000000000000
+    OnClick = Button6Click
+  end
+end

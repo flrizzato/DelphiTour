@@ -1,0 +1,100 @@
+object TabbedForm: TTabbedForm
+  Left = 0
+  Top = 0
+  Caption = 'Form51'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  object HeaderToolBar: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object ToolBarLabel: TLabel
+      Align = alCenter
+      Height = 27.000000000000000000
+      Position.X = 75.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Strings Basics'
+      TextAlign = taCenter
+      Width = 169.000000000000000000
+    end
+  end
+  object TabControl1: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 504.000000000000000000
+    Position.Y = 44.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = tpBottom
+    Width = 320.000000000000000000
+    object TabItem1: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      StyleLookup = 'tabitemfavorites'
+      TabOrder = 0
+      Text = 'TabItem1'
+      Width = 80.000000000000000000
+      object btnRefCount: TButton
+        DisableFocusEffect = False
+        Height = 44.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 24.000000000000000000
+        TabOrder = 0
+        Text = 'Reference Counting'
+        Width = 289.000000000000000000
+        OnClick = btnRefCountClick
+      end
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [igPan]
+        Height = 193.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 248.000000000000000000
+        TabOrder = 1
+        Width = 297.000000000000000000
+        DisableFocusEffect = False
+        KeyboardType = vktDefault
+      end
+    end
+    object TabItem2: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 80.000000000000000000
+      StyleLookup = 'tabitemcontacts'
+      TabOrder = 1
+      Text = 'TabItem2'
+      Width = 80.000000000000000000
+    end
+    object TabItem3: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 160.000000000000000000
+      StyleLookup = 'tabitemsearch'
+      TabOrder = 2
+      Text = 'TabItem3'
+      Width = 80.000000000000000000
+    end
+    object TabItem4: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 240.000000000000000000
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 3
+      Text = 'TabItem4'
+      Width = 80.000000000000000000
+    end
+  end
+end

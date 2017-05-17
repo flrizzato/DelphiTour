@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/05/12 18:22:03.000.962,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\ServerFunctions.js</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.993,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\templates\ReverseString.html</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.957,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\CallbackFramework.js</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.777,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.980,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\ServerFunctionInvoker.js</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.986,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\css\main.css</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.949,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\ServerFunctionExecutor.js</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.970,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\ServerFunctionExecutor-min.js</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.833,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.964,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\base64-min.js</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.989,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\css\ServerFunctionInvoker.css</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.974,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\CallbackFramework-min.js</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.997,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\templates\ServerFunctionInvoker.html</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.896,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\WebModuleUnit1.pas</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.953,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\json2.js</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.977,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\connection.js</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.967,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\json2-min.js</Transaction>
+    <Transaction>2014/05/12 18:22:03.000.944,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\js\base64.js</Transaction>
+    <Transaction>2014/05/12 18:22:04.000.006,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\images\expand.png</Transaction>
+    <Transaction>2014/05/12 18:22:04.000.001,=C:\DTOURXE6\07_DataSnap\01-Basic\Server\images\collapse.png</Transaction>
+  </Transactions>
+</BorlandProject>

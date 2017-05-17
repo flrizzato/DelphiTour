@@ -1,0 +1,138 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object MemoContent: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Height = 329.000000000000000000
+    Position.X = 128.000000000000000000
+    Position.Y = 80.000000000000000000
+    TabOrder = 7
+    Width = 489.000000000000000000
+    Lines.Strings = (
+      
+        '{"resp": {"status": true, "version": "2.0", "artist": {"profile"' +
+        ': "Brazilian pop singer, born April 19, 1941 in Cachoeiro de Ita' +
+        'pemirim, Esp\u00edrito Santo, Brazil.  Roberto Carlos is one of ' +
+        'the most successful Latin American pop singers in history, selli' +
+        'ng over 100 million albums over a career that spans nearly 50 ye' +
+        'ars.", "releases_url": "http://api.discogs.com/artists/286945/re' +
+        'leases", "name": "Roberto Carlos", "namevariations": [" R.Carlos' +
+        '", "Carlos", "Carlos Braga", "\u0420\u043e\u0431\u0435\u0440\u04' +
+        '42\u043e \u041a\u0430\u0440\u043b\u043e\u0441", "R. B. Carlos", ' +
+        '"R. Carlos", "R.Carlos", "Robert Carlos", "Roberto Caclos", "Rob' +
+        'erto Carlos Braga"], "uri": "http://www.discogs.com/artist/28694' +
+        '5-Roberto-Carlos", "urls": ["http://robertocarlos.globo.com/"], ' +
+        '"images": [{"uri": "http://api.discogs.com/image/A-286945-114157' +
+        '8498.jpeg", "height": 524, "width": 600, "resource_url": "http:/' +
+        '/api.discogs.com/image/A-286945-1141578498.jpeg", "type": "prima' +
+        'ry", "uri150": "http://api.discogs.com/image/A-150-286945-114157' +
+        '8498.jpeg"}, {"uri": "http://api.discogs.com/image/A-286945-1226' +
+        '802615.jpeg", "height": 291, "width": 538, "resource_url": "http' +
+        '://api.discogs.com/image/A-286945-1226802615.jpeg", "type": "sec' +
+        'ondary", "uri150": "http://api.discogs.com/image/A-150-286945-12' +
+        '26802615.jpeg"}, {"uri": "http://api.discogs.com/image/A-286945-' +
+        '1307999347.png", "height": 230, "width": 418, "resource_url": "h' +
+        'ttp://api.discogs.com/image/A-286945-1307999347.png", "type": "s' +
+        'econdary", "uri150": "http://api.discogs.com/image/A-150-286945-' +
+        '1307999347.png"}, {"uri": "http://api.discogs.com/image/A-286945' +
+        '-1307999363.png", "height": 287, "width": 311, "resource_url": "' +
+        'http://api.discogs.com/image/A-286945-1307999363.png", "type": "' +
+        'secondary", "uri150": "http://api.discogs.com/image/A-150-286945' +
+        '-1307999363.png"}, {"uri": "http://api.discogs.com/image/A-28694' +
+        '5-1307999378.png", "height": 287, "width": 337, "resource_url": ' +
+        '"http://api.discogs.com/image/A-286945-1307999378.png", "type": ' +
+        '"secondary", "uri150": "http://api.discogs.com/image/A-150-28694' +
+        '5-1307999378.png"}], "resource_url": "http://api.discogs.com/art' +
+        'ists/286945", "groups": ["Hermanos", "Roberto E Erasmo Carlos"],' +
+        ' "id": 286945, "data_quality": "Needs Vote", "realname": "Robert' +
+        'o Carlos Braga"}}}')
+    TextSettings.WordWrap = True
+  end
+  object EditParamsNAME: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 10
+    Text = 'Roberto Carlos'
+    Position.X = 128.000000000000000000
+    Position.Y = 40.000000000000000000
+    Width = 161.000000000000000000
+    Height = 22.000000000000000000
+    object LabelParamsNAME: TLabel
+      Height = 17.000000000000000000
+      Position.Y = -16.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'Params.NAME'
+      Width = 120.000000000000000000
+    end
+  end
+  object Button1: TButton
+    Height = 22.000000000000000000
+    Position.X = 296.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 11
+    Text = 'Execute'
+    Width = 80.000000000000000000
+    OnClick = Button1Click
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    AcceptEncoding = 'identity'
+    BaseURL = 'http://api.discogs.com'
+    Params = <>
+    HandleRedirects = True
+    Left = 40
+    Top = 72
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <
+      item
+        Kind = pkURLSEGMENT
+        name = 'NAME'
+        Options = [poAutoCreated]
+        Value = 'Roberto Carlos'
+      end>
+    Resource = 'artist/{NAME}'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 40
+    Top = 128
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    Left = 40
+    Top = 184
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 36
+    Top = 13
+    object LinkControlToFieldContent: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = RESTResponse1
+      FieldName = 'Content'
+      Control = MemoContent
+      Track = False
+    end
+    object LinkControlToFieldParamsNAME: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = RESTRequest1
+      FieldName = 'Params.NAME'
+      Control = EditParamsNAME
+      Track = False
+    end
+  end
+end

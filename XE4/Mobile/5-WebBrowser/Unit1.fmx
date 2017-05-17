@@ -1,0 +1,48 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 300
+  ClientWidth = 480
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 480
+  DesignerHeight = 320
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 3
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 480.000000000000000000
+    object Button1: TButton
+      Height = 31.000000000000000000
+      Position.X = 6.000000000000000000
+      Position.Y = 6.000000000000000000
+      StyleLookup = 'priortoolbuttonbordered'
+      TabOrder = 0
+      Text = 'Button1'
+      Trimming = ttCharacter
+      Width = 36.000000000000000000
+      OnClick = Button1Click
+    end
+    object edtURL: TEdit
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 1
+      KeyboardType = vktURL
+      Position.X = 47.000000000000000000
+      Position.Y = 6.000000000000000000
+      Width = 425.000000000000000000
+      Height = 31.000000000000000000
+      KillFocusByReturn = False
+      OnChange = edtURLChange
+      OnKeyDown = edtURLKeyDown
+    end
+  end
+  object WebBrowser1: TWebBrowser
+    Align = alClient
+    Height = 256.000000000000000000
+    Width = 480.000000000000000000
+  end
+end

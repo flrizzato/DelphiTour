@@ -1,0 +1,50 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object CalendarEdit1: TCalendarEdit
+    TabOrder = 0
+    Cursor = crIBeam
+    Date = 41390.000000000000000000
+    Height = 31.000000000000000000
+    InputSupport = True
+    Position.X = 16.000000000000000000
+    Position.Y = 80.000000000000000000
+    TodayDefault = True
+    Width = 153.000000000000000000
+    OnChange = CalendarEdit1Change
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object Label2: TLabel
+      FontColor = claAliceblue
+      StyledSettings = [ssFamily, ssSize, ssStyle]
+      Height = 21.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 12.000000000000000000
+      Text = 'Label2'
+      Width = 297.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+  object Label1: TLabel
+    Height = 21.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 56.000000000000000000
+    Text = 'Calendar'
+    Width = 137.000000000000000000
+    Trimming = ttCharacter
+  end
+end

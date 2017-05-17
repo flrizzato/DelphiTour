@@ -1,0 +1,97 @@
+object HeaderFooterForm: THeaderFooterForm
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Header: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object HeaderLabel: TLabel
+      Align = alContents
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Native Controls'
+      TextAlign = taCenter
+      Width = 384.000000000000000000
+    end
+  end
+  object Footer: TToolBar
+    Align = alBottom
+    Height = 48.000000000000000000
+    Position.Y = 519.000000000000000000
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    Width = 384.000000000000000000
+  end
+  object ComboBox1: TComboBox
+    Align = alTop
+    DisableFocusEffect = False
+    Height = 32.000000000000000000
+    ItemIndex = 0
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Margins.Bottom = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 68.000000000000000000
+    TabOrder = 2
+    Width = 344.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      Height = 44.000000000000000000
+      IsSelected = True
+      Text = 'ListBoxItem1'
+      Width = 44.000000000000000000
+    end
+    object ListBoxItem2: TListBoxItem
+      Height = 44.000000000000000000
+      Text = 'ListBoxItem2'
+      Width = 44.000000000000000000
+    end
+    object ListBoxItem3: TListBoxItem
+      Height = 44.000000000000000000
+      Text = 'ListBoxItem3'
+      Width = 44.000000000000000000
+    end
+    object ListBoxItem4: TListBoxItem
+      Height = 44.000000000000000000
+      Text = 'ListBoxItem4'
+      Width = 44.000000000000000000
+    end
+    object ListBoxItem5: TListBoxItem
+      Height = 44.000000000000000000
+      Text = 'ListBoxItem5'
+      Width = 44.000000000000000000
+    end
+    object ListBoxItem6: TListBoxItem
+      Height = 44.000000000000000000
+      Text = 'ListBoxItem6'
+      Width = 44.000000000000000000
+    end
+  end
+  object CalendarEdit1: TCalendarEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    Align = alTop
+    TabOrder = 3
+    Cursor = crIBeam
+    Date = 41521.000000000000000000
+    Height = 32.000000000000000000
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Margins.Bottom = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 140.000000000000000000
+    Width = 344.000000000000000000
+  end
+end

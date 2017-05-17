@@ -1,0 +1,1319 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 300
+  ClientWidth = 480
+  FormFactor.Width = 1469
+  FormFactor.Height = 919
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 480
+  DesignerHeight = 320
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 1
+  object TabControl1: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 300.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = tpBottom
+    Width = 480.000000000000000000
+    object ToolBarPage: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      TabOrder = 0
+      Text = 'ToolBars'
+      Width = 80.000000000000000000
+      object ToolBar1: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 0
+        Width = 480.000000000000000000
+        object SpeedButton12: TSpeedButton
+          StaysPressed = True
+          GroupName = 'group1'
+          Height = 31.000000000000000000
+          Position.X = 344.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'toolbuttonmiddle'
+          Text = 'Text'
+          Width = 57.000000000000000000
+        end
+        object SpeedButton13: TSpeedButton
+          StaysPressed = True
+          GroupName = 'group1'
+          Height = 31.000000000000000000
+          Position.X = 401.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'toolbuttonright'
+          Text = 'Text'
+          Width = 57.000000000000000000
+        end
+        object SpeedButton1: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'backtoolbutton'
+          Text = 'Back'
+          Width = 79.000000000000000000
+        end
+        object SpeedButton2: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 94.000000000000000000
+          Position.Y = 6.000000000000000000
+          Text = 'SpeedButton'
+          Width = 113.000000000000000000
+        end
+        object SpeedButton10: TSpeedButton
+          StaysPressed = True
+          GroupName = 'group1'
+          Height = 31.000000000000000000
+          IsPressed = True
+          Position.X = 287.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'toolbuttonleft'
+          Text = 'Text'
+          Width = 57.000000000000000000
+        end
+      end
+      object ToolBar13: TToolBar
+        Align = alBottom
+        Height = 44.000000000000000000
+        Position.Y = 207.000000000000000000
+        StyleLookup = 'bottomtoolbar'
+        TabOrder = 1
+        Width = 480.000000000000000000
+        object SpeedButton7: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'pagecurltoolbutton'
+          Trimming = ttCharacter
+          Width = 35.000000000000000000
+        end
+      end
+      object ToolBar2: TToolBar
+        Height = 44.000000000000000000
+        Position.Y = 44.000000000000000000
+        TabOrder = 2
+        Width = 480.000000000000000000
+        object SpeedButton4: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 6.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'arrowuptoolbuttonborderedleft'
+          Trimming = ttCharacter
+          Width = 42.000000000000000000
+        end
+        object SpeedButton6: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 48.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'arrowdowntoolbuttonborderedright'
+          Trimming = ttCharacter
+          Width = 42.000000000000000000
+        end
+        object SpeedButton79: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 380.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'donetoolbutton'
+          Text = 'Done'
+          Trimming = ttCharacter
+          Width = 79.000000000000000000
+        end
+        object SpeedButton80: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 286.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'deletetoolbutton'
+          Text = 'Delete'
+          Trimming = ttCharacter
+          Width = 81.000000000000000000
+        end
+        object Label1: TLabel
+          AutoSize = True
+          FontColor = claNull
+          Height = 29.000000000000000000
+          Position.X = 168.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Label1'
+          Width = 72.000000000000000000
+          WordWrap = False
+          Trimming = ttCharacter
+        end
+      end
+    end
+    object ToolButtonPage: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 80.000000000000000000
+      TabOrder = 1
+      Text = 'ToolButtons'
+      Width = 80.000000000000000000
+      object ToolBar5: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 0
+        Width = 480.000000000000000000
+        object SpeedButton27: TSpeedButton
+          Height = 41.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'stoptoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton31: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 41.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'infotoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton30: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 83.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'searchtoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton29: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 125.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'nexttoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton23: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 167.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'addtoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton28: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 209.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'priortoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton24: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 250.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'pausetoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton21: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 292.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'actiontoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton25: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 334.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'forwardtoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton26: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 375.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'rewindtoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton22: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 417.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'playtoolbutton'
+          Width = 41.000000000000000000
+        end
+      end
+      object ToolBar6: TToolBar
+        Height = 44.000000000000000000
+        Position.Y = 176.000000000000000000
+        TabOrder = 1
+        Width = 480.000000000000000000
+        object SpeedButton49: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 5.000000000000000000
+          StyleLookup = 'cameratoolbuttonbordered'
+          Width = 40.000000000000000000
+        end
+        object SpeedButton54: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 56.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'organizetoolbuttonbordered'
+          Width = 39.000000000000000000
+        end
+        object SpeedButton50: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 103.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'composetoolbuttonbordered'
+          Width = 42.000000000000000000
+        end
+        object SpeedButton58: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 154.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'trashtoolbuttonbordered'
+          Width = 36.000000000000000000
+        end
+        object SpeedButton55: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 197.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'bookmarkstoolbuttonbordered'
+          Width = 44.000000000000000000
+        end
+        object SpeedButton56: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 254.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'replytoolbuttonbordered'
+          Width = 45.000000000000000000
+        end
+      end
+      object ToolBar7: TToolBar
+        Height = 44.000000000000000000
+        Position.Y = 132.000000000000000000
+        TabOrder = 2
+        Width = 480.000000000000000000
+        object SpeedButton59: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 47.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'actiontoolbuttonbordered'
+          Width = 47.000000000000000000
+        end
+        object SpeedButton48: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 7.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'infotoolbuttonbordered'
+          Width = 33.000000000000000000
+        end
+        object SpeedButton60: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 102.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'refreshtoolbuttonbordered'
+          Width = 34.000000000000000000
+        end
+        object SpeedButton53: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 154.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'arrowlefttoolbuttonbordered'
+          Width = 33.000000000000000000
+        end
+        object SpeedButton57: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 191.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'arrowrighttoolbuttonbordered'
+          Width = 33.000000000000000000
+        end
+        object SpeedButton52: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 228.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'arrowuptoolbuttonbordered'
+          Width = 33.000000000000000000
+        end
+        object SpeedButton51: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 265.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'arrowdowntoolbuttonbordered'
+          Width = 33.000000000000000000
+        end
+      end
+      object ToolBar8: TToolBar
+        Height = 44.000000000000000000
+        Position.Y = 88.000000000000000000
+        TabOrder = 3
+        Width = 480.000000000000000000
+        object SpeedButton72: TSpeedButton
+          Height = 41.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'detailstoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton47: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 175.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'searchtoolbuttonbordered'
+          Width = 40.000000000000000000
+        end
+        object SpeedButton42: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 231.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'priortoolbuttonbordered'
+          Width = 36.000000000000000000
+        end
+        object SpeedButton43: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 271.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'nexttoolbuttonbordered'
+          Width = 33.000000000000000000
+        end
+        object SpeedButton62: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 95.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'addtoolbuttonbordered'
+          Width = 33.000000000000000000
+        end
+        object SpeedButton5: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 135.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'stoptoolbuttonbordered'
+          Width = 33.000000000000000000
+        end
+        object SpeedButton65: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 317.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'rewindtoolbuttonbordered'
+          Width = 36.000000000000000000
+        end
+        object SpeedButton63: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 395.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'pausetoolbuttonbordered'
+          Width = 31.000000000000000000
+        end
+        object SpeedButton64: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 431.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'forwardtoolbuttonbordered'
+          Width = 36.000000000000000000
+        end
+        object SpeedButton61: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 358.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'playtoolbuttonbordered'
+          Width = 32.000000000000000000
+        end
+        object SpeedButton8: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 47.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'detailstoolbuttonbordered'
+          Width = 35.000000000000000000
+        end
+      end
+      object ToolBar9: TToolBar
+        Height = 44.000000000000000000
+        Position.Y = 44.000000000000000000
+        TabOrder = 4
+        Width = 480.000000000000000000
+        object SpeedButton20: TSpeedButton
+          Height = 41.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'refreshtoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton40: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 40.000000000000000000
+          Position.Y = 3.000000000000000000
+          StyleLookup = 'cameratoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton34: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 82.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'arrowlefttoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton38: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 131.000000000000000000
+          Position.Y = 3.000000000000000000
+          StyleLookup = 'arrowrighttoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton33: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 167.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'arrowuptoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton32: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 209.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'arrowdowntoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton35: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 248.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'organizetoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton41: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 287.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'composetoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton39: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 331.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'trashtoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton36: TSpeedButton
+          Height = 41.000000000000000000
+          Position.X = 373.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'bookmarkstoolbutton'
+          Width = 41.000000000000000000
+        end
+        object SpeedButton37: TSpeedButton
+          Height = 40.000000000000000000
+          Position.X = 414.000000000000000000
+          Position.Y = 2.000000000000000000
+          StyleLookup = 'replytoolbutton'
+          Width = 41.000000000000000000
+        end
+      end
+    end
+    object Tabs: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 160.000000000000000000
+      TabOrder = 2
+      Text = 'Tabs'
+      Width = 80.000000000000000000
+      object TabControl2: TTabControl
+        Align = alTop
+        FullSize = True
+        Height = 57.000000000000000000
+        TabHeight = 49.000000000000000000
+        TabIndex = 1
+        TabOrder = 0
+        TabPosition = tpBottom
+        Width = 480.000000000000000000
+        object TabItem1: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = False
+          Position.X = 1.000000000000000000
+          StyleLookup = 'tabitemcontacts'
+          TabOrder = 0
+          Text = 'Contacts'
+          Width = 120.000000000000000000
+        end
+        object TabItem10: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = True
+          Position.X = 121.000000000000000000
+          StyleLookup = 'tabitemsearch'
+          TabOrder = 1
+          Text = 'Search'
+          Width = 120.000000000000000000
+        end
+        object TabItem11: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = False
+          Position.X = 241.000000000000000000
+          StyleLookup = 'tabitemmostrecent'
+          TabOrder = 2
+          Text = 'Most recent'
+          Width = 120.000000000000000000
+        end
+        object TabItem12: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = False
+          Position.X = 361.000000000000000000
+          StyleLookup = 'tabitemdownloads'
+          TabOrder = 3
+          Text = 'Downloads'
+          Width = 118.000000000000000000
+        end
+      end
+      object TabControl3: TTabControl
+        Align = alTop
+        FullSize = True
+        Height = 56.000000000000000000
+        Position.Y = 57.000000000000000000
+        TabHeight = 49.000000000000000000
+        TabIndex = 1
+        TabOrder = 1
+        TabPosition = tpBottom
+        Width = 480.000000000000000000
+        object TabItem5: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = False
+          Position.X = 1.000000000000000000
+          StyleLookup = 'tabitemrecent'
+          TabOrder = 0
+          Text = 'Recent'
+          Width = 120.000000000000000000
+        end
+        object TabItem6: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = True
+          Position.X = 121.000000000000000000
+          StyleLookup = 'tabitemtoprated'
+          TabOrder = 1
+          Text = 'Top rated'
+          Width = 120.000000000000000000
+        end
+        object TabItem7: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = False
+          Position.X = 241.000000000000000000
+          StyleLookup = 'tabitemmostviewed'
+          TabOrder = 2
+          Text = 'Most viewed'
+          Width = 120.000000000000000000
+        end
+        object TabItem8: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = False
+          Position.X = 361.000000000000000000
+          StyleLookup = 'tabitemfeatured'
+          TabOrder = 3
+          Text = 'Featured'
+          Width = 118.000000000000000000
+        end
+      end
+      object TabControl4: TTabControl
+        Align = alTop
+        FullSize = True
+        Height = 56.000000000000000000
+        Position.Y = 113.000000000000000000
+        TabHeight = 49.000000000000000000
+        TabIndex = 2
+        TabOrder = 2
+        TabPosition = tpBottom
+        Width = 480.000000000000000000
+        object TabItem2: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = False
+          Position.X = 1.000000000000000000
+          StyleLookup = 'tabitemmore'
+          TabOrder = 0
+          Text = 'More'
+          Width = 120.000000000000000000
+        end
+        object TabItem3: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = False
+          Position.X = 121.000000000000000000
+          StyleLookup = 'tabitemfavorites'
+          TabOrder = 1
+          Text = 'Favorites'
+          Width = 120.000000000000000000
+        end
+        object TabItem4: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = True
+          Position.X = 241.000000000000000000
+          StyleLookup = 'tabitemhistory'
+          TabOrder = 2
+          Text = 'History'
+          Width = 120.000000000000000000
+        end
+        object TabItem9: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = False
+          Position.X = 361.000000000000000000
+          StyleLookup = 'tabitembookmarks'
+          TabOrder = 3
+          Text = 'Bookmarks'
+          Width = 118.000000000000000000
+        end
+      end
+      object TabControl5: TTabControl
+        Align = alTop
+        FullSize = True
+        Height = 64.000000000000000000
+        Position.Y = 169.000000000000000000
+        TabHeight = 49.000000000000000000
+        TabIndex = 0
+        TabOrder = 3
+        TabPosition = tpDots
+        Width = 480.000000000000000000
+        object TabItem13: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = True
+          Position.X = 216.000000000000000000
+          Position.Y = 45.000000000000000000
+          StyleLookup = 'tabdotstyle'
+          TabOrder = 0
+          Text = 'TabItem13'
+          Width = 8.000000000000000000
+        end
+        object TabItem14: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = False
+          Position.X = 226.000000000000000000
+          Position.Y = 45.000000000000000000
+          StyleLookup = 'tabdotstyle'
+          TabOrder = 1
+          Text = 'TabItem14'
+          Width = 8.000000000000000000
+        end
+        object TabItem16: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = False
+          Position.X = 236.000000000000000000
+          Position.Y = 45.000000000000000000
+          StyleLookup = 'tabdotstyle'
+          TabOrder = 2
+          Text = 'TabItem16'
+          Width = 8.000000000000000000
+        end
+        object TabItem15: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = False
+          Position.X = 246.000000000000000000
+          Position.Y = 45.000000000000000000
+          StyleLookup = 'tabdotstyle'
+          TabOrder = 3
+          Text = 'TabItem15'
+          Width = 8.000000000000000000
+        end
+        object TabItem17: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = False
+          Position.X = 256.000000000000000000
+          Position.Y = 45.000000000000000000
+          StyleLookup = 'tabdotstyle'
+          TabOrder = 4
+          Text = 'TabItem17'
+          Width = 8.000000000000000000
+        end
+      end
+    end
+    object ListBoxPage: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 240.000000000000000000
+      TabOrder = 3
+      Text = 'ListBoxes'
+      Width = 80.000000000000000000
+      object ListBox2: TListBox
+        Align = alLeft
+        Height = 251.000000000000000000
+        ShowSizeGrip = True
+        TabOrder = 0
+        Width = 233.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        object ListBoxGroupHeader2: TListBoxGroupHeader
+          Height = 23.000000000000000000
+          Text = 'ListBoxGroupHeader1'
+          Width = 225.000000000000000000
+        end
+        object ListBoxItem14: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 23.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'ListBoxItem1'
+          Width = 225.000000000000000000
+        end
+        object ListBoxItem16: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Detail'
+          Position.Y = 67.000000000000000000
+          StyleLookup = 'listboxitembottomdetail'
+          Text = 'ListBoxItem3'
+          Width = 225.000000000000000000
+        end
+        object ListBoxGroupHeader3: TListBoxGroupHeader
+          Height = 23.000000000000000000
+          Position.Y = 111.000000000000000000
+          Text = 'ListBoxGroupHeader2'
+          Width = 225.000000000000000000
+        end
+        object ListBoxItem17: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Detail'
+          Position.Y = 134.000000000000000000
+          StyleLookup = 'listboxitemrightdetail'
+          Text = 'ListBoxItem4'
+          Width = 225.000000000000000000
+        end
+        object ListBoxItem18: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Detail'
+          ItemData.Accessory = aDetail
+          Position.Y = 178.000000000000000000
+          StyleLookup = 'listboxitemleftdetail'
+          Text = 'ListBoxItem5'
+          Width = 225.000000000000000000
+        end
+        object ListBoxItem19: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 222.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'ListBoxItem6'
+          Width = 225.000000000000000000
+        end
+        object ListBoxItem20: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 266.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'ListBoxItem7'
+          Width = 225.000000000000000000
+        end
+        object ListBoxHeader1: TListBoxHeader
+          Height = 44.000000000000000000
+          StyleLookup = 'listboxheader'
+          TabOrder = 0
+          Width = 233.000000000000000000
+          object Label6: TLabel
+            AutoSize = True
+            Height = 31.000000000000000000
+            Position.X = 6.000000000000000000
+            Position.Y = 6.000000000000000000
+            StyleLookup = 'listboxheaderlabel'
+            Text = 'ListBox Header'
+            Width = 146.000000000000000000
+            WordWrap = False
+          end
+        end
+        object SearchBox1: TSearchBox
+          Align = alTop
+          TabOrder = 1
+          Position.Y = 44.000000000000000000
+          Width = 233.000000000000000000
+          Height = 44.000000000000000000
+          TextPrompt = 'search'
+          KillFocusByReturn = False
+        end
+      end
+      object ListBox3: TListBox
+        Align = alClient
+        Height = 251.000000000000000000
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 1
+        Width = 247.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = gsGrouped
+        object ListBoxGroupHeader1: TListBoxGroupHeader
+          Height = 31.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          Text = 'ListBoxGroupHeader1'
+          Width = 223.000000000000000000
+        end
+        object ListBoxItem15: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Detail'
+          ItemData.Accessory = aMore
+          Position.Y = 31.000000000000000000
+          StyleLookup = 'listboxitemrightdetail'
+          Text = 'ListBoxItem1'
+          Width = 223.000000000000000000
+        end
+        object ListBoxItem21: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Detail'
+          ItemData.Accessory = aCheckmark
+          Position.Y = 75.000000000000000000
+          StyleLookup = 'listboxitembottomdetail'
+          Text = 'ListBoxItem3'
+          Width = 223.000000000000000000
+        end
+        object ListBoxGroupHeader4: TListBoxGroupHeader
+          Height = 31.000000000000000000
+          Position.Y = 119.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          Text = 'ListBoxGroupHeader2'
+          Width = 223.000000000000000000
+        end
+        object ListBoxItem22: TListBoxItem
+          Height = 44.000000000000000000
+          IsChecked = True
+          Position.Y = 150.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Width = 223.000000000000000000
+          object Label13: TLabel
+            AutoSize = True
+            Locked = True
+            Height = 27.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 8.000000000000000000
+            StyleLookup = 'listboxitemlabel'
+            Text = 'Label13'
+            Width = 66.000000000000000000
+            WordWrap = False
+          end
+          object Label14: TLabel
+            AutoSize = True
+            Locked = True
+            Height = 27.000000000000000000
+            Position.X = 90.000000000000000000
+            Position.Y = 8.000000000000000000
+            StyleLookup = 'listboxitemdetaillabel'
+            Text = 'Label14'
+            Width = 62.000000000000000000
+            WordWrap = False
+          end
+          object Label15: TLabel
+            StyledSettings = [ssFamily, ssStyle, ssFontColor]
+            Locked = True
+            Height = 15.000000000000000000
+            Position.X = 170.000000000000000000
+            Position.Y = 11.000000000000000000
+            StyleLookup = 'listboxitemdetaillabel'
+            Text = 'Label15'
+            Width = 49.000000000000000000
+          end
+        end
+        object ListBoxItem23: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Detail'
+          Position.Y = 194.000000000000000000
+          StyleLookup = 'listboxitemleftdetail'
+          Text = 'ListBoxItem5'
+          TextAlign = taTrailing
+          Width = 223.000000000000000000
+        end
+        object ListBoxItem24: TListBoxItem
+          Selectable = False
+          Height = 44.000000000000000000
+          Position.Y = 238.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'ListBoxItem6'
+          Width = 223.000000000000000000
+          object Switch2: TSwitch
+            Height = 27.000000000000000000
+            IsChecked = False
+            Position.X = 136.000000000000000000
+            Position.Y = 8.000000000000000000
+            TabOrder = 0
+            Width = 78.000000000000000000
+          end
+        end
+        object ListBoxItem25: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 282.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'ListBoxItem7'
+          Width = 223.000000000000000000
+        end
+        object ListBoxGroupFooter1: TListBoxGroupFooter
+          Height = 31.000000000000000000
+          Position.Y = 326.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          Text = 'ListBoxGroupFooter1'
+          Width = 223.000000000000000000
+        end
+        object ListBoxItem7: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 357.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'ListBoxItem8'
+          Width = 223.000000000000000000
+        end
+        object ListBoxHeader2: TListBoxHeader
+          Height = 44.000000000000000000
+          StyleLookup = 'toolbarstyle'
+          TabOrder = 0
+          Width = 247.000000000000000000
+          object Label7: TLabel
+            AutoSize = True
+            Height = 31.000000000000000000
+            Position.X = 6.000000000000000000
+            Position.Y = 6.000000000000000000
+            StyleLookup = 'toollabel'
+            Text = 'ListBox Header'
+            Width = 146.000000000000000000
+            WordWrap = False
+          end
+        end
+      end
+    end
+    object ControlPage: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 320.000000000000000000
+      TabOrder = 4
+      Text = 'Controls'
+      Width = 80.000000000000000000
+      object ProgressBar1: TProgressBar
+        Height = 12.000000000000000000
+        Orientation = orHorizontal
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Width = 137.000000000000000000
+      end
+      object TrackBar1: TTrackBar
+        Height = 24.000000000000000000
+        Orientation = orHorizontal
+        Position.X = 8.000000000000000000
+        Position.Y = 40.000000000000000000
+        TabOrder = 1
+        Width = 137.000000000000000000
+      end
+      object ProgressBar2: TProgressBar
+        Height = 11.000000000000000000
+        Orientation = orHorizontal
+        Position.X = 8.000000000000000000
+        Position.Y = 80.000000000000000000
+        StyleLookup = 'innerprogressbar'
+        Width = 137.000000000000000000
+      end
+      object TrackBar2: TTrackBar
+        Height = 24.000000000000000000
+        Orientation = orHorizontal
+        Position.X = 8.000000000000000000
+        Position.Y = 104.000000000000000000
+        StyleLookup = 'outertrackbar'
+        TabOrder = 3
+        Width = 137.000000000000000000
+      end
+      object ProgressBar3: TProgressBar
+        Height = 120.000000000000000000
+        Orientation = orVertical
+        Position.X = 176.000000000000000000
+        Position.Y = 16.000000000000000000
+        Width = 12.000000000000000000
+      end
+      object TrackBar3: TTrackBar
+        Height = 120.000000000000000000
+        Orientation = orVertical
+        Position.X = 200.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 5
+        Width = 24.000000000000000000
+      end
+      object ProgressBar4: TProgressBar
+        Height = 120.000000000000000000
+        Orientation = orVertical
+        Position.X = 240.000000000000000000
+        Position.Y = 16.000000000000000000
+        StyleLookup = 'innerprogressbar'
+        Width = 11.000000000000000000
+      end
+      object TrackBar4: TTrackBar
+        Height = 120.000000000000000000
+        Orientation = orVertical
+        Position.X = 264.000000000000000000
+        Position.Y = 16.000000000000000000
+        StyleLookup = 'outertrackbar'
+        TabOrder = 7
+        Width = 24.000000000000000000
+      end
+      object Switch1: TSwitch
+        Height = 27.000000000000000000
+        IsChecked = False
+        Position.X = 304.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 8
+        Width = 78.000000000000000000
+      end
+      object Label5: TLabel
+        FontColor = claNull
+        Height = 25.000000000000000000
+        Position.X = 312.000000000000000000
+        Position.Y = 56.000000000000000000
+        Text = 'Label'
+        Width = 89.000000000000000000
+      end
+      object AniIndicator1: TAniIndicator
+        Enabled = True
+        Height = 30.000000000000000000
+        Position.X = 408.000000000000000000
+        Position.Y = 102.000000000000000000
+        Width = 30.000000000000000000
+      end
+      object Button15: TButton
+        Height = 41.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 144.000000000000000000
+        TabOrder = 11
+        Text = 'Button'
+        Trimming = ttCharacter
+        Width = 110.000000000000000000
+      end
+      object SpeedButton68: TSpeedButton
+        StyleName = 'group4'
+        StaysPressed = True
+        GroupName = 'group3'
+        Height = 42.000000000000000000
+        Position.X = 151.000000000000000000
+        Position.Y = 192.000000000000000000
+        StyleLookup = 'segmentedbuttonleft'
+        Text = 'Segment1'
+        Trimming = ttCharacter
+        Width = 105.000000000000000000
+      end
+      object SpeedButton69: TSpeedButton
+        StyleName = 'group4'
+        StaysPressed = True
+        GroupName = 'group3'
+        Height = 42.000000000000000000
+        IsPressed = True
+        Position.X = 256.000000000000000000
+        Position.Y = 192.000000000000000000
+        StyleLookup = 'segmentedbuttonmiddle'
+        Text = 'Segment2'
+        Trimming = ttCharacter
+        Width = 105.000000000000000000
+      end
+      object SpeedButton70: TSpeedButton
+        StyleName = 'group4'
+        StaysPressed = True
+        GroupName = 'group3'
+        Height = 42.000000000000000000
+        Position.X = 361.000000000000000000
+        Position.Y = 192.000000000000000000
+        StyleLookup = 'segmentedbuttonright'
+        Text = 'Segment3'
+        Trimming = ttCharacter
+        Width = 105.000000000000000000
+      end
+      object Button7: TButton
+        Font.Size = 30.000000000000000000
+        Font.Style = [fsBold]
+        Height = 28.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 201.000000000000000000
+        StyleLookup = 'stepperbuttonleft'
+        TabOrder = 15
+        Text = '-'
+        Trimming = ttCharacter
+        Width = 60.000000000000000000
+      end
+      object Button8: TButton
+        Font.Size = 30.000000000000000000
+        Font.Style = [fsBold]
+        Height = 28.000000000000000000
+        Position.X = 68.000000000000000000
+        Position.Y = 201.000000000000000000
+        StyleLookup = 'stepperbuttonright'
+        TabOrder = 16
+        Text = '+'
+        Trimming = ttCharacter
+        Width = 60.000000000000000000
+      end
+      object SpeedButton73: TSpeedButton
+        Height = 27.000000000000000000
+        Position.X = 304.000000000000000000
+        Position.Y = 104.000000000000000000
+        StyleLookup = 'additembutton'
+        Trimming = ttCharacter
+        Width = 29.000000000000000000
+      end
+      object SpeedButton74: TSpeedButton
+        Height = 27.000000000000000000
+        Position.X = 352.000000000000000000
+        Position.Y = 104.000000000000000000
+        StyleLookup = 'deleteitembutton'
+        Trimming = ttCharacter
+        Width = 29.000000000000000000
+      end
+    end
+    object TabItem18: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 400.000000000000000000
+      TabOrder = 5
+      Text = 'Editors'
+      Width = 80.000000000000000000
+      object ToolBar11: TToolBar
+        Align = alNone
+        Height = 44.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 0
+        Width = 270.000000000000000000
+        object Edit4: TEdit
+          StyleLookup = 'searchedit'
+          TabOrder = 0
+          Text = 'Edit4'
+          Position.X = 24.000000000000000000
+          Position.Y = 7.000000000000000000
+          Width = 225.000000000000000000
+          Height = 31.000000000000000000
+          KillFocusByReturn = False
+          object ClearEditButton1: TClearEditButton
+            CanFocus = False
+            Height = 27.000000000000000000
+            TabOrder = 0
+            Width = 25.000000000000000000
+          end
+        end
+      end
+      object Memo1: TMemo
+        Height = 137.000000000000000000
+        Position.X = 304.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 1
+        Width = 153.000000000000000000
+        Lines.Strings = (
+          'Memo1')
+      end
+      object Edit3: TEdit
+        StyleLookup = 'tooledit'
+        TabOrder = 2
+        Text = 'Edit3'
+        Position.X = 155.000000000000000000
+        Position.Y = 74.000000000000000000
+        Width = 130.000000000000000000
+        Height = 31.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Edit1: TEdit
+        TabOrder = 3
+        Text = 'Edit1'
+        Position.X = 17.000000000000000000
+        Position.Y = 74.000000000000000000
+        Width = 130.000000000000000000
+        Height = 31.000000000000000000
+        KillFocusByReturn = False
+        object ClearEditButton3: TClearEditButton
+          CanFocus = False
+          Height = 27.000000000000000000
+          TabOrder = 0
+          Width = 25.000000000000000000
+        end
+      end
+      object ComboBox1: TComboBox
+        DisableFocusEffect = False
+        Height = 31.000000000000000000
+        ItemIndex = 0
+        ListBoxResource = 'transparentlistboxstyle'
+        Position.X = 17.000000000000000000
+        Position.Y = 120.000000000000000000
+        TabOrder = 4
+        Width = 130.000000000000000000
+        object ListBoxItem1: TListBoxItem
+          Height = 19.000000000000000000
+          IsSelected = True
+          Text = 'ListBoxItem1'
+          Width = 112.000000000000000000
+        end
+        object ListBoxItem2: TListBoxItem
+          Height = 19.000000000000000000
+          Position.Y = 19.000000000000000000
+          Text = 'ListBoxItem2'
+          Width = 112.000000000000000000
+        end
+        object ListBoxItem3: TListBoxItem
+          Height = 19.000000000000000000
+          Position.Y = 38.000000000000000000
+          Text = 'ListBoxItem3'
+          Width = 112.000000000000000000
+        end
+        object ListBoxItem4: TListBoxItem
+          Height = 19.000000000000000000
+          Position.Y = 57.000000000000000000
+          Text = 'ListBoxItem4'
+          Width = 112.000000000000000000
+        end
+        object ListBoxItem5: TListBoxItem
+          Height = 19.000000000000000000
+          Position.Y = 76.000000000000000000
+          Text = 'ListBoxItem5'
+          Width = 112.000000000000000000
+        end
+        object ListBoxItem6: TListBoxItem
+          Height = 19.000000000000000000
+          Position.Y = 95.000000000000000000
+          Text = 'ListBoxItem6'
+          Width = 112.000000000000000000
+        end
+      end
+      object PopupBox1: TPopupBox
+        Height = 31.000000000000000000
+        Items.Strings = (
+          'item1'
+          'item2'
+          'item3'
+          'item4'
+          'item5'
+          'item6'
+          'item7')
+        ItemIndex = 0
+        Position.X = 155.000000000000000000
+        Position.Y = 120.000000000000000000
+        TabOrder = 5
+        Width = 130.000000000000000000
+      end
+      object CalendarEdit1: TCalendarEdit
+        TabOrder = 6
+        Cursor = crIBeam
+        Date = 41313.000000000000000000
+        Height = 31.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 168.000000000000000000
+        Width = 129.000000000000000000
+      end
+      object ComboEdit1: TComboEdit
+        TabOrder = 7
+        ItemHeight = 19.000000000000000000
+        ItemIndex = 0
+        Items.Strings = (
+          'item1'
+          'item2'
+          'item3'
+          'item4'
+          'item5'
+          'item6'
+          'item7')
+        Text = 'item1'
+        Position.X = 155.000000000000000000
+        Position.Y = 168.000000000000000000
+        Width = 130.000000000000000000
+        Height = 31.000000000000000000
+        KillFocusByReturn = False
+      end
+    end
+  end
+end

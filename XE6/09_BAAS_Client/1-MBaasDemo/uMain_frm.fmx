@@ -1,0 +1,226 @@
+object frm_Main: Tfrm_Main
+  Left = 0
+  Top = 0
+  Caption = 'MBaasDemo'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object tc_main: TTabControl
+    Align = Client
+    FullSize = True
+    Height = 460.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = Bottom
+    Width = 320.000000000000000000
+    object ti_ListRecipes: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = True
+      TabOrder = 0
+      Text = 'ti_ListRecipes'
+      Width = 107.000000000000000000
+      object lv_Recipes: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Height = 367.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        OnItemClick = lv_RecipesItemClick
+        OnDeletingItem = lv_RecipesDeletingItem
+      end
+      object tb_HdrList: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 1
+        Width = 320.000000000000000000
+        object lbl_HdrList: TLabel
+          Align = Client
+          Height = 44.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = 'Recipes-Manager'
+          Width = 320.000000000000000000
+          object btn_AddRecipe: TButton
+            Align = Right
+            Height = 26.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 286.000000000000000000
+            Position.Y = 9.000000000000000000
+            StyleLookup = 'additembutton'
+            TabOrder = 1
+            Text = 'btn_AddRecipe'
+            Width = 26.000000000000000000
+            OnClick = btn_AddRecipeClick
+          end
+          object btn_RefreshList: TButton
+            Align = Left
+            Height = 44.000000000000000000
+            Margins.Left = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            StyleLookup = 'refreshtoolbutton'
+            TabOrder = 2
+            Text = 'btn_RefreshList'
+            Width = 44.000000000000000000
+            OnClick = btn_RefreshListClick
+          end
+        end
+      end
+    end
+    object ti_ViewRecipe: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = False
+      TabOrder = 0
+      Text = 'ti_ViewRecipe'
+      Width = 107.000000000000000000
+      object tb_HdrView: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        object lbl_HdrView: TLabel
+          Align = Client
+          Height = 44.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = 'View Recipe'
+          Width = 320.000000000000000000
+          object btn_EditRecipe: TButton
+            Align = Right
+            Height = 44.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 268.000000000000000000
+            StyleLookup = 'composetoolbutton'
+            TabOrder = 1
+            Text = 'btn_AddRecipe'
+            Width = 44.000000000000000000
+            OnClick = btn_EditRecipeClick
+          end
+          object btn_Back2List: TButton
+            Align = Left
+            Height = 44.000000000000000000
+            Margins.Left = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            StyleLookup = 'priortoolbutton'
+            TabOrder = 2
+            Text = 'btn_RefreshList'
+            Width = 44.000000000000000000
+            OnClick = btn_Back2ListClick
+          end
+        end
+      end
+      object lbl_RecipeTitle: TLabel
+        Align = Top
+        Height = 21.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 54.000000000000000000
+        StyleLookup = 'toollabel'
+        Text = 'lbl_RecipeTitle'
+        Width = 300.000000000000000000
+      end
+      object memo_ViewRecipeBody: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        Align = Client
+        Height = 316.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        TabOrder = 1
+        Width = 300.000000000000000000
+        CanFocus = False
+        ReadOnly = True
+        TextSettings.WordWrap = True
+      end
+    end
+    object ti_EditRecipe: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = False
+      TabOrder = 0
+      Text = 'ti_EditRecipe'
+      Width = 106.000000000000000000
+      object tb_Hdr_Edit: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        object lbl_HdrEdit: TLabel
+          Align = Client
+          Height = 44.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = 'Edit Recipe'
+          Width = 320.000000000000000000
+          object btn_Back2View: TButton
+            Align = Left
+            Height = 44.000000000000000000
+            Margins.Left = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            StyleLookup = 'priortoolbutton'
+            TabOrder = 1
+            Text = 'btn_RefreshList'
+            Width = 44.000000000000000000
+            OnClick = btn_Back2ViewClick
+          end
+        end
+      end
+      object edt_EditReceipeTitle: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        Position.X = 10.000000000000000000
+        Position.Y = 54.000000000000000000
+        Width = 300.000000000000000000
+        Height = 30.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        TextPrompt = 'Title of recipe'
+      end
+      object memo_EditReceipeBody: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        Align = Client
+        Height = 268.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        TabOrder = 2
+        Width = 300.000000000000000000
+        TextSettings.WordWrap = True
+      end
+      object btn_SaveRecipe: TButton
+        Align = Bottom
+        Height = 44.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 367.000000000000000000
+        StyleLookup = 'toolbutton'
+        TabOrder = 3
+        Text = 'Save changes'
+        Width = 300.000000000000000000
+        OnClick = btn_SaveRecipeClick
+      end
+    end
+  end
+end

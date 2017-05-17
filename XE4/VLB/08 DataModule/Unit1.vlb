@@ -1,0 +1,17 @@
+﻿[]
+Coordinates=30,0,92,177
+Visible=False
+
+[DataModule2.ClientDataSet1]
+Coordinates=0,0,92,195
+Visible=False
+
+[BindSourceDB1]
+Coordinates=0,0,92,195
+
+[StringGridBindSourceDB1]
+Coordinates=172,71,143,51
+
+[BindingsList1]
+Visible=False
+

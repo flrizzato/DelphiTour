@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdb="http://www.borland.com/schemas/delphi/10.0/XMLDataBinding">
+  <element xmlns="http://www.w3.org/2001/XMLSchema" name="NewDataSet" type="NewDataSetType"/>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="NewDataSetType"><annotation>
+      <appinfo xdb:docElement="NewDataSet"/>
+    </annotation>
+    <sequence>
+      <element name="Table" type="TableType" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  <complexType xmlns="http://www.w3.org/2001/XMLSchema" name="TableType">
+    <sequence>
+      <element name="Name" type="xs:decimal"/>
+    </sequence>
+  </complexType>
+</xs:schema>

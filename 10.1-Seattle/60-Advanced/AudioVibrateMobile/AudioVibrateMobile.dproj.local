@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/04/01 11:03:28.000.115,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/04/01 11:04:46.000.356,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\ProjectsXE7\AudioVibrateMobile\uMainForm.pas</Transaction>
+    <Transaction>2015/04/01 11:04:46.000.356,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\ProjectsXE7\AudioVibrateMobile\uMainForm.fmx</Transaction>
+    <Transaction>2015/04/01 11:04:51.000.959,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\ProjectsXE7\AudioVibrateMobile\AudioVibrateMobile.dproj</Transaction>
+    <Transaction>2015/04/01 11:26:53.000.331,=C:\ProjectsXE7\AudioVibrateMobile\GameAudioManager.pas</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3-Android</MobileDevice>
+</BorlandProject>

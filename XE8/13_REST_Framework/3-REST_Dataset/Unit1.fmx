@@ -1,0 +1,300 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 843
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object GridBindSourceDB1: TGrid
+    Align = Client
+    Height = 415.000000000000000000
+    TabOrder = 13
+    Width = 843.000000000000000000
+    RowCount = 3
+    RowHeight = 21.000000000000000000
+  end
+  object Panel1: TPanel
+    Align = Top
+    Height = 65.000000000000000000
+    Width = 843.000000000000000000
+    TabOrder = 16
+    object Button1: TButton
+      Height = 22.000000000000000000
+      Position.X = 352.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 16
+      Text = 'Execute'
+      Width = 80.000000000000000000
+      OnClick = Button1Click
+    end
+  end
+  object EditParamsper_page: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 32
+    Text = '3'
+    Position.X = 240.000000000000000000
+    Position.Y = 24.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    object LabelParamsper_page: TLabel
+      Height = 17.000000000000000000
+      Position.Y = -16.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'Params.per_page'
+      Width = 120.000000000000000000
+    end
+  end
+  object EditParamstype: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 33
+    Text = 'master'
+    Position.X = 128.000000000000000000
+    Position.Y = 24.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    object LabelParamstype: TLabel
+      Height = 17.000000000000000000
+      Position.Y = -16.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'Params.type'
+      Width = 120.000000000000000000
+    end
+  end
+  object EditParamstitle: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 34
+    Text = 'Thriller'
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    object LabelParamstitle: TLabel
+      Height = 17.000000000000000000
+      Position.Y = -16.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'Params.title'
+      Width = 120.000000000000000000
+    end
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    AcceptEncoding = 'identity'
+    BaseURL = 'http://api.discogs.com'
+    Params = <>
+    HandleRedirects = True
+    Left = 72
+    Top = 176
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <
+      item
+        name = 'title'
+        Value = 'Thriller'
+      end
+      item
+        name = 'per_page'
+        Value = '3'
+      end
+      item
+        name = 'type'
+        Value = 'master'
+      end>
+    Resource = 'database/search'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 72
+    Top = 232
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    RootElement = 'results'
+    Left = 72
+    Top = 288
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Active = True
+    Dataset = ClientDataSet1
+    FieldDefs = <>
+    Response = RESTResponse1
+    Left = 72
+    Top = 344
+  end
+  object ClientDataSet1: TClientDataSet
+    Active = True
+    Aggregates = <>
+    FieldDefs = <
+      item
+        Name = 'style'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'thumb'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'title'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'country'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'format'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'uri'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'label'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'catno'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'year'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'genre'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'resource_url'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'type'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'id'
+        DataType = ftString
+        Size = 255
+      end>
+    IndexDefs = <>
+    Params = <>
+    StoreDefs = True
+    Left = 80
+    Top = 400
+    Data = {
+      4D0400009619E0BD01000000180000000D000300000003000000A60105737479
+      6C65020049000000010005574944544802000200FF00057468756D6202004900
+      0000010005574944544802000200FF00057469746C6502004900000001000557
+      4944544802000200FF0007636F756E7472790200490000000100055749445448
+      02000200FF0006666F726D6174020049000000010005574944544802000200FF
+      0003757269020049000000010005574944544802000200FF00056C6162656C02
+      0049000000010005574944544802000200FF00056361746E6F02004900000001
+      0005574944544802000200FF0004796561720200490000000100055749445448
+      02000200FF000567656E7265020049000000010005574944544802000200FF00
+      0C7265736F757263655F75726C020049000000010005574944544802000200FF
+      000474797065020049000000010005574944544802000200FF00026964020049
+      000000010005574944544802000200FF0001000A4348414E47455F4C4F470400
+      8200090000000100000000000000040000000200000000000000040000000300
+      0000000000000400000004000000000700286172726179293900687474703A2F
+      2F6170692E646973636F67732E636F6D2F696D6167652F522D39302D31323331
+      3331372D313238343436323333362E6A70656713005354465520283229202D20
+      546872696C6C657207004765726D616E790700286172726179291C002F535446
+      552D546872696C6C65722F6D61737465722F3138333932320700286172726179
+      2908005449474552203536040032303038070028617272617929250068747470
+      3A2F2F6170692E646973636F67732E636F6D2F6D6173746572732F3138333932
+      3206006D61737465720600313833393232040000000007002861727261792937
+      00687474703A2F2F6170692E646973636F67732E636F6D2F696D6167652F522D
+      39302D3335323936312D313131363635343832302E6A706716004D75646D656E
+      2C20546865202D20546872696C6C65720200554B0700286172726179291E002F
+      4D75646D656E2D546872696C6C65722F6D61737465722F313832363333070028
+      6172726179290600585451542038040031393939070028617272617929250068
+      7474703A2F2F6170692E646973636F67732E636F6D2F6D6173746572732F3138
+      3236333306006D61737465720600313832363333040000000007002861727261
+      79293100687474703A2F2F6170692E646973636F67732E636F6D2F696D616765
+      732F64656661756C742D72656C656173652E706E67100052696C6F64202D2054
+      6872696C6C657206004672616E63650700286172726179291D002F52696C6F64
+      2D546872696C6C65722F6D61737465722F313531313038070028617272617929
+      09004E564E203830303030040032303036070028617272617929250068747470
+      3A2F2F6170692E646973636F67732E636F6D2F6D6173746572732F3135313130
+      3806006D61737465720600313531313038}
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ClientDataSet1
+    ScopeMappings = <>
+    Left = 176
+    Top = 176
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 172
+    Top = 237
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = GridBindSourceDB1
+      Columns = <>
+    end
+    object LinkControlToFieldParamstitle: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = RESTRequest1
+      FieldName = 'Params.title'
+      Track = False
+    end
+    object LinkControlToFieldParamstype: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = RESTRequest1
+      FieldName = 'Params.type'
+      Track = False
+    end
+    object LinkControlToFieldParamsper_page: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = RESTRequest1
+      FieldName = 'Params.per_page'
+      Track = False
+    end
+    object LinkControlToFieldParamsper_page2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = RESTRequest1
+      FieldName = 'Params.per_page'
+      Control = EditParamsper_page
+      Track = False
+    end
+    object LinkControlToFieldParamstype2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = RESTRequest1
+      FieldName = 'Params.type'
+      Control = EditParamstype
+      Track = False
+    end
+    object LinkControlToFieldParamstitle2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = RESTRequest1
+      FieldName = 'Params.title'
+      Control = EditParamstitle
+      Track = False
+    end
+  end
+end

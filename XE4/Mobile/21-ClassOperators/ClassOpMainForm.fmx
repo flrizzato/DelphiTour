@@ -1,0 +1,24 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object Button1: TButton
+    Height = 44.000000000000000000
+    Position.X = 56.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 0
+    Text = 'Class Ops Test'
+    Width = 209.000000000000000000
+    OnClick = Button1Click
+  end
+end

@@ -1,0 +1,134 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'ThreadedDatabase'
+  ClientHeight = 567
+  ClientWidth = 384
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Touch.GestureManager = GestureManager1
+  OnGesture = FormGesture
+  DesignerMasterStyle = 3
+  object TabControlMain: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 384.000000000000000000
+    Size.Height = 567.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 7
+    TabPosition = PlatformDefault
+    OnChange = TabControlMainChange
+    object TabItemItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 192.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Book'
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        OnUpdateObjects = ListView1UpdateObjects
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 518.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Checkmark
+        ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+        CanSwipeDelete = False
+        OnItemClick = ListView1ItemClick
+      end
+    end
+    object TabItemDetail: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 192.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Content'
+      object MemoDetail: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 518.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModuleMain.FDTableMaster
+    ScopeMappings = <>
+    Left = 128
+    Top = 4
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 36
+    Top = 5
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Title'
+      Control = ListView1
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldSelectedTag: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'ID'
+      Component = ListView1
+      ComponentProperty = 'Selected.Tag'
+    end
+  end
+  object ActionList1: TActionList
+    Left = 64
+    Top = 120
+    object PreviousTabAction: TPreviousTabAction
+      Category = 'Tab'
+      TabControl = TabControlMain
+      CustomText = 'Back'
+    end
+    object NextTabAction: TNextTabAction
+      Category = 'Tab'
+      TabControl = TabControlMain
+      CustomText = 'Next'
+    end
+  end
+  object GestureManager1: TGestureManager
+    Left = 64
+    Top = 176
+    GestureData = <
+      item
+        Control = Owner
+        Collection = <
+          item
+            Action = NextTabAction
+            GestureID = sgiLeft
+          end
+          item
+            Action = PreviousTabAction
+            GestureID = sgiRight
+          end>
+      end>
+  end
+end

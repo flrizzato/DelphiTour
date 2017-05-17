@@ -1,0 +1,893 @@
+object TabbedwithNavigationForm: TTabbedwithNavigationForm
+  Left = 0
+  Top = 0
+  Caption = 'TabbedwithNavigation'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  OnKeyUp = FormKeyUp
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object tcMain: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 460.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = tpBottom
+    Width = 320.000000000000000000
+    object tabLogin: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      StyleLookup = 'tabitemfeatured'
+      TabOrder = 0
+      Text = 'Login'
+      Trimming = ttCharacter
+      Width = 107.000000000000000000
+      object ToolBar6: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        object Label5: TLabel
+          Align = alClient
+          Height = 44.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Directory Login'
+          TextAlign = taCenter
+          Width = 320.000000000000000000
+          Trimming = ttCharacter
+        end
+      end
+      object sbLogin: TScrollBox
+        Align = alClient
+        Height = 367.000000000000000000
+        TabOrder = 1
+        Width = 320.000000000000000000
+        object ListBox1: TListBox
+          Align = alTop
+          Height = 289.000000000000000000
+          StyleLookup = 'transparentlistboxstyle'
+          TabOrder = 0
+          Width = 320.000000000000000000
+          DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          GroupingKind = gsGrouped
+          object ListBoxGroupHeader3: TListBoxGroupHeader
+            Height = 31.000000000000000000
+            StyleLookup = 'listboxgroupheader'
+            Text = 'User Login Details'
+            Width = 304.000000000000000000
+          end
+          object ListBoxItem1: TListBoxItem
+            Height = 44.000000000000000000
+            Position.Y = 31.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            Text = 'User Name'
+            Width = 304.000000000000000000
+            object edtUserName: TEdit
+              Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+              Align = alClient
+              TabOrder = 0
+              Width = 158.000000000000000000
+              Height = 31.000000000000000000
+              Margins.Left = 140.000000000000000000
+              Margins.Top = 6.000000000000000000
+              Margins.Right = 6.000000000000000000
+              Margins.Bottom = 6.000000000000000000
+              KillFocusByReturn = False
+            end
+          end
+          object ListBoxItem2: TListBoxItem
+            Height = 44.000000000000000000
+            Position.Y = 75.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            Text = 'Password'
+            Width = 304.000000000000000000
+            object edtPassword: TEdit
+              Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+              Align = alClient
+              TabOrder = 0
+              Password = True
+              Width = 158.000000000000000000
+              Height = 31.000000000000000000
+              Margins.Left = 140.000000000000000000
+              Margins.Top = 6.000000000000000000
+              Margins.Right = 6.000000000000000000
+              Margins.Bottom = 6.000000000000000000
+              KillFocusByReturn = False
+            end
+          end
+          object ListBoxGroupHeader4: TListBoxGroupHeader
+            Height = 31.000000000000000000
+            Position.Y = 119.000000000000000000
+            StyleLookup = 'listboxgroupheader'
+            Text = 'Server Details'
+            Width = 304.000000000000000000
+          end
+          object lbiServer: TListBoxItem
+            Height = 44.000000000000000000
+            ItemData.Detail = 'e.g. 127.0.0.1'
+            Position.Y = 150.000000000000000000
+            StyleLookup = 'listboxitembottomdetail'
+            Text = 'Server'
+            Width = 304.000000000000000000
+            object edtServer: TEdit
+              Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+              Align = alClient
+              TabOrder = 0
+              Width = 158.000000000000000000
+              Height = 31.000000000000000000
+              Margins.Left = 140.000000000000000000
+              Margins.Top = 6.000000000000000000
+              Margins.Right = 6.000000000000000000
+              Margins.Bottom = 6.000000000000000000
+              KillFocusByReturn = False
+            end
+          end
+          object lbiPort: TListBoxItem
+            Height = 44.000000000000000000
+            ItemData.Detail = 'e.g. 8080 '
+            Position.Y = 194.000000000000000000
+            StyleLookup = 'listboxitembottomdetail'
+            Text = 'Port'
+            Width = 304.000000000000000000
+            object edtPort: TEdit
+              Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+              Align = alClient
+              TabOrder = 0
+              Width = 158.000000000000000000
+              Height = 31.000000000000000000
+              Margins.Left = 140.000000000000000000
+              Margins.Top = 6.000000000000000000
+              Margins.Right = 6.000000000000000000
+              Margins.Bottom = 6.000000000000000000
+              KillFocusByReturn = False
+            end
+          end
+          object lbiURLPath: TListBoxItem
+            Height = 44.000000000000000000
+            ItemData.Detail = 'e.g. path/empdir.dll'
+            Position.Y = 238.000000000000000000
+            StyleLookup = 'listboxitembottomdetail'
+            Text = 'URL Path'
+            Width = 304.000000000000000000
+            object edtURLPath: TEdit
+              Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+              Align = alClient
+              TabOrder = 0
+              Width = 158.000000000000000000
+              Height = 31.000000000000000000
+              Margins.Left = 140.000000000000000000
+              Margins.Top = 6.000000000000000000
+              Margins.Right = 6.000000000000000000
+              Margins.Bottom = 6.000000000000000000
+              KillFocusByReturn = False
+            end
+          end
+        end
+        object btnLogin: TButton
+          Align = alTop
+          Height = 48.000000000000000000
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 294.000000000000000000
+          TabOrder = 1
+          Text = 'Login'
+          Trimming = ttCharacter
+          Width = 280.000000000000000000
+          OnClick = btnLoginClick
+        end
+      end
+    end
+    object tabEmployees: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 107.000000000000000000
+      StyleLookup = 'tabitemcontacts'
+      TabOrder = 1
+      Text = 'Employees'
+      Width = 107.000000000000000000
+      object tcEmployee: TTabControl
+        Align = alClient
+        FullSize = True
+        Height = 411.000000000000000000
+        TabHeight = 49.000000000000000000
+        TabIndex = 1
+        TabOrder = 0
+        TabPosition = tpNone
+        Width = 320.000000000000000000
+        object tabEmployeesList: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = False
+          Position.X = 151.000000000000000000
+          Position.Y = 392.000000000000000000
+          TabOrder = 0
+          Text = 'tabEmployeesList'
+          Trimming = ttCharacter
+          Width = 8.000000000000000000
+          object ListView1: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            EditModeOptions = [HideSelection, ClearWhenStart]
+            EditMode = False
+            Align = alClient
+            ClipChildren = True
+            Height = 367.000000000000000000
+            TabOrder = 0
+            Width = 320.000000000000000000
+            CanSwypeDelete = True
+            OnItemClick = OnEmployeeSelected
+            DeleteButtonEnabled = False
+            SearchVisible = False
+            SearchAlwaysOnTop = True
+          end
+          object ToolBar3: TToolBar
+            Height = 44.000000000000000000
+            TabOrder = 1
+            Width = 320.000000000000000000
+            object Label2: TLabel
+              Align = alClient
+              Height = 44.000000000000000000
+              StyleLookup = 'toollabel'
+              Text = 'Employee Directory'
+              TextAlign = taCenter
+              Width = 320.000000000000000000
+              Trimming = ttCharacter
+            end
+          end
+        end
+        object tabEmployeeDetail: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = True
+          Position.X = 161.000000000000000000
+          Position.Y = 392.000000000000000000
+          TabOrder = 1
+          Text = 'tabEmployeeDetail'
+          Trimming = ttCharacter
+          Width = 8.000000000000000000
+          object ToolBar2: TToolBar
+            Height = 44.000000000000000000
+            TabOrder = 0
+            Width = 320.000000000000000000
+            object lblTitle2: TLabel
+              Align = alClient
+              Height = 44.000000000000000000
+              StyleLookup = 'toollabel'
+              Text = 'Employees'
+              TextAlign = taCenter
+              Width = 320.000000000000000000
+              Trimming = ttCharacter
+            end
+            object Layout1: TLayout
+              Height = 44.000000000000000000
+              Width = 73.000000000000000000
+              object btnBack_Employees: TSpeedButton
+                Action = ctaEmployeeList
+                Align = alCenter
+                Height = 30.000000000000000000
+                StyleLookup = 'backtoolbutton'
+                Trimming = ttCharacter
+                Width = 67.000000000000000000
+              end
+            end
+            object Layout2: TLayout
+              Anchors = [akTop, akRight, akBottom]
+              Height = 44.000000000000000000
+              Position.X = 224.000000000000000000
+              Width = 96.000000000000000000
+              object Button1: TButton
+                Action = LiveBindingsBindNavigatePrior1
+                Align = alRight
+                Height = 30.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 7.000000000000000000
+                Position.Y = 7.000000000000000000
+                StyleLookup = 'arrowuptoolbuttonborderedleft'
+                TabOrder = 0
+                Trimming = ttCharacter
+                Width = 42.000000000000000000
+              end
+              object Button2: TButton
+                Action = LiveBindingsBindNavigateNext1
+                Align = alRight
+                Height = 30.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 49.000000000000000000
+                Position.Y = 7.000000000000000000
+                StyleLookup = 'arrowdowntoolbuttonborderedright'
+                TabOrder = 1
+                Trimming = ttCharacter
+                Width = 42.000000000000000000
+              end
+            end
+          end
+          object ScrollBox1: TScrollBox
+            Align = alClient
+            Height = 367.000000000000000000
+            TabOrder = 1
+            Width = 320.000000000000000000
+            object ListBox2: TListBox
+              Align = alTop
+              Height = 209.000000000000000000
+              StyleLookup = 'transparentlistboxstyle'
+              TabOrder = 0
+              Width = 320.000000000000000000
+              DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+              DefaultItemStyles.GroupHeaderStyle = ''
+              DefaultItemStyles.GroupFooterStyle = ''
+              GroupingKind = gsGrouped
+              object ListBoxGroupHeader2: TListBoxGroupHeader
+                Height = 31.000000000000000000
+                StyleLookup = 'listboxgroupheader'
+                Text = 'Employee'
+                Width = 304.000000000000000000
+              end
+              object ListBoxItem5: TListBoxItem
+                Height = 44.000000000000000000
+                ItemData.Detail = '34'
+                Position.Y = 31.000000000000000000
+                StyleLookup = 'listboxitemrightdetail'
+                Text = 'ID'
+                Width = 304.000000000000000000
+              end
+              object ListBoxItem6: TListBoxItem
+                Height = 44.000000000000000000
+                ItemData.Detail = 'Janet'
+                Position.Y = 75.000000000000000000
+                StyleLookup = 'listboxitemrightdetail'
+                Text = 'First Name'
+                Width = 304.000000000000000000
+              end
+              object ListBoxItem7: TListBoxItem
+                Height = 44.000000000000000000
+                ItemData.Detail = 'Baldwin'
+                Position.Y = 119.000000000000000000
+                StyleLookup = 'listboxitemrightdetail'
+                Text = 'Last Name'
+                Width = 304.000000000000000000
+              end
+              object ListBoxItem8: TListBoxItem
+                Height = 44.000000000000000000
+                ItemData.Detail = '2'
+                Position.Y = 163.000000000000000000
+                StyleLookup = 'listboxitemrightdetail'
+                Text = 'Phone Ext'
+                Width = 304.000000000000000000
+              end
+            end
+            object ListBox3: TListBox
+              Align = alClient
+              Height = 158.000000000000000000
+              StyleLookup = 'transparentlistboxstyle'
+              TabOrder = 1
+              Width = 320.000000000000000000
+              ItemIndex = 0
+              DefaultItemStyles.ItemStyle = 'listboxitembottomdetail'
+              DefaultItemStyles.GroupHeaderStyle = ''
+              DefaultItemStyles.GroupFooterStyle = ''
+              GroupingKind = gsGrouped
+            end
+          end
+        end
+      end
+    end
+    object tabProjects: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 214.000000000000000000
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 2
+      Text = 'Projects'
+      Width = 106.000000000000000000
+      object tcProjects: TTabControl
+        Align = alClient
+        FullSize = True
+        Height = 411.000000000000000000
+        TabHeight = 49.000000000000000000
+        TabIndex = 1
+        TabOrder = 0
+        TabPosition = tpDots
+        Width = 320.000000000000000000
+        object tabProjectList: TTabItem
+          WordWrap = False
+          Height = 6.000000000000000000
+          IsSelected = False
+          Position.X = 146.000000000000000000
+          Position.Y = 392.000000000000000000
+          StyleLookup = 'tabdotstyle'
+          TabOrder = 0
+          Text = 'tabProjectList'
+          Trimming = ttCharacter
+          Width = 6.000000000000000000
+          object lvProjects: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            EditModeOptions = [HideSelection, ClearWhenStart]
+            EditMode = False
+            Align = alClient
+            ClipChildren = True
+            Height = 367.000000000000000000
+            TabOrder = 0
+            Width = 320.000000000000000000
+            CanSwypeDelete = True
+            OnItemClick = OnProjectClick
+            DeleteButtonEnabled = False
+            SearchVisible = False
+            SearchAlwaysOnTop = True
+          end
+          object ToolBar5: TToolBar
+            Height = 44.000000000000000000
+            TabOrder = 1
+            Width = 320.000000000000000000
+            object Label3: TLabel
+              Align = alClient
+              Height = 44.000000000000000000
+              StyleLookup = 'toollabel'
+              Text = 'Projects Directory'
+              TextAlign = taCenter
+              Width = 320.000000000000000000
+              Trimming = ttCharacter
+            end
+          end
+        end
+        object tabProjectDetails: TTabItem
+          WordWrap = False
+          Height = 6.000000000000000000
+          IsSelected = True
+          Position.X = 156.000000000000000000
+          Position.Y = 392.000000000000000000
+          StyleLookup = 'tabdotstyle'
+          TabOrder = 1
+          Text = 'tabProjectDetails'
+          Trimming = ttCharacter
+          Width = 6.000000000000000000
+          object lbProjectDetails: TListBox
+            Align = alTop
+            Height = 209.000000000000000000
+            Position.Y = 44.000000000000000000
+            StyleLookup = 'transparentlistboxstyle'
+            TabOrder = 0
+            Width = 320.000000000000000000
+            DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            GroupingKind = gsGrouped
+            object ListBoxGroupHeader1: TListBoxGroupHeader
+              Height = 31.000000000000000000
+              StyleLookup = 'listboxgroupheader'
+              Text = 'AutoMap'
+              Width = 304.000000000000000000
+            end
+            object lbiProjectID: TListBoxItem
+              Height = 44.000000000000000000
+              ItemData.Detail = 'GUIDE'
+              Position.Y = 31.000000000000000000
+              StyleLookup = 'listboxitembottomdetail'
+              Text = 'ID'
+              Width = 304.000000000000000000
+            end
+            object lbiProjectName: TListBoxItem
+              Height = 44.000000000000000000
+              ItemData.Detail = 'AutoMap'
+              Position.Y = 75.000000000000000000
+              StyleLookup = 'listboxitembottomdetail'
+              Text = 'Name'
+              Width = 304.000000000000000000
+            end
+            object lbiProjectProduct: TListBoxItem
+              Height = 44.000000000000000000
+              ItemData.Detail = 'hardware'
+              Position.Y = 119.000000000000000000
+              StyleLookup = 'listboxitembottomdetail'
+              Text = 'Product'
+              Width = 304.000000000000000000
+            end
+            object lbiProjectLead: TListBoxItem
+              Height = 44.000000000000000000
+              ItemData.Detail = 'Papadopoulos, Chris'
+              Position.Y = 163.000000000000000000
+              StyleLookup = 'listboxitembottomdetail'
+              Text = 'Lead Employee'
+              Width = 304.000000000000000000
+            end
+          end
+          object MemoPROJ_DESC: TMemo
+            Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+            Align = alClient
+            Height = 138.000000000000000000
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            TabOrder = 1
+            Width = 300.000000000000000000
+            Lines.Strings = (
+              'Develop a prototype for the automobile version of'
+              'the hand-held map browsing device.')
+            ReadOnly = True
+          end
+          object ToolBar4: TToolBar
+            Align = alMostTop
+            Height = 44.000000000000000000
+            TabOrder = 2
+            Width = 320.000000000000000000
+            object lblTitle4: TLabel
+              Align = alClient
+              Height = 44.000000000000000000
+              StyleLookup = 'toollabel'
+              Text = 'Projects'
+              TextAlign = taCenter
+              Width = 320.000000000000000000
+              Trimming = ttCharacter
+            end
+            object Layout3: TLayout
+              Height = 44.000000000000000000
+              Width = 73.000000000000000000
+              object btnBack_Projects: TSpeedButton
+                Action = ctaProjectList
+                Align = alCenter
+                Height = 30.000000000000000000
+                StyleLookup = 'backtoolbutton'
+                Trimming = ttCharacter
+                Width = 70.000000000000000000
+              end
+            end
+            object Layout4: TLayout
+              Anchors = [akTop, akRight]
+              Height = 44.000000000000000000
+              Position.X = 248.000000000000000000
+              Width = 72.000000000000000000
+              object btnProjectStaff: TSpeedButton
+                Action = ctaProjectEmployees
+                Align = alCenter
+                Height = 30.000000000000000000
+                StyleLookup = 'toolbutton'
+                Trimming = ttCharacter
+                Width = 66.000000000000000000
+              end
+            end
+          end
+        end
+        object tabProjectEmployees: TTabItem
+          WordWrap = False
+          Height = 6.000000000000000000
+          IsSelected = False
+          Position.X = 166.000000000000000000
+          Position.Y = 392.000000000000000000
+          StyleLookup = 'tabdotstyle'
+          TabOrder = 2
+          Text = 'tabProjectEmployees'
+          Trimming = ttCharacter
+          Width = 6.000000000000000000
+          object ToolBar1: TToolBar
+            Height = 44.000000000000000000
+            TabOrder = 0
+            Width = 320.000000000000000000
+            object Label1: TLabel
+              Align = alClient
+              Height = 44.000000000000000000
+              StyleLookup = 'toollabel'
+              Text = 'Project Staff'
+              TextAlign = taCenter
+              Width = 320.000000000000000000
+              Trimming = ttCharacter
+            end
+            object Layout5: TLayout
+              Height = 44.000000000000000000
+              Width = 73.000000000000000000
+              object btnBack_Project: TSpeedButton
+                Action = ctaProjectDetails
+                Align = alCenter
+                Height = 30.000000000000000000
+                StyleLookup = 'backtoolbutton'
+                Trimming = ttCharacter
+                Width = 71.000000000000000000
+              end
+            end
+            object Layout6: TLayout
+              Anchors = [akTop, akRight, akBottom]
+              Height = 44.000000000000000000
+              Position.X = 224.000000000000000000
+              Width = 96.000000000000000000
+              object Button3: TButton
+                Action = LiveBindingsBindNavigatePrior2
+                Align = alRight
+                Height = 30.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 7.000000000000000000
+                Position.Y = 7.000000000000000000
+                StyleLookup = 'arrowuptoolbuttonborderedleft'
+                TabOrder = 0
+                Trimming = ttCharacter
+                Width = 42.000000000000000000
+              end
+              object Button4: TButton
+                Action = LiveBindingsBindNavigateNext2
+                Align = alRight
+                Height = 30.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 49.000000000000000000
+                Position.Y = 7.000000000000000000
+                StyleLookup = 'arrowdowntoolbuttonborderedright'
+                TabOrder = 1
+                Trimming = ttCharacter
+                Width = 42.000000000000000000
+              end
+            end
+          end
+          object ListView2: TListView
+            ItemAppearanceClassName = 'TCustomizeItemObjects'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            EditModeOptions = [HideSelection, ClearWhenStart]
+            EditMode = False
+            Align = alClient
+            ClipChildren = True
+            Height = 337.000000000000000000
+            TabOrder = 1
+            Width = 320.000000000000000000
+            CanSwypeDelete = True
+            DeleteButtonEnabled = False
+            SearchVisible = False
+            SearchAlwaysOnTop = True
+          end
+          object lblProjectStaffTitle: TLabel
+            Align = alTop
+            Height = 30.000000000000000000
+            Position.Y = 44.000000000000000000
+            StyleLookup = 'listboxheaderlabel'
+            Text = '<Project>'
+            TextAlign = taCenter
+            Width = 320.000000000000000000
+            Trimming = ttCharacter
+          end
+        end
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 200
+    Top = 48
+    object ctaEmployeeDetail: TChangeTabAction
+      CustomText = 'Next'
+      Tab = tabEmployeeDetail
+      Transition = ttSlide
+    end
+    object ctaEmployeeList: TChangeTabAction
+      CustomText = 'Back'
+      Tab = tabEmployeesList
+      Transition = ttSlide
+    end
+    object ctaProjectList: TChangeTabAction
+      CustomText = 'Projects'
+      Tab = tabProjectList
+      Transition = ttSlide
+    end
+    object ctaProjectEmployees: TChangeTabAction
+      CustomText = 'Staff'
+      Tab = tabProjectEmployees
+      Transition = ttSlide
+    end
+    object ctaProjectDetails: TChangeTabAction
+      CustomText = 'Project'
+      Tab = tabProjectDetails
+      Transition = ttSlide
+    end
+    object LiveBindingsBindNavigatePrior1: TFMXBindNavigatePrior
+      Category = 'LiveBindings'
+      Text = 'Prior'
+      DataSource = bsEmployees
+    end
+    object LiveBindingsBindNavigateNext1: TFMXBindNavigateNext
+      Category = 'LiveBindings'
+      Text = 'Next'
+      DataSource = bsEmployees
+    end
+    object LiveBindingsBindNavigateNext2: TFMXBindNavigateNext
+      Category = 'LiveBindings'
+      Text = 'Next'
+      DataSource = bsProjects
+    end
+    object LiveBindingsBindNavigatePrior2: TFMXBindNavigatePrior
+      Category = 'LiveBindings'
+      Text = 'Prior'
+      DataSource = bsProjects
+    end
+  end
+  object bsEmployees: TBindSourceDB
+    DataSet = DataModule1.cdsEmployee
+    ScopeMappings = <>
+    Left = 120
+    Top = 144
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 268
+    Top = 45
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = bsEmployees
+      FieldName = 'FULL_NAME'
+      Control = ListView1
+      FillExpressions = <>
+      AutoBufferCount = False
+      FillHeaderExpressions = <>
+      FillHeaderCustomFormat = 'SubString(%s, 0, 1)'
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldItemDataDetail5: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = bsEmployees
+      FieldName = 'EMP_NO'
+      Component = ListBoxItem5
+      ComponentProperty = 'ItemData.Detail'
+    end
+    object LinkPropertyToFieldItemDataDetail6: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = bsEmployees
+      FieldName = 'PHONE_EXT'
+      Component = ListBoxItem8
+      ComponentProperty = 'ItemData.Detail'
+    end
+    object LinkPropertyToFieldItemDataDetail7: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = bsEmployees
+      FieldName = 'FIRST_NAME'
+      Component = ListBoxItem6
+      ComponentProperty = 'ItemData.Detail'
+    end
+    object LinkPropertyToFieldItemDataDetail8: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = bsEmployees
+      FieldName = 'LAST_NAME'
+      Component = ListBoxItem7
+      ComponentProperty = 'ItemData.Detail'
+    end
+    object LinkListControlToField4: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = bsEmployeeProjects
+      FieldName = 'Project_name'
+      Control = ListBox3
+      FillExpressions = <
+        item
+          SourceMemberName = 'Product'
+          ControlMemberName = 'Detail'
+        end>
+      AutoBufferCount = False
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'EMP_NO'
+      FillHeaderCustomFormat = #39'Projects'#39
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = bsProjectEmployess
+      FieldName = 'FULL_NAME'
+      Control = ListView2
+      FillExpressions = <>
+      AutoBufferCount = False
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField5: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = bsProjects
+      FieldName = 'PROJ_NAME'
+      Control = lvProjects
+      FillExpressions = <>
+      AutoBufferCount = False
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldItemDataDetail9: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = bsProjects
+      FieldName = 'FULL_NAME'
+      Component = lbiProjectLead
+      ComponentProperty = 'ItemData.Detail'
+    end
+    object LinkPropertyToFieldItemDataDetail10: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = bsProjects
+      FieldName = 'PRODUCT'
+      Component = lbiProjectProduct
+      ComponentProperty = 'ItemData.Detail'
+    end
+    object LinkPropertyToFieldItemDataDetail11: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = bsProjects
+      FieldName = 'PROJ_NAME'
+      Component = lbiProjectName
+      ComponentProperty = 'ItemData.Detail'
+    end
+    object LinkPropertyToFieldItemDataDetail12: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = bsProjects
+      FieldName = 'PROJ_ID'
+      Component = lbiProjectID
+      ComponentProperty = 'ItemData.Detail'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = bsProjects
+      FieldName = 'PROJ_NAME'
+      Component = lblProjectStaffTitle
+      ComponentProperty = 'Text'
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = DataModule1.pbsServerSettings
+      FieldName = 'UserName'
+      Control = edtUserName
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = DataModule1.pbsServerSettings
+      FieldName = 'URLPath'
+      Control = edtURLPath
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = DataModule1.pbsServerSettings
+      FieldName = 'Server'
+      Control = edtServer
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = DataModule1.pbsServerSettings
+      FieldName = 'Port'
+      Control = edtPort
+      Track = False
+    end
+    object LinkControlToField5: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = DataModule1.pbsServerSettings
+      FieldName = 'Password'
+      Control = edtPassword
+      Track = False
+    end
+  end
+  object bsProjects: TBindSourceDB
+    DataSet = DataModule1.cdsProjects
+    ScopeMappings = <>
+    Left = 240
+    Top = 136
+  end
+  object bsEmployeeProjects: TBindSourceDB
+    DataSet = DataModule1.cdsEmployeeProjects
+    ScopeMappings = <>
+    Left = 120
+    Top = 192
+  end
+  object bsProjectEmployess: TBindSourceDB
+    DataSet = DataModule1.cdsProjectEmployess
+    ScopeMappings = <>
+    Left = 240
+    Top = 192
+  end
+end

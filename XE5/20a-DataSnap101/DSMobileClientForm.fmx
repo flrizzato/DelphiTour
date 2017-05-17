@@ -1,0 +1,103 @@
+object HeaderFooterForm: THeaderFooterForm
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Header: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object Button1: TButton
+      Align = alRight
+      Height = 48.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 279.000000000000000000
+      StyleLookup = 'donetoolbutton'
+      TabOrder = 0
+      Text = 'Reverse'
+      Trimming = ttCharacter
+      Width = 100.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Align = alLeft
+      Height = 48.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      StyleLookup = 'donetoolbutton'
+      TabOrder = 1
+      Text = 'Populate'
+      Trimming = ttCharacter
+      Width = 100.000000000000000000
+      OnClick = Button2Click
+    end
+  end
+  object Footer: TToolBar
+    Align = alBottom
+    Height = 48.000000000000000000
+    Position.Y = 519.000000000000000000
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    Width = 384.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    Align = alTop
+    TabOrder = 2
+    Text = 'Sample'
+    Position.X = 5.000000000000000000
+    Position.Y = 53.000000000000000000
+    Width = 374.000000000000000000
+    Height = 32.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    KillFocusByReturn = False
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    AlternatingColors = True
+    Align = alClient
+    Height = 429.000000000000000000
+    TabOrder = 3
+    Width = 384.000000000000000000
+    CanSwipeDelete = False
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ClientModule1.ClientDataSet1
+    ScopeMappings = <>
+    Left = 176
+    Top = 272
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 172
+    Top = 213
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Company'
+      Control = ListView1
+      FillExpressions = <>
+      AutoBufferCount = False
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'Country'
+      FillBreakGroups = <>
+    end
+  end
+end

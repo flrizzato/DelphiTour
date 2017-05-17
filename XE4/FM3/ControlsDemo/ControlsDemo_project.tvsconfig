@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="namespaceFolder.aboutboxfrm" Type="System.String" Value="aboutboxfrm" Category="General" IsBrowsable="False" />
+  <Option Name="namespaceFolder.ControlsDemo" Type="System.String" Value="ControlsDemo" Category="General" IsBrowsable="False" />
+</TgConfig>

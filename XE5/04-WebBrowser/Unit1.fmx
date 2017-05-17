@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 300
+  ClientWidth = 480
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 480
+  DesignerHeight = 320
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 3
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 480.000000000000000000
+    object edtURL: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      Align = alClient
+      TabOrder = 0
+      KeyboardType = vktURL
+      Width = 460.000000000000000000
+      Height = 31.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      KillFocusByReturn = True
+    end
+  end
+  object ToolBar2: TToolBar
+    Align = alBottom
+    Height = 44.000000000000000000
+    Position.Y = 256.000000000000000000
+    TabOrder = 1
+    Width = 480.000000000000000000
+    object SpeedButton1: TSpeedButton
+      Align = alLeft
+      Height = 44.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      StyleLookup = 'priortoolbutton'
+      Text = 'SpeedButton1'
+      Trimming = ttCharacter
+      Width = 44.000000000000000000
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton2: TSpeedButton
+      Align = alLeft
+      Height = 44.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Position.X = 64.000000000000000000
+      StyleLookup = 'nexttoolbutton'
+      Text = 'SpeedButton2'
+      Trimming = ttCharacter
+      Width = 44.000000000000000000
+      OnClick = SpeedButton2Click
+    end
+    object Button1: TButton
+      Align = alLeft
+      Height = 30.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Position.X = 118.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 2
+      Text = 'Home'
+      Trimming = ttCharacter
+      Width = 80.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Align = alLeft
+      Height = 30.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Position.X = 208.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 3
+      Text = 'Go!'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = Button2Click
+    end
+  end
+  object WebBrowser1: TWebBrowser
+    Align = alClient
+    Height = 212.000000000000000000
+    Width = 480.000000000000000000
+  end
+end

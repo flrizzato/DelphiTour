@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2C362C72-A75F-4DB6-BF6D-0A07DE80465F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\desktop_app\FMWeatherDsk.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\mobile_app\FMWeather1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\mobile_app\FMWeather2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\mobile_app\FMWeather3.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FMWeatherDsk">
+        <MSBuild Projects="..\desktop_app\FMWeatherDsk.dproj"/>
+    </Target>
+    <Target Name="FMWeatherDsk:Clean">
+        <MSBuild Projects="..\desktop_app\FMWeatherDsk.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMWeatherDsk:Make">
+        <MSBuild Projects="..\desktop_app\FMWeatherDsk.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FMWeather1">
+        <MSBuild Projects="..\mobile_app\FMWeather1.dproj"/>
+    </Target>
+    <Target Name="FMWeather1:Clean">
+        <MSBuild Projects="..\mobile_app\FMWeather1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMWeather1:Make">
+        <MSBuild Projects="..\mobile_app\FMWeather1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FMWeather2">
+        <MSBuild Projects="..\mobile_app\FMWeather2.dproj"/>
+    </Target>
+    <Target Name="FMWeather2:Clean">
+        <MSBuild Projects="..\mobile_app\FMWeather2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMWeather2:Make">
+        <MSBuild Projects="..\mobile_app\FMWeather2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FMWeather3">
+        <MSBuild Projects="..\mobile_app\FMWeather3.dproj"/>
+    </Target>
+    <Target Name="FMWeather3:Clean">
+        <MSBuild Projects="..\mobile_app\FMWeather3.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMWeather3:Make">
+        <MSBuild Projects="..\mobile_app\FMWeather3.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FMWeatherDsk;FMWeather1;FMWeather2;FMWeather3"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FMWeatherDsk:Clean;FMWeather1:Clean;FMWeather2:Clean;FMWeather3:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FMWeatherDsk:Make;FMWeather1:Make;FMWeather2:Make;FMWeather3:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

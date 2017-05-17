@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/05/12 18:27:19.000.533,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\DTOURXE6\07_DataSnap\01-Basic\BasicDataSnap.groupproj</Transaction>
+    <Transaction>2014/05/12 18:28:06.000.783,C:\DTOURXE6\07_DataSnap\01-Basic\BasicDataSnap.groupproj=C:\DTOURXE6\07_DataSnap\01-Basic\BasicFiredacJSON.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\DTOURXE6\07_DataSnap\01-Basic\Server\Server.dproj"/>
+	</Default.Personality>
+</BorlandProject>

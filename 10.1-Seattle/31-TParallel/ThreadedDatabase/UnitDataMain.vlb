@@ -1,0 +1,15 @@
+﻿[FDQueryCreate]
+Coordinates=130,0,89,51
+
+[FDGUIxWaitCursor1]
+Coordinates=10,71,113,33
+
+[FDTableMaster]
+Coordinates=10,90,88,87
+
+[FDConnectionMain]
+Coordinates=179,10,90,33
+
+[cdsDetailCache]
+Coordinates=0,0,91,51
+

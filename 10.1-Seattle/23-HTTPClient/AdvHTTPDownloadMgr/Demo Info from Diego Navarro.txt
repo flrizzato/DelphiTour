@@ -1,0 +1,12 @@
+Info from Diego:
+
+ 
+If you know the download address, just use the Direct download edit, and press download.
+If you want to explore the links paste an address in the first edit and press getLinks, the listbox should be filled with the available links of the page
+  Button explore will try to navigate and get links of the selected address on the listbox.
+  If you want to download a file from the links on the listbox just select it and press the download button
+ 
+The downloads list is not persistent, will be lost after close, but downloaded files will be available on the documents path in each platform.
+Has been tested in win, osx, android and ios
+
+You can replace the URL with your own download URL.

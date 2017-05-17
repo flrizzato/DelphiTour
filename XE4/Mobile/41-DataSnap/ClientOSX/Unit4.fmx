@@ -1,0 +1,164 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Client OSX'
+  ClientHeight = 463
+  ClientWidth = 667
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Button1: TButton
+    Height = 22.000000000000000000
+    Position.X = 32.000000000000000000
+    Position.Y = 424.000000000000000000
+    StyleLookup = 'Button1Style1'
+    TabOrder = 0
+    Text = 'Open >>'
+    Width = 80.000000000000000000
+    OnClick = Button1Click
+  end
+  object NavigatorBindSourceDB1: TBindNavigator
+    Height = 25.000000000000000000
+    Position.X = 32.000000000000000000
+    Position.Y = 32.000000000000000000
+    Width = 600.000000000000000000
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object GridBindSourceDB1: TGrid
+    Height = 337.000000000000000000
+    Position.X = 32.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 2
+    Width = 609.000000000000000000
+    RowCount = 0
+    RowHeight = 21.000000000000000000
+  end
+  object SQLConnection1: TSQLConnection
+    ConnectionName = 'DSCLIENTWIN32'
+    DriverName = 'DataSnap'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverName=DataSnap'
+      'DriverUnit=Data.DBXDataSnap'
+      'HostName=172.16.121.197'
+      'Port=211'
+      'CommunicationProtocol=tcp/ip'
+      'DatasnapContext=datasnap/'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXClientDriverLoader,Borland' +
+        '.Data.DbxClientDriver,Version=18.0.0.0,Culture=neutral,PublicKey' +
+        'Token=91d62ebb5b0d1b1b')
+    Left = 40
+    Top = 120
+  end
+  object DSProviderConnection1: TDSProviderConnection
+    ServerClassName = 'TServerMethods1'
+    SQLConnection = SQLConnection1
+    Left = 40
+    Top = 176
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetProvider1'
+    RemoteServer = DSProviderConnection1
+    Left = 40
+    Top = 232
+    object ClientDataSet1CUST_NO: TIntegerField
+      FieldName = 'CUST_NO'
+      Origin = 'CUST_NO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object ClientDataSet1CUSTOMER: TStringField
+      FieldName = 'CUSTOMER'
+      Origin = 'CUSTOMER'
+      Required = True
+      Size = 25
+    end
+    object ClientDataSet1CONTACT_FIRST: TStringField
+      FieldName = 'CONTACT_FIRST'
+      Origin = 'CONTACT_FIRST'
+      Size = 15
+    end
+    object ClientDataSet1CONTACT_LAST: TStringField
+      FieldName = 'CONTACT_LAST'
+      Origin = 'CONTACT_LAST'
+    end
+    object ClientDataSet1PHONE_NO: TStringField
+      FieldName = 'PHONE_NO'
+      Origin = 'PHONE_NO'
+    end
+    object ClientDataSet1ADDRESS_LINE1: TStringField
+      FieldName = 'ADDRESS_LINE1'
+      Origin = 'ADDRESS_LINE1'
+      Size = 30
+    end
+    object ClientDataSet1ADDRESS_LINE2: TStringField
+      FieldName = 'ADDRESS_LINE2'
+      Origin = 'ADDRESS_LINE2'
+      Size = 30
+    end
+    object ClientDataSet1CITY: TStringField
+      FieldName = 'CITY'
+      Origin = 'CITY'
+      Size = 25
+    end
+    object ClientDataSet1STATE_PROVINCE: TStringField
+      FieldName = 'STATE_PROVINCE'
+      Origin = 'STATE_PROVINCE'
+      Size = 15
+    end
+    object ClientDataSet1COUNTRY: TStringField
+      FieldName = 'COUNTRY'
+      Origin = 'COUNTRY'
+      Size = 15
+    end
+    object ClientDataSet1POSTAL_CODE: TStringField
+      FieldName = 'POSTAL_CODE'
+      Origin = 'POSTAL_CODE'
+      Size = 12
+    end
+    object ClientDataSet1ON_HOLD: TStringField
+      FieldName = 'ON_HOLD'
+      Origin = 'ON_HOLD'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 124
+    Top = 285
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      DataSource = BindSourceDB1
+      AutoBufferCount = False
+      Columns = <>
+    end
+    object LinkGridToDataSourceBindSourceDB12: TLinkGridToDataSource
+      DataSource = BindSourceDB1
+      AutoBufferCount = False
+      Columns = <>
+    end
+    object LinkGridToDataSourceBindSourceDB13: TLinkGridToDataSource
+      DataSource = BindSourceDB1
+      GridControl = GridBindSourceDB1
+      AutoBufferCount = False
+      Columns = <>
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ClientDataSet1
+    ScopeMappings = <>
+    Left = 40
+    Top = 288
+  end
+end

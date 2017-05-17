@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+	<Transactions>
+    <Transaction>2013/11/14 01:44:00.000.804,=C:\DTOURXE5\@PremiumStylePack\Android\AndroidJet.style</Transaction>
+    <Transaction>2013/11/14 01:44:00.000.806,=C:\DTOURXE5\@PremiumStylePack\iOS\iOS7Jet.style</Transaction>
+    <Transaction>2013/11/14 01:47:19.000.151,C:\DTOURXE5\@PremiumStylePack\Android\AndroidJet.style=</Transaction>
+    <Transaction>2013/11/14 01:47:19.000.164,C:\DTOURXE5\@PremiumStylePack\iOS\iOS7Jet.style=</Transaction>
+  </Transactions>
+</BorlandProject>

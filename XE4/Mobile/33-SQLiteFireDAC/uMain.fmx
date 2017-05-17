@@ -1,0 +1,127 @@
+object SQLiteForm: TSQLiteForm
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object Button1: TButton
+      Height = 31.000000000000000000
+      Position.X = 280.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyleLookup = 'addtoolbuttonbordered'
+      TabOrder = 0
+      Text = 'Button1'
+      Width = 33.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Height = 31.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyleLookup = 'deletetoolbutton'
+      TabOrder = 1
+      Text = 'Delete'
+      Visible = False
+      Width = 57.000000000000000000
+      OnClick = Button2Click
+    end
+  end
+  object ListBox1: TListBox
+    Align = alClient
+    Height = 416.000000000000000000
+    TabOrder = 1
+    Width = 320.000000000000000000
+    ItemIndex = 0
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 244
+    Top = 253
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListBox1
+      AutoActivate = False
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'TaskName'
+      AutoFill = False
+      BufferCount = -1
+      AutoBufferCount = False
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ADTableTask
+    ScopeMappings = <>
+    Left = 240
+    Top = 344
+  end
+  object ADTableTask: TADTable
+    Connection = FireTaskList
+    UpdateOptions.UpdateTableName = 'Task'
+    TableName = 'Task'
+    Left = 48
+    Top = 172
+  end
+  object FireTaskList: TADConnection
+    Params.Strings = (
+      'Database=C:\tempprojects\tasks.s3db'
+      'DriverID=SQLite')
+    AfterConnect = TaskListAfterConnect
+    BeforeConnect = TaskListBeforeConnect
+    Left = 48
+    Top = 84
+  end
+  object ADQueryDelete: TADQuery
+    Connection = FireTaskList
+    SQL.Strings = (
+      'delete from task where TaskName = (:TaskName)')
+    Left = 184
+    Top = 100
+    ParamData = <
+      item
+        Name = 'TASKNAME'
+        ParamType = ptInput
+      end>
+  end
+  object ADQueryInsert: TADQuery
+    Connection = FireTaskList
+    SQL.Strings = (
+      'insert into task (TaskName) values (:TaskName)')
+    Left = 176
+    Top = 172
+    ParamData = <
+      item
+        Name = 'TASKNAME'
+        ParamType = ptInput
+      end>
+  end
+  object ADPhysSQLiteDriverLink1: TADPhysSQLiteDriverLink
+    Left = 88
+    Top = 340
+  end
+  object ADGUIxWaitCursor1: TADGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 72
+    Top = 396
+  end
+end

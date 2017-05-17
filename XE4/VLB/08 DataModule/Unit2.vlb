@@ -1,0 +1,9 @@
+﻿[ClientDataSet1]
+Coordinates=0,0,87,177
+
+[Form1.]
+Coordinates=106,1,127,51
+
+[Form1.BindSourceDB1]
+Coordinates=106,1,127,177
+

@@ -1,0 +1,302 @@
+object FormWeatherMobile2: TFormWeatherMobile2
+  Left = 0
+  Top = 0
+  Caption = 'Form15'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object TabControlMain: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 460.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = tpNone
+    Width = 320.000000000000000000
+    object TabItemOverview: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = True
+      Position.X = 146.000000000000000000
+      Position.Y = 441.000000000000000000
+      TabOrder = 0
+      Text = 'TabItemOverview'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object ToolBar1: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        object LabelTitle1: TLabel
+          Align = alClient
+          Height = 44.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Airport Weather'
+          TextAlign = taCenter
+          Width = 320.000000000000000000
+          Trimming = ttCharacter
+        end
+      end
+      object ToolBar2: TToolBar
+        Align = alBottom
+        Height = 44.000000000000000000
+        Position.Y = 416.000000000000000000
+        TabOrder = 1
+        Width = 320.000000000000000000
+        object SpeedButtonInfo: TSpeedButton
+          Anchors = [akRight, akBottom]
+          Height = 41.000000000000000000
+          Position.X = 280.000000000000000000
+          StyleLookup = 'infotoolbutton'
+          Text = 'SpeedButtonInfo'
+          Trimming = ttCharacter
+          Width = 41.000000000000000000
+          OnClick = SpeedButtonInfoClick
+        end
+        object LabelUpdated: TLabel
+          Anchors = [akLeft, akTop, akRight]
+          Font.Size = 12.000000000000000000
+          StyledSettings = [ssFamily, ssStyle, ssFontColor]
+          Height = 21.000000000000000000
+          Position.X = 40.000000000000000000
+          Position.Y = 12.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Updated'
+          Width = 241.000000000000000000
+          Trimming = ttCharacter
+        end
+        object SpeedButtonRefresh: TSpeedButton
+          Height = 41.000000000000000000
+          StyleLookup = 'refreshtoolbutton'
+          Text = 'SpeedButtonRefresh'
+          Trimming = ttCharacter
+          Width = 41.000000000000000000
+          OnClick = SpeedButtonRefreshClick
+        end
+      end
+      object ListBoxOverview: TListBox
+        Align = alClient
+        Height = 372.000000000000000000
+        TabOrder = 2
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+      end
+    end
+    object TabItemFavs: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = False
+      Position.X = 156.000000000000000000
+      Position.Y = 441.000000000000000000
+      TabOrder = 1
+      Text = 'TabItemFavs'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object ToolBar4: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        object SpeedButtonGoToOverview: TSpeedButton
+          Height = 31.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'arrowlefttoolbuttonbordered'
+          Text = 'Go to TabItemOverview'
+          Trimming = ttCharacter
+          Width = 33.000000000000000000
+          OnClick = SpeedButtonGoToOverviewClick
+        end
+        object Label2: TLabel
+          Height = 21.000000000000000000
+          Position.X = 104.000000000000000000
+          Position.Y = 12.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Favorites'
+          Width = 129.000000000000000000
+          Trimming = ttCharacter
+        end
+        object SpeedButtonFavAdd: TSpeedButton
+          Anchors = [akTop, akRight]
+          Height = 31.000000000000000000
+          Position.X = 280.000000000000000000
+          Position.Y = 6.000000000000000000
+          StyleLookup = 'addtoolbuttonbordered'
+          Text = 'SpeedButtonFavAdd'
+          Trimming = ttCharacter
+          Width = 33.000000000000000000
+          OnClick = SpeedButtonFavAddClick
+        end
+        object SpeedButtonFavDel: TSpeedButton
+          Anchors = [akTop, akRight]
+          Height = 31.000000000000000000
+          Position.X = 239.000000000000000000
+          Position.Y = 5.000000000000000000
+          StyleLookup = 'trashtoolbuttonbordered'
+          Text = 'SpeedButton2'
+          Trimming = ttCharacter
+          Width = 36.000000000000000000
+          OnClick = SpeedButtonFavDelClick
+        end
+      end
+      object Panel1: TPanel
+        Align = alTop
+        Height = 100.000000000000000000
+        Position.Y = 44.000000000000000000
+        Width = 320.000000000000000000
+        TabOrder = 1
+        object ListBoxSel: TListBox
+          Align = alClient
+          Height = 100.000000000000000000
+          TabOrder = 0
+          Width = 320.000000000000000000
+          DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          object ListBoxItem8: TListBoxItem
+            Height = 44.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            Text = 'Country'
+            Width = 320.000000000000000000
+            object ComboBoxCountry: TComboBox
+              Anchors = [akLeft, akTop, akRight]
+              DisableFocusEffect = False
+              Height = 31.000000000000000000
+              Position.X = 96.000000000000000000
+              Position.Y = 5.000000000000000000
+              TabOrder = 0
+              Width = 217.000000000000000000
+              OnChange = ComboBoxCountryChange
+            end
+          end
+          object ListBoxItem9: TListBoxItem
+            Height = 44.000000000000000000
+            Position.Y = 44.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            Text = 'City'
+            Width = 320.000000000000000000
+            object ComboBoxCity: TComboBox
+              Anchors = [akLeft, akTop, akRight]
+              DisableFocusEffect = False
+              Height = 31.000000000000000000
+              Position.X = 95.000000000000000000
+              Position.Y = 5.000000000000000000
+              TabOrder = 0
+              Width = 217.000000000000000000
+            end
+          end
+        end
+      end
+      object ListBoxFavs: TListBox
+        Align = alClient
+        Height = 316.000000000000000000
+        TabOrder = 2
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        object ListBoxHeader2: TListBoxHeader
+          Height = 44.000000000000000000
+          TabOrder = 0
+          Width = 320.000000000000000000
+          object Label3: TLabel
+            Height = 21.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 10.000000000000000000
+            StyleLookup = 'toollabel'
+            Text = 'Cities and Countries'
+            Width = 273.000000000000000000
+            Trimming = ttCharacter
+          end
+        end
+      end
+    end
+    object TabItemPleaseWait: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = False
+      Position.X = 166.000000000000000000
+      Position.Y = 441.000000000000000000
+      TabOrder = 2
+      Text = 'TabItemPleaseWait'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object PanelPleaseWait: TPanel
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Height = 233.000000000000000000
+        Position.X = 63.000000000000000000
+        Position.Y = 104.000000000000000000
+        Width = 186.000000000000000000
+        TabOrder = 0
+        object AniIndicator1: TAniIndicator
+          Enabled = True
+          Height = 65.000000000000000000
+          Position.X = 64.000000000000000000
+          Position.Y = 8.000000000000000000
+          Width = 65.000000000000000000
+        end
+        object Label4: TLabel
+          Font.Size = 18.000000000000000000
+          StyledSettings = [ssFamily, ssStyle, ssFontColor]
+          Height = 81.000000000000000000
+          Position.X = 40.000000000000000000
+          Position.Y = 96.000000000000000000
+          Text = 'Updating weather information. Please wait'
+          Width = 113.000000000000000000
+          Trimming = ttCharacter
+        end
+      end
+      object ToolBar5: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 1
+        Width = 320.000000000000000000
+        object Label5: TLabel
+          Align = alClient
+          Height = 44.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Airport Weather'
+          TextAlign = taCenter
+          Width = 320.000000000000000000
+          Trimming = ttCharacter
+        end
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 256
+    Top = 368
+    object ChangeTabActionOverview: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItemOverview
+      Transition = ttSlide
+    end
+    object ChangeTabActionFavs: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItemFavs
+      Transition = ttSlide
+    end
+    object LiveBindingsBindNavigatePrior1: TFMXBindNavigatePrior
+      Category = 'LiveBindings'
+      Text = 'Prior'
+    end
+    object LiveBindingsBindNavigateNext1: TFMXBindNavigateNext
+      Category = 'LiveBindings'
+      Text = 'Next'
+    end
+    object ChangeTabActionPleaseWait: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItemPleaseWait
+      Transition = ttSlide
+    end
+  end
+end
