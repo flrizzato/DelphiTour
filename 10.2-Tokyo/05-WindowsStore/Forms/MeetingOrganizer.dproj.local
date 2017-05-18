@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/01/18 15:53:46.000.185,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/01/18 15:54:20.000.145,C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\MeetingOrganizer.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/01/18 15:54:39.000.806,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uAbstractControl.pas</Transaction>
+    <Transaction>2017/01/18 15:54:47.000.255,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uAbstractForm.pas</Transaction>
+    <Transaction>2017/01/18 15:54:54.000.365,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uAbstractDataModule.pas</Transaction>
+    <Transaction>2017/01/18 15:55:00.000.181,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uAbstractDataForm.pas</Transaction>
+    <Transaction>2017/01/18 15:55:05.000.882,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uAbstractDataTabForm.pas</Transaction>
+    <Transaction>2017/01/18 15:55:13.000.865,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uMainDM.pas</Transaction>
+    <Transaction>2017/01/18 15:55:23.000.888,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uMeetingDM.pas</Transaction>
+    <Transaction>2017/01/18 15:55:23.000.646,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uMeetingControl.pas</Transaction>
+    <Transaction>2017/01/18 15:55:23.000.618,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uMainForm.pas</Transaction>
+    <Transaction>2017/01/18 15:55:24.000.812,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uRoomForm.pas</Transaction>
+    <Transaction>2017/01/18 15:55:24.000.333,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uMeetingTimeRoomForm.pas</Transaction>
+    <Transaction>2017/01/18 15:55:24.000.239,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uMeetingForm.pas</Transaction>
+    <Transaction>2017/01/18 15:55:24.000.350,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uMsgControl.pas</Transaction>
+    <Transaction>2017/01/18 15:55:24.000.458,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uRoomControl.pas</Transaction>
+    <Transaction>2017/01/18 15:55:24.000.563,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uRoomDM.pas</Transaction>
+    <Transaction>2017/01/18 15:55:24.000.440,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uRecError.pas</Transaction>
+    <Transaction>2017/01/18 15:55:24.000.949,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uUserDM.pas</Transaction>
+    <Transaction>2017/01/18 15:55:24.000.834,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uUserControl.pas</Transaction>
+    <Transaction>2017/01/18 15:55:25.000.215,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uUserForm.pas</Transaction>
+    <Transaction>2017/01/18 15:55:25.000.290,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Forms\uUserLoginForm.pas</Transaction>
+    <Transaction>2017/01/18 16:22:44.000.336,=C:\EVENTS\BerlinUpdate2\MeetingOrganizer\MEETINGORGANIZER.IB</Transaction>
+  </Transactions>
+	<BT_BuildType>AppStore</BT_BuildType>
+</BorlandProject>

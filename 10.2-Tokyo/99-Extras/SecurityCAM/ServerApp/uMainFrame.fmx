@@ -1,0 +1,53 @@
+object MainFrame: TMainFrame
+  Size.Width = 601.000000000000000000
+  Size.Height = 473.000000000000000000
+  Size.PlatformDefault = False
+  object ToolBar1: TToolBar
+    Anchors = []
+    Size.Width = 601.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object edtURL: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Text = 'http://192.168.0.10:8080/image'
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 506.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object butStart: TButton
+      Align = Right
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 516.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'donetoolbutton'
+      TabOrder = 1
+      Text = 'Start'
+      OnClick = butStartClick
+    end
+  end
+  object imgMonitor: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 591.000000000000000000
+    Size.Height = 423.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

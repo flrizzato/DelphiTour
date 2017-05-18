@@ -1,0 +1,215 @@
+object frmConfiguration: TfrmConfiguration
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Radiant Media Player Configuration'
+  ClientHeight = 329
+  ClientWidth = 298
+  Fill.Color = xFF282828
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  StyleBook = frmMediaPlayer.StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object btnOK: TButton
+    Default = True
+    ModalResult = 1
+    Position.X = 112.000000000000000000
+    Position.Y = 293.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'OK'
+    OnClick = btnOKClick
+  end
+  object btnCancel: TButton
+    Cancel = True
+    ModalResult = 2
+    Position.X = 205.000000000000000000
+    Position.Y = 293.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Cancel'
+  end
+  object optStockColors: TRadioButton
+    GroupName = 'ColorSetting'
+    IsChecked = True
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Stock Button Colors'
+    OnChange = optStockColorsChange
+  end
+  object optCustomColors: TRadioButton
+    GroupName = 'ColorSetting'
+    Position.X = 8.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 149.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Custom Button Colors'
+    OnChange = optCustomColorsChange
+  end
+  object lytStockColors: TLayout
+    Position.X = 12.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 270.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object optColorScheme1: TRadioButton
+      GroupName = 'StockColors'
+      IsChecked = True
+      Position.X = 12.000000000000000000
+      Position.Y = 12.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object rectScheme1Color: TRadiantRectangle
+        Fill.Color = xFF35C9FD
+        HitTest = False
+        Position.X = 24.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object rectScheme1Highlight: TRadiantRectangle
+        Fill.Color = xFFBCF1FF
+        HitTest = False
+        Position.X = 72.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object optColorScheme2: TRadioButton
+      GroupName = 'StockColors'
+      Position.X = 12.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object rectScheme2Color: TRadiantRectangle
+        Fill.Color = xFFE73030
+        HitTest = False
+        Position.X = 24.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object rectScheme2Highlight: TRadiantRectangle
+        Fill.Color = xFFFBBDBD
+        HitTest = False
+        Position.X = 72.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object optColorScheme3: TRadioButton
+      GroupName = 'StockColors'
+      Position.X = 144.000000000000000000
+      Position.Y = 12.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object rectScheme3Color: TRadiantRectangle
+        Fill.Color = xFF11C23C
+        HitTest = False
+        Position.X = 24.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object rectScheme3Highlight: TRadiantRectangle
+        Fill.Color = xFFBCFFD1
+        HitTest = False
+        Position.X = 72.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object optColorScheme4: TRadioButton
+      GroupName = 'StockColors'
+      Position.X = 144.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object rectScheme4Color: TRadiantRectangle
+        Fill.Color = xFFBC5AE9
+        HitTest = False
+        Position.X = 24.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object rectScheme4Highlight: TRadiantRectangle
+        Fill.Color = xFFE8BCFF
+        HitTest = False
+        Position.X = 72.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object lytCustomColors: TLayout
+    Enabled = False
+    Position.X = 12.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 270.000000000000000000
+    Size.Height = 77.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object cbxButtonColor: TComboColorBox
+      Color = claWhite
+      Position.X = 108.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 149.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object cbxHighlightColor: TComboColorBox
+      Color = claWhite
+      Position.X = 108.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 149.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object Label2: TLabel
+      Position.X = 12.000000000000000000
+      Position.Y = 12.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Button'
+    end
+    object Label3: TLabel
+      Position.X = 12.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Highlight'
+    end
+  end
+end

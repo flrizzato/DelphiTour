@@ -1,0 +1,277 @@
+object frmGears: TfrmGears
+  Left = 0
+  Top = 0
+  Caption = 'Radiant Gears'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object chkAnimate: TCheckBox
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Animate Gears'
+    OnChange = chkAnimateChange
+  end
+  object RadiantGear1: TRadiantGear
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFC3C7CC
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFF646F7B
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = Radial
+    Position.X = 24.000000000000000000
+    Position.Y = 148.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    Cogs = 12
+    CogSize.Units = Pixels
+    CogSize.Pixels = 12.000000000000000000
+    object FloatAnimation1: TFloatAnimation
+      Duration = 3.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+  object RadiantGear2: TRadiantGear
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFB4B8BE
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = claWhite
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = Radial
+    Position.X = 101.000000000000000000
+    Position.Y = 157.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFF595959
+    Stroke.Thickness = 2.000000000000000000
+    Cogs = 24
+    CogSize.Units = Pixels
+    CogSize.Pixels = 12.000000000000000000
+    HoleSize.ScaleFactor = 0.150000005960464500
+    object FloatAnimation2: TFloatAnimation
+      Duration = 6.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle'
+      StartValue = 360.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+  object RadiantGear3: TRadiantGear
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF878D92
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFF0F0F0
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = Radial
+    Position.X = 247.000000000000000000
+    Position.Y = 69.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 150.000000000000000000
+    Size.PlatformDefault = False
+    Cogs = 18
+    CogSize.Units = Pixels
+    CogSize.Pixels = 14.000000000000000000
+    object FloatAnimation3: TFloatAnimation
+      Duration = 4.500000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+  object RadiantGear4: TRadiantGear
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF9AA0A6
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFE6E6E6
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = Radial
+    Position.X = 377.000000000000000000
+    Position.Y = 141.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFF2D2D46
+    Stroke.Thickness = 1.500000000000000000
+    Cogs = 12
+    CogSize.Units = Pixels
+    CogSize.Pixels = 12.000000000000000000
+    object FloatAnimation4: TFloatAnimation
+      Duration = 3.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle'
+      StartValue = 360.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+  object RadiantGear5: TRadiantGear
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFEBEEF0
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFF3A464D
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = Radial
+    Position.X = 408.000000000000000000
+    Position.Y = 206.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFF3C3C3C
+    Stroke.Thickness = 1.399999976158142000
+    Cogs = 24
+    CogSize.Units = Pixels
+    CogSize.Pixels = 12.000000000000000000
+    HoleSize.ScaleFactor = 0.699999988079071100
+    object FloatAnimation5: TFloatAnimation
+      Duration = 6.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+  object RadiantGear7: TRadiantGear
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF878D92
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFF0F0F0
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = Radial
+    Position.X = 500.000000000000000000
+    Position.Y = 321.000000000000000000
+    Cogs = 18
+    CogSize.Units = Pixels
+    CogSize.Pixels = 4.000000000000000000
+    HoleSize.ScaleFactor = 0.600000023841857900
+    object FloatAnimation7: TFloatAnimation
+      Duration = 4.500000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+  object RadiantGear8: TRadiantGear
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF878D92
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFF0F0F0
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = Radial
+    Position.X = 441.000000000000000000
+    Position.Y = 272.000000000000000000
+    Cogs = 18
+    CogSize.Units = Pixels
+    CogSize.Pixels = 4.000000000000000000
+    HoleSize.ScaleFactor = 0.200000002980232200
+    object FloatAnimation8: TFloatAnimation
+      Duration = 4.500000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+  object RadiantGear6: TRadiantGear
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF878D92
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFF0F0F0
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = Radial
+    Position.X = 513.000000000000000000
+    Position.Y = 253.000000000000000000
+    Cogs = 18
+    CogSize.Units = Pixels
+    CogSize.Pixels = 4.000000000000000000
+    HoleSize.ScaleFactor = 0.600000023841857900
+    object FloatAnimation6: TFloatAnimation
+      Duration = 4.500000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+  object RadiantGear9: TRadiantGear
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF878D92
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFF0F0F0
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = Radial
+    Position.X = 487.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    Cogs = 18
+    CogSize.Units = Pixels
+    CogSize.Pixels = 4.000000000000000000
+    HoleSize.ScaleFactor = 0.400000005960464400
+    ShowHole = False
+    object FloatAnimation9: TFloatAnimation
+      Duration = 4.500000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle'
+      StartValue = 360.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+end

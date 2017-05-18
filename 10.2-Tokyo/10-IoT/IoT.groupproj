@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{1FD97996-86B6-433A-A25C-22130D4193B7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SimpleBeaconDemo\BeaconComponent.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BeaconVCLTethering\MobilePhotoAppBeacon.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BeaconVCLTethering\DesktopWallVCLApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BeaconComponent">
+        <MSBuild Projects="SimpleBeaconDemo\BeaconComponent.dproj"/>
+    </Target>
+    <Target Name="BeaconComponent:Clean">
+        <MSBuild Projects="SimpleBeaconDemo\BeaconComponent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BeaconComponent:Make">
+        <MSBuild Projects="SimpleBeaconDemo\BeaconComponent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MobilePhotoAppBeacon">
+        <MSBuild Projects="BeaconVCLTethering\MobilePhotoAppBeacon.dproj"/>
+    </Target>
+    <Target Name="MobilePhotoAppBeacon:Clean">
+        <MSBuild Projects="BeaconVCLTethering\MobilePhotoAppBeacon.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobilePhotoAppBeacon:Make">
+        <MSBuild Projects="BeaconVCLTethering\MobilePhotoAppBeacon.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DesktopWallVCLApp">
+        <MSBuild Projects="BeaconVCLTethering\DesktopWallVCLApp.dproj"/>
+    </Target>
+    <Target Name="DesktopWallVCLApp:Clean">
+        <MSBuild Projects="BeaconVCLTethering\DesktopWallVCLApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DesktopWallVCLApp:Make">
+        <MSBuild Projects="BeaconVCLTethering\DesktopWallVCLApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BeaconComponent;MobilePhotoAppBeacon;DesktopWallVCLApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BeaconComponent:Clean;MobilePhotoAppBeacon:Clean;DesktopWallVCLApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BeaconComponent:Make;MobilePhotoAppBeacon:Make;DesktopWallVCLApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

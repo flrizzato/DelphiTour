@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/09/10 09:37:52.000.769,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/09/10 09:38:20.000.366,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DTOURXE7\04+ BaaS\BaaS 101\BaaS_Basic.dproj</Transaction>
+    <Transaction>2014/09/10 09:38:32.000.297,=C:\DTOURXE7\04+ BaaS\BaaS 101\uMainForm.pas</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="iPhone5"/>  <NoProfile Android="0022831207"/>
+  </ActiveMobileDevice>
+</BorlandProject>

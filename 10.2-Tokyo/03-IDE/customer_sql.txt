@@ -1,0 +1,16 @@
+SELECT
+    t.CUSTOMERID,
+    t.FIRSTNAME,
+    t.LASTNAME,
+    t.COMPANY,
+    t.ADDRESS,
+    t.CITY,
+    t.STATE,
+    t.COUNTRY,
+    t.POSTALCODE,
+    t.PHONE,
+    t.FAX,
+    t.EMAIL,
+    t.SUPPORTREPID
+FROM CUSTOMER t
+ORDER BY t.CUSTOMERID

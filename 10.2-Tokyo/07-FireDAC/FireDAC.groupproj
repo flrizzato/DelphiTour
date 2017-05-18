@@ -1,0 +1,144 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3DDC31DC-C166-47AE-93A7-106DDA96AAA2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="FireDAC101\FireDAC101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FireDAC102\FireDAC102.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FDMultiDBv2\FDMultiDBv2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LocalSQL\IB+ORA+MSSQL+DB2\ib_ora_mssql_db2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LocalSQL\IB+REST+JSON\ib_rest_json.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LocalSQL\MDB+XML\mdb_xml.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Migrate\MastAppFD\mastapp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Paradox\FDParadox.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TFDMemTable\FDMemTable.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="UpdateJoins\UpdateJoins.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FireDAC101">
+        <MSBuild Projects="FireDAC101\FireDAC101.dproj"/>
+    </Target>
+    <Target Name="FireDAC101:Clean">
+        <MSBuild Projects="FireDAC101\FireDAC101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireDAC101:Make">
+        <MSBuild Projects="FireDAC101\FireDAC101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FireDAC102">
+        <MSBuild Projects="FireDAC102\FireDAC102.dproj"/>
+    </Target>
+    <Target Name="FireDAC102:Clean">
+        <MSBuild Projects="FireDAC102\FireDAC102.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireDAC102:Make">
+        <MSBuild Projects="FireDAC102\FireDAC102.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FDMultiDBv2">
+        <MSBuild Projects="FDMultiDBv2\FDMultiDBv2.dproj"/>
+    </Target>
+    <Target Name="FDMultiDBv2:Clean">
+        <MSBuild Projects="FDMultiDBv2\FDMultiDBv2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FDMultiDBv2:Make">
+        <MSBuild Projects="FDMultiDBv2\FDMultiDBv2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ib_ora_mssql_db2">
+        <MSBuild Projects="LocalSQL\IB+ORA+MSSQL+DB2\ib_ora_mssql_db2.dproj"/>
+    </Target>
+    <Target Name="ib_ora_mssql_db2:Clean">
+        <MSBuild Projects="LocalSQL\IB+ORA+MSSQL+DB2\ib_ora_mssql_db2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ib_ora_mssql_db2:Make">
+        <MSBuild Projects="LocalSQL\IB+ORA+MSSQL+DB2\ib_ora_mssql_db2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ib_rest_json">
+        <MSBuild Projects="LocalSQL\IB+REST+JSON\ib_rest_json.dproj"/>
+    </Target>
+    <Target Name="ib_rest_json:Clean">
+        <MSBuild Projects="LocalSQL\IB+REST+JSON\ib_rest_json.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ib_rest_json:Make">
+        <MSBuild Projects="LocalSQL\IB+REST+JSON\ib_rest_json.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="mdb_xml">
+        <MSBuild Projects="LocalSQL\MDB+XML\mdb_xml.dproj"/>
+    </Target>
+    <Target Name="mdb_xml:Clean">
+        <MSBuild Projects="LocalSQL\MDB+XML\mdb_xml.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mdb_xml:Make">
+        <MSBuild Projects="LocalSQL\MDB+XML\mdb_xml.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="mastapp">
+        <MSBuild Projects="Migrate\MastAppFD\mastapp.dproj"/>
+    </Target>
+    <Target Name="mastapp:Clean">
+        <MSBuild Projects="Migrate\MastAppFD\mastapp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mastapp:Make">
+        <MSBuild Projects="Migrate\MastAppFD\mastapp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FDParadox">
+        <MSBuild Projects="Paradox\FDParadox.dproj"/>
+    </Target>
+    <Target Name="FDParadox:Clean">
+        <MSBuild Projects="Paradox\FDParadox.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FDParadox:Make">
+        <MSBuild Projects="Paradox\FDParadox.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FDMemTable">
+        <MSBuild Projects="TFDMemTable\FDMemTable.dproj"/>
+    </Target>
+    <Target Name="FDMemTable:Clean">
+        <MSBuild Projects="TFDMemTable\FDMemTable.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FDMemTable:Make">
+        <MSBuild Projects="TFDMemTable\FDMemTable.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UpdateJoins">
+        <MSBuild Projects="UpdateJoins\UpdateJoins.dproj"/>
+    </Target>
+    <Target Name="UpdateJoins:Clean">
+        <MSBuild Projects="UpdateJoins\UpdateJoins.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UpdateJoins:Make">
+        <MSBuild Projects="UpdateJoins\UpdateJoins.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FireDAC101;FireDAC102;FDMultiDBv2;ib_ora_mssql_db2;ib_rest_json;mdb_xml;mastapp;FDParadox;FDMemTable;UpdateJoins"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FireDAC101:Clean;FireDAC102:Clean;FDMultiDBv2:Clean;ib_ora_mssql_db2:Clean;ib_rest_json:Clean;mdb_xml:Clean;mastapp:Clean;FDParadox:Clean;FDMemTable:Clean;UpdateJoins:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FireDAC101:Make;FireDAC102:Make;FDMultiDBv2:Make;ib_ora_mssql_db2:Make;ib_rest_json:Make;mdb_xml:Make;mastapp:Make;FDParadox:Make;FDMemTable:Make;UpdateJoins:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,1379 @@
+object frmDashboard: TfrmDashboard
+  Left = 0
+  Top = 0
+  Caption = 'Radiant Dashboard'
+  ClientHeight = 717
+  ClientWidth = 592
+  Fill.Color = claBlack
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object rectStatus: TRadiantRectangle
+    Fill.Kind = None
+    Position.X = 28.000000000000000000
+    Position.Y = 28.000000000000000000
+    Size.Width = 537.000000000000000000
+    Size.Height = 117.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claCornflowerblue
+    Corners = [TopRight]
+    CornerType = Bevel
+    XRadius = 25.000000000000000000
+    YRadius = 25.000000000000000000
+    object lytStatus: TLayout
+      Align = Center
+      Size.Width = 410.000000000000000000
+      Size.Height = 61.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object chevRight1: TRadiantChevron
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 273.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        Direction = Right
+      end
+      object rectStatusCenter: TRadiantRectangle
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 132.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        CornerType = Bevel
+        XRadius = 14.000000000000000000
+        YRadius = 30.000000000000000000
+        object txtStatus: TText
+          Align = Center
+          Size.Width = 109.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Idle'
+          TextSettings.Font.Size = 24.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF2BA8F4
+        end
+      end
+      object chevRight2: TRadiantChevron
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 299.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        Direction = Right
+      end
+      object chevRight3: TRadiantChevron
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 325.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        Direction = Right
+      end
+      object chevRight4: TRadiantChevron
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 351.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        Direction = Right
+      end
+      object chevLeft4: TRadiantChevron
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 28.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        Direction = Left
+      end
+      object chevLeft3: TRadiantChevron
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 54.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        Direction = Left
+      end
+      object chevLeft2: TRadiantChevron
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 80.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        Direction = Left
+      end
+      object chevLeft1: TRadiantChevron
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 106.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        Direction = Left
+      end
+      object chevLeft5: TRadiantChevron
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        Direction = Left
+      end
+      object chevRight5: TRadiantChevron
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 377.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+        Direction = Right
+      end
+    end
+    object lytStatusTitle: TLayout
+      Align = Top
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Position.X = 4.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 531.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object RadiantRectangle1: TRadiantRectangle
+        Align = Client
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Size.Width = 506.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object RadiantTriangle1: TRadiantTriangle
+        Align = Right
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Position.X = 506.000000000000000000
+        Size.Width = 25.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        TriangleType = RightAngle
+      end
+      object Text1: TText
+        Position.X = 12.000000000000000000
+        Size.Width = 265.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'System Status'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claLightskyblue
+        TextSettings.HorzAlign = Leading
+      end
+    end
+  end
+  object rectNetwork: TRadiantRectangle
+    Fill.Color = claBlack
+    Position.X = 28.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 537.000000000000000000
+    Size.Height = 509.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claCornflowerblue
+    Corners = [TopRight]
+    CornerType = Bevel
+    XRadius = 25.000000000000000000
+    YRadius = 25.000000000000000000
+    object lytNetwork: TLayout
+      Align = Center
+      Size.Width = 509.000000000000000000
+      Size.Height = 459.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lytControllerA: TLayout
+        Position.X = 152.000000000000000000
+        Position.Y = 8.000000000000000000
+        RotationAngle = 180.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 260.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object rectConnectionSA: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 97.000000000000000000
+          Position.Y = 49.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 81.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object rectConnectionA1: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 52.000000000000000000
+          Position.Y = 155.000000000000000000
+          RotationAngle = 72.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object rectConnectionA2: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 96.000000000000000000
+          Position.Y = 188.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object rectConnectionA3: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 139.000000000000000000
+          Position.Y = 155.000000000000000000
+          RotationAngle = -72.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object trapDispenserA1: TRadiantTrapezoid
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = -1.000000000000000000
+          Position.Y = 165.000000000000000000
+          RotationAngle = 72.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          AcuteAngle = 70.000000000000000000
+          object txtDispenserA1: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = -252.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Text = '1'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+          end
+        end
+        object trapDispenserA2: TRadiantTrapezoid
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 70.000000000000000000
+          Position.Y = 220.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          AcuteAngle = 70.000000000000000000
+          object txtDispenserA2: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = 180.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Text = '2'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+          end
+        end
+        object trapDispenserA3: TRadiantTrapezoid
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 144.000000000000000000
+          Position.Y = 166.000000000000000000
+          RotationAngle = -72.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          AcuteAngle = 70.000000000000000000
+          object txtDispenserA3: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = 252.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Text = '3'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+          end
+        end
+        object pentControllerA: TRadiantPentagon
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 61.000000000000000000
+          Position.Y = 116.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          object txtControllerA: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = 180.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'A'
+            TextSettings.Font.Size = 24.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+            TextSettings.VertAlign = Leading
+          end
+        end
+      end
+      object lytControllerB: TLayout
+        Position.X = 42.000000000000000000
+        Position.Y = 200.000000000000000000
+        RotationAngle = 60.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 260.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object rectConnectionSB: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 96.000000000000000000
+          Position.Y = 51.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 76.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object rectConnectionB1: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 52.000000000000000000
+          Position.Y = 157.000000000000000000
+          RotationAngle = 72.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object rectConnectionB2: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 96.000000000000000000
+          Position.Y = 190.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object rectConnectionB3: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 139.000000000000000000
+          Position.Y = 157.000000000000000000
+          RotationAngle = -72.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object trapDispenserB1: TRadiantTrapezoid
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = -1.000000000000000000
+          Position.Y = 165.000000000000000000
+          RotationAngle = 72.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          AcuteAngle = 70.000000000000000000
+          object txtDispenserB1: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = -132.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Text = '1'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+          end
+        end
+        object trapDispenserB2: TRadiantTrapezoid
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 70.000000000000000000
+          Position.Y = 220.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          AcuteAngle = 70.000000000000000000
+          object txtDispenserB2: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = -60.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Text = '2'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+          end
+        end
+        object trapDispenserB3: TRadiantTrapezoid
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 144.000000000000000000
+          Position.Y = 166.000000000000000000
+          RotationAngle = -72.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          AcuteAngle = 70.000000000000000000
+          object txtDispenserB3: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = 12.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Text = '3'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+          end
+        end
+        object pentControllerB: TRadiantPentagon
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 61.000000000000000000
+          Position.Y = 116.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          object txtControllerB: TText
+            Align = Center
+            HitTest = False
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'B'
+            TextSettings.Font.Size = 24.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+            TextSettings.VertAlign = Trailing
+          end
+        end
+      end
+      object lytControllerC: TLayout
+        Position.X = 264.000000000000000000
+        Position.Y = 200.000000000000000000
+        RotationAngle = -60.000000000000000000
+        Size.Width = 201.000000000000000000
+        Size.Height = 260.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object rectConnectionSC: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 96.000000000000000000
+          Position.Y = 50.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 77.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object rectConnectionC1: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 55.000000000000000000
+          Position.Y = 155.000000000000000000
+          RotationAngle = 72.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object rectConnectionC2: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 96.000000000000000000
+          Position.Y = 187.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object rectConnectionC3: TRadiantRectangle
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 139.000000000000000000
+          Position.Y = 156.000000000000000000
+          RotationAngle = -72.000000000000000000
+          Size.Width = 9.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object trapDispenserC1: TRadiantTrapezoid
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = -1.000000000000000000
+          Position.Y = 165.000000000000000000
+          RotationAngle = 72.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          AcuteAngle = 70.000000000000000000
+          object txtDispenserC1: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = -12.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Text = '1'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+          end
+        end
+        object trapDispenserC2: TRadiantTrapezoid
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 70.000000000000000000
+          Position.Y = 220.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          AcuteAngle = 70.000000000000000000
+          object txtDispenserC2: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = 60.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Text = '2'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+          end
+        end
+        object trapDispenserC3: TRadiantTrapezoid
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 144.000000000000000000
+          Position.Y = 166.000000000000000000
+          RotationAngle = -72.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          AcuteAngle = 70.000000000000000000
+          object txtDispenserC3: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = 132.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Text = '3'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+          end
+        end
+        object pentControllerC: TRadiantPentagon
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF012234
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF00527E
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Position.X = 61.000000000000000000
+          Position.Y = 116.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF2BA8F4
+          Stroke.Thickness = 2.000000000000000000
+          object txtControllerC: TText
+            Align = Center
+            HitTest = False
+            RotationAngle = 60.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'C'
+            TextSettings.Font.Size = 24.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF2BA8F4
+          end
+        end
+      end
+      object hexServer: TRadiantHexagon
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Position.X = 193.000000000000000000
+        Position.Y = 217.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2BA8F4
+        Stroke.Thickness = 2.000000000000000000
+      end
+    end
+    object lytNetworkTitle: TLayout
+      Align = Top
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Position.X = 4.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 531.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object RadiantRectangle2: TRadiantRectangle
+        Align = Client
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Size.Width = 506.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object RadiantTriangle2: TRadiantTriangle
+        Align = Right
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF012234
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF00527E
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Position.X = 506.000000000000000000
+        Size.Width = 25.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        TriangleType = RightAngle
+      end
+      object Text3: TText
+        Position.X = 12.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Network Status'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claLightskyblue
+        TextSettings.HorzAlign = Leading
+      end
+    end
+  end
+  object NormalFill: TBrushObject
+    StyleName = 'NormalFill'
+    Brush.Kind = Gradient
+    Brush.Gradient.Points = <
+      item
+        Color = xFF012234
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFF00527E
+        Offset = 1.000000000000000000
+      end>
+    Brush.Gradient.StartPosition.X = 0.500000000000000000
+    Brush.Gradient.StartPosition.Y = 1.000000000000000000
+    Brush.Gradient.StopPosition.X = 0.499999970197677600
+    Brush.Gradient.StopPosition.Y = 0.000000000000000000
+    Left = 64
+    Top = 232
+  end
+  object HighlightFill: TBrushObject
+    StyleName = 'HighlightFill'
+    Brush.Kind = Gradient
+    Brush.Gradient.Points = <
+      item
+        Color = xFF01341B
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFF007E38
+        Offset = 1.000000000000000000
+      end>
+    Brush.Gradient.StartPosition.X = 0.500000000000000000
+    Brush.Gradient.StartPosition.Y = 1.000000000000000000
+    Brush.Gradient.StopPosition.X = 0.499999970197677600
+    Brush.Gradient.StopPosition.Y = 0.000000000000000000
+    Left = 64
+    Top = 284
+  end
+  object ErrorFill: TBrushObject
+    StyleName = 'ErrorFill'
+    Brush.Kind = Gradient
+    Brush.Gradient.Points = <
+      item
+        Color = xFF6D0202
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFBF0000
+        Offset = 1.000000000000000000
+      end>
+    Brush.Gradient.StartPosition.X = 0.500000000000000000
+    Brush.Gradient.StartPosition.Y = 1.000000000000000000
+    Brush.Gradient.StopPosition.X = 0.499999970197677600
+    Brush.Gradient.StopPosition.Y = 0.000000000000000000
+    Left = 64
+    Top = 332
+  end
+  object tmrError: TTimer
+    Enabled = False
+    Interval = 120
+    OnTimer = tmrErrorTimer
+    Left = 480
+    Top = 280
+  end
+  object tmrSimulate: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = tmrSimulateTimer
+    Left = 484
+    Top = 236
+  end
+  object ErrorBalloon: TRadiantCallout
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF7E7E7E
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = claWhite
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StartPosition.X = 0.500000000000000000
+    Fill.Gradient.StartPosition.Y = 1.000000000000000000
+    Fill.Gradient.StopPosition.X = 0.499999970197677600
+    Fill.Gradient.StopPosition.Y = 0.000000000000000000
+    Position.X = 432.000000000000000000
+    Position.Y = 336.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 76.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claMaroon
+    Stroke.Thickness = 2.000000000000000000
+    OnClick = AcknowledgeErrorClick
+    CalloutAlignment = Center
+    object txtErrorMessage: TText
+      Align = Client
+      HitTest = False
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 4.000000000000000000
+      Margins.Bottom = 28.000000000000000000
+      Size.Width = 92.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Out of Paper'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claMaroon
+    end
+  end
+  object sqrSimulate: TRadiantSquare
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFF012234
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFF00527E
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StartPosition.X = 0.500000000000000000
+    Fill.Gradient.StartPosition.Y = 1.000000000000000000
+    Fill.Gradient.StopPosition.X = 0.499999970197677600
+    Fill.Gradient.StopPosition.Y = 0.000000000000000000
+    Position.X = 28.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 20.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claCornflowerblue
+    OnClick = sqrSimulateClick
+    object xCheckMark: TRadiantX
+      Align = Center
+      Fill.Color = xFF2BA8F4
+      HitTest = False
+      Size.Width = 14.000000000000000000
+      Size.Height = 14.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Visible = False
+    end
+  end
+  object Text2: TText
+    Position.X = 54.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Simulate'
+    TextSettings.FontColor = xFF2BA8F4
+    TextSettings.HorzAlign = Leading
+    OnClick = sqrSimulateClick
+  end
+end

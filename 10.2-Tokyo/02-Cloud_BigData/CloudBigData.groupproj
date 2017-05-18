@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A4DB6D8E-0ADB-40BE-8FA5-8FDBEF843CE4}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="BaaS_Basic\BaaS_Basic.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BaaS_ToDo\BaaS_ToDo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Mongo_DataSet\Mongo_DataSet.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Mongo_Explore\Mongo_Explore.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="REST_Client\SunriseSunset.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BaaS_Basic">
+        <MSBuild Projects="BaaS_Basic\BaaS_Basic.dproj"/>
+    </Target>
+    <Target Name="BaaS_Basic:Clean">
+        <MSBuild Projects="BaaS_Basic\BaaS_Basic.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BaaS_Basic:Make">
+        <MSBuild Projects="BaaS_Basic\BaaS_Basic.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BaaS_ToDo">
+        <MSBuild Projects="BaaS_ToDo\BaaS_ToDo.dproj"/>
+    </Target>
+    <Target Name="BaaS_ToDo:Clean">
+        <MSBuild Projects="BaaS_ToDo\BaaS_ToDo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BaaS_ToDo:Make">
+        <MSBuild Projects="BaaS_ToDo\BaaS_ToDo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mongo_DataSet">
+        <MSBuild Projects="Mongo_DataSet\Mongo_DataSet.dproj"/>
+    </Target>
+    <Target Name="Mongo_DataSet:Clean">
+        <MSBuild Projects="Mongo_DataSet\Mongo_DataSet.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mongo_DataSet:Make">
+        <MSBuild Projects="Mongo_DataSet\Mongo_DataSet.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mongo_Explore">
+        <MSBuild Projects="Mongo_Explore\Mongo_Explore.dproj"/>
+    </Target>
+    <Target Name="Mongo_Explore:Clean">
+        <MSBuild Projects="Mongo_Explore\Mongo_Explore.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mongo_Explore:Make">
+        <MSBuild Projects="Mongo_Explore\Mongo_Explore.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SunriseSunset">
+        <MSBuild Projects="REST_Client\SunriseSunset.dproj"/>
+    </Target>
+    <Target Name="SunriseSunset:Clean">
+        <MSBuild Projects="REST_Client\SunriseSunset.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SunriseSunset:Make">
+        <MSBuild Projects="REST_Client\SunriseSunset.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BaaS_Basic;BaaS_ToDo;Mongo_DataSet;Mongo_Explore;SunriseSunset"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BaaS_Basic:Clean;BaaS_ToDo:Clean;Mongo_DataSet:Clean;Mongo_Explore:Clean;SunriseSunset:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BaaS_Basic:Make;BaaS_ToDo:Make;Mongo_DataSet:Make;Mongo_Explore:Make;SunriseSunset:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

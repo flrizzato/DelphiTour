@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<MobileDevice>%iosdevice%7112cfd6ce9983e12d46ee84fbffa466ff670ccf-iOSDevice64</MobileDevice>
+	<Transactions>
+    <Transaction>2015/05/18 15:18:39.000.728,C:\DTOURXE8\10-Beacons\SimpleBeaconDemo\Unit1.fmx=C:\DTOURXE8\10-Beacons\SimpleBeaconDemo\uMainForm.fmx</Transaction>
+    <Transaction>2015/05/18 15:18:39.000.727,C:\DTOURXE8\10-Beacons\SimpleBeaconDemo\Unit1.pas=C:\DTOURXE8\10-Beacons\SimpleBeaconDemo\uMainForm.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="_iossimulator_53C7CAB4-C4CA-478E-89FF-67657FD552FC" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

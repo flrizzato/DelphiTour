@@ -1,0 +1,144 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B11E406B-8263-41DE-9DE4-9582D65635E8}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ActivityIndicator\ActivityIndicator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RelativePanel\RelativePanel.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SearchBox\SearchBox.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SplitView\SplitView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ToggleSwitch\ToggleSwitch.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VCLCalendars\VCLCalendars.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VCLStyles\VCLStyles.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FMXStyles\FMXStyles.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Windows 10 Notifications\NotificationsProject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Windows 10 SharingContract\ShareContractFramework.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ActivityIndicator">
+        <MSBuild Projects="ActivityIndicator\ActivityIndicator.dproj"/>
+    </Target>
+    <Target Name="ActivityIndicator:Clean">
+        <MSBuild Projects="ActivityIndicator\ActivityIndicator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ActivityIndicator:Make">
+        <MSBuild Projects="ActivityIndicator\ActivityIndicator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RelativePanel">
+        <MSBuild Projects="RelativePanel\RelativePanel.dproj"/>
+    </Target>
+    <Target Name="RelativePanel:Clean">
+        <MSBuild Projects="RelativePanel\RelativePanel.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RelativePanel:Make">
+        <MSBuild Projects="RelativePanel\RelativePanel.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SearchBox">
+        <MSBuild Projects="SearchBox\SearchBox.dproj"/>
+    </Target>
+    <Target Name="SearchBox:Clean">
+        <MSBuild Projects="SearchBox\SearchBox.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SearchBox:Make">
+        <MSBuild Projects="SearchBox\SearchBox.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SplitView">
+        <MSBuild Projects="SplitView\SplitView.dproj"/>
+    </Target>
+    <Target Name="SplitView:Clean">
+        <MSBuild Projects="SplitView\SplitView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SplitView:Make">
+        <MSBuild Projects="SplitView\SplitView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ToggleSwitch">
+        <MSBuild Projects="ToggleSwitch\ToggleSwitch.dproj"/>
+    </Target>
+    <Target Name="ToggleSwitch:Clean">
+        <MSBuild Projects="ToggleSwitch\ToggleSwitch.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ToggleSwitch:Make">
+        <MSBuild Projects="ToggleSwitch\ToggleSwitch.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VCLCalendars">
+        <MSBuild Projects="VCLCalendars\VCLCalendars.dproj"/>
+    </Target>
+    <Target Name="VCLCalendars:Clean">
+        <MSBuild Projects="VCLCalendars\VCLCalendars.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLCalendars:Make">
+        <MSBuild Projects="VCLCalendars\VCLCalendars.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VCLStyles">
+        <MSBuild Projects="VCLStyles\VCLStyles.dproj"/>
+    </Target>
+    <Target Name="VCLStyles:Clean">
+        <MSBuild Projects="VCLStyles\VCLStyles.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLStyles:Make">
+        <MSBuild Projects="VCLStyles\VCLStyles.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FMXStyles">
+        <MSBuild Projects="FMXStyles\FMXStyles.dproj"/>
+    </Target>
+    <Target Name="FMXStyles:Clean">
+        <MSBuild Projects="FMXStyles\FMXStyles.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMXStyles:Make">
+        <MSBuild Projects="FMXStyles\FMXStyles.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NotificationsProject">
+        <MSBuild Projects="Windows 10 Notifications\NotificationsProject.dproj"/>
+    </Target>
+    <Target Name="NotificationsProject:Clean">
+        <MSBuild Projects="Windows 10 Notifications\NotificationsProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NotificationsProject:Make">
+        <MSBuild Projects="Windows 10 Notifications\NotificationsProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ShareContractFramework">
+        <MSBuild Projects="Windows 10 SharingContract\ShareContractFramework.dproj"/>
+    </Target>
+    <Target Name="ShareContractFramework:Clean">
+        <MSBuild Projects="Windows 10 SharingContract\ShareContractFramework.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ShareContractFramework:Make">
+        <MSBuild Projects="Windows 10 SharingContract\ShareContractFramework.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ActivityIndicator;RelativePanel;SearchBox;SplitView;ToggleSwitch;VCLCalendars;VCLStyles;FMXStyles;NotificationsProject;ShareContractFramework"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ActivityIndicator:Clean;RelativePanel:Clean;SearchBox:Clean;SplitView:Clean;ToggleSwitch:Clean;VCLCalendars:Clean;VCLStyles:Clean;FMXStyles:Clean;NotificationsProject:Clean;ShareContractFramework:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ActivityIndicator:Make;RelativePanel:Make;SearchBox:Make;SplitView:Make;ToggleSwitch:Make;VCLCalendars:Make;VCLStyles:Make;FMXStyles:Make;NotificationsProject:Make;ShareContractFramework:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

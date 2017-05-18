@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7A151AF8-E399-4658-AD02-3D1DADFE64C6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="RadiantTicTacToe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RadiantFlowchart.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RadiantPlaylist.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RadiantMediaPlayer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RadiantGauges.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RadiantDashboard.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RadiantGears.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RadiantTicTacToe">
+        <MSBuild Projects="RadiantTicTacToe.dproj"/>
+    </Target>
+    <Target Name="RadiantTicTacToe:Clean">
+        <MSBuild Projects="RadiantTicTacToe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadiantTicTacToe:Make">
+        <MSBuild Projects="RadiantTicTacToe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RadiantFlowchart">
+        <MSBuild Projects="RadiantFlowchart.dproj"/>
+    </Target>
+    <Target Name="RadiantFlowchart:Clean">
+        <MSBuild Projects="RadiantFlowchart.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadiantFlowchart:Make">
+        <MSBuild Projects="RadiantFlowchart.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RadiantPlaylist">
+        <MSBuild Projects="RadiantPlaylist.dproj"/>
+    </Target>
+    <Target Name="RadiantPlaylist:Clean">
+        <MSBuild Projects="RadiantPlaylist.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadiantPlaylist:Make">
+        <MSBuild Projects="RadiantPlaylist.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RadiantMediaPlayer">
+        <MSBuild Projects="RadiantMediaPlayer.dproj"/>
+    </Target>
+    <Target Name="RadiantMediaPlayer:Clean">
+        <MSBuild Projects="RadiantMediaPlayer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadiantMediaPlayer:Make">
+        <MSBuild Projects="RadiantMediaPlayer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RadiantGauges">
+        <MSBuild Projects="RadiantGauges.dproj"/>
+    </Target>
+    <Target Name="RadiantGauges:Clean">
+        <MSBuild Projects="RadiantGauges.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadiantGauges:Make">
+        <MSBuild Projects="RadiantGauges.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RadiantDashboard">
+        <MSBuild Projects="RadiantDashboard.dproj"/>
+    </Target>
+    <Target Name="RadiantDashboard:Clean">
+        <MSBuild Projects="RadiantDashboard.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadiantDashboard:Make">
+        <MSBuild Projects="RadiantDashboard.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RadiantGears">
+        <MSBuild Projects="RadiantGears.dproj"/>
+    </Target>
+    <Target Name="RadiantGears:Clean">
+        <MSBuild Projects="RadiantGears.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadiantGears:Make">
+        <MSBuild Projects="RadiantGears.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RadiantTicTacToe;RadiantFlowchart;RadiantPlaylist;RadiantMediaPlayer;RadiantGauges;RadiantDashboard;RadiantGears"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RadiantTicTacToe:Clean;RadiantFlowchart:Clean;RadiantPlaylist:Clean;RadiantMediaPlayer:Clean;RadiantGauges:Clean;RadiantDashboard:Clean;RadiantGears:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RadiantTicTacToe:Make;RadiantFlowchart:Make;RadiantPlaylist:Make;RadiantMediaPlayer:Make;RadiantGauges:Make;RadiantDashboard:Make;RadiantGears:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

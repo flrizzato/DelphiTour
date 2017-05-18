@@ -1,0 +1,68 @@
+BaaS
+https://www.kinvey.com/
+http://api.shephertz.com/
+https://community.embarcadero.com/blogs/entry/baas-tutorials-to-help-you-get-started-quickly-1122
+
+Amazon Web Services Programming
+https://community.embarcadero.com/blogs/entry/my-amazon-web-services-programming-with-delphi-coderagex-session
+
+Introdução a NoSQL com MongoDB e FireDAC 
+https://www.youtube.com/watch?v=6s07xuSGiLs&index=21&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX
+
+Integração de Serviços Cloud com REST/JSON 
+https://www.youtube.com/watch?v=azFARYrYKR4&index=22&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX
+
+Truques e Técnicas que Você Precisa Saber Sobre a IDE
+https://www.youtube.com/watch?v=7KAc9G4mG-c&index=8&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX
+
+Trabalhando com Subversion, Mercurial e Git Integrados na IDE 
+https://www.youtube.com/watch?v=oHHJsv9RbaY&index=7&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX
+
+Conheças os novos recursos que chegam com o Update 2 do RAD Studio Berlin - Edição de Aniversário 
+https://www.youtube.com/watch?v=GVN2czZXXwk
+
+Appx Development for Windows 10 Store with RAD Studio
+https://www.youtube.com/watch?v=hEOk3Ztm-8g
+
+Acesso a Dados com FireDAC 
+https://www.youtube.com/watch?v=OdX1GMRFr1c&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX&index=16
+
+Migrando de BDE e DBX para FireDAC 
+https://www.youtube.com/watch?v=XRHY4a1ryFw&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX&index=15
+
+FireDAC Cached Updates e Campos Auto-Inc 
+https://www.youtube.com/watch?v=6-W5Q_hd6j0&index=14&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX
+
+FireDAC TFDMemTable - DataSets em Memória 
+https://www.youtube.com/watch?v=z4t7BiQVnQ0&index=13&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX
+
+FireDAC Tracing e Monitoring
+https://www.youtube.com/watch?v=WtvoO3ZLxig&index=12&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX
+
+FireDAC Local SQL Cache
+https://www.youtube.com/watch?v=V0nHz84gvIY&index=11&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX
+
+FireDAC em Aplicações Mobile 
+https://www.youtube.com/watch?v=lxmUCVVLurk&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX&index=10
+
+FireDAC e Interbase Change Views
+https://www.youtube.com/watch?v=ZxzqKpLYccM&list=PLlUDMEtO0HdTXlSbL5GkXCSjpvbuX15dX&index=9
+
+Saiba tudo sobre o RAD Server: o back-end perfeito para aplicações Delphi e C++ Builder 
+https://www.youtube.com/watch?v=qM39OctfVUw&list=PLlUDMEtO0HdQb_HWG1kjW-697rGj-EXSZ&index=1&t=23s
+
+Using the Wahoo Digital Scale ThingConnect IoT component in your Delphi Apps 
+https://www.youtube.com/watch?v=tQlYAlvfpPQ&feature=youtu.be
+
+IoT em Ação: Construindo uma moderna aplicação para hospitais ou clinicas
+https://youtu.be/rC97QGq3lWo
+
+Linux Development:
+http://chapmanworld.com/2016/12/29/configure-delphi-and-redhat-or-ubuntu-for-linux-development/
+http://chapmanworld.com/2017/02/28/embarcadero-delphi-linux-bootcamp/
+http://chapmanworld.com/2017/04/06/calling-linux-commands-from-delphi/
+http://chapmanworld.com/2017/04/05/creating-a-linux-daemon-service-in-delphi/
+https://blog.grijjy.com/2017/04/06/importing-third-party-linux-libraries-on-delphi-10-2-tokyo/
+https://community.embarcadero.com/blogs/entry/try-delphi-on-amazon-linux
+http://emiliopm.com/2017/04/delphi-10-2-tokyo-linux-centos-webservice-soap/
+http://vivaitaocara.com.br/landersongomes/embarcadero/instalando-o-interbase-no-linux-ubuntu

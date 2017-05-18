@@ -1,0 +1,204 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Barcode Transfer'
+  ClientHeight = 565
+  ClientWidth = 505
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnCloseQuery = FormCloseQuery
+  OnDestroy = FormDestroy
+  OnKeyUp = FormKeyUp
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 505.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object butStart: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cameratoolbuttonbordered'
+      TabOrder = 3
+      Text = 'butStart'
+      OnClick = butStartClick
+    end
+    object butStop: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 58.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'stoptoolbuttonbordered'
+      TabOrder = 2
+      Text = 'butStart'
+      OnClick = butStopClick
+    end
+    object butSend: TButton
+      Align = Right
+      Enabled = False
+      Margins.Right = 5.000000000000000000
+      Position.X = 399.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'speedbuttonstyle'
+      TabOrder = 1
+      Text = 'Send'
+      OnClick = butSendClick
+    end
+    object butShare: TButton
+      Action = ShowShareSheetAction1
+      Align = Right
+      Enabled = False
+      ImageIndex = -1
+      Margins.Right = 5.000000000000000000
+      Position.X = 452.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'speedbuttonstyle'
+      TabOrder = 0
+      Visible = True
+    end
+  end
+  object imgCamera: TImage
+    MultiResBitmap.Height = 117
+    MultiResBitmap.Width = 117
+    MultiResBitmap.LoadSize = 1
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    MarginWrapMode = Center
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 495.000000000000000000
+    Size.Height = 447.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object CameraComponent1: TCameraComponent
+    OnSampleBufferReady = CameraComponent1SampleBufferReady
+    Left = 61
+    Top = 80
+  end
+  object timAutoConnect: TTimer
+    OnTimer = timAutoConnectTimer
+    Left = 64
+    Top = 248
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end>
+    Left = 64
+    Top = 304
+  end
+  object LayoutBottom: TLayout
+    Align = Bottom
+    Margins.Left = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 535.000000000000000000
+    Size.Width = 495.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    object lblScanStatus: TLabel
+      Align = Right
+      StyledSettings = [FontColor]
+      Position.X = 340.000000000000000000
+      Size.Width = 155.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Default'
+      TextSettings.Font.Size = 10.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Trailing
+      Text = 'Status...'
+    end
+    object chkLibrary: TCheckBox
+      Align = Left
+      StyledSettings = [Family, Size, FontColor]
+      IsChecked = True
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 155.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'External Library'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object chkAutoSend: TCheckBox
+      Align = Left
+      StyledSettings = [Family, Size, FontColor]
+      IsChecked = True
+      Margins.Left = 5.000000000000000000
+      Position.X = 165.000000000000000000
+      Size.Width = 155.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Auto Send'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+  object edtResult: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Bottom
+    TabOrder = 2
+    ReadOnly = True
+    Position.X = 5.000000000000000000
+    Position.Y = 505.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 495.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Barcode...'
+    OnChange = edtResultChange
+  end
+  object TetheringManager1: TTetheringManager
+    OnEndAutoConnect = TetheringManager1EndAutoConnect
+    Text = 'TetheringManager1'
+    AllowedAdapters = 'Network'
+    Left = 61
+    Top = 136
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Manager = TetheringManager1
+    Text = 'TetheringAppProfile1'
+    Group = 'DataGroup'
+    Actions = <>
+    Resources = <
+      item
+        Name = 'Barcode'
+        IsPublic = True
+      end>
+    Left = 61
+    Top = 192
+  end
+  object ActionList1: TActionList
+    Left = 64
+    Top = 360
+    object ShowShareSheetAction1: TShowShareSheetAction
+      Category = 'Media Library'
+      CustomText = 'Share'
+      Enabled = False
+      OnBeforeExecute = ShowShareSheetAction1BeforeExecute
+    end
+  end
+end

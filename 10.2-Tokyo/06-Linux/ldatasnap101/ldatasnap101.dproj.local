@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/05/03 00:59:30.000.313,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2017/05/03 00:59:32.000.098,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2017/05/03 00:59:32.000.506,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/05/03 00:59:33.000.827,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\ServerConst1.pas</Transaction>
+    <Transaction>2017/05/03 00:59:33.000.969,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\base64.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.185,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\callbackframework-min.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.123,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\json2-min.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.044,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\json2.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.245,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\serverfunctioninvoker.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.063,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\callbackframework.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.443,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\templates\serverfunctioninvoker.html</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.090,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\serverfunctions.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.143,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\serverfunctionexecutor-min.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.107,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\base64-min.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.291,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\css\main.css</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.403,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\templates\reversestring.html</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.004,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\serverfunctionexecutor.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.217,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\js\connection.js</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.489,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\images\collapse.png</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.536,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\images\expand.png</Transaction>
+    <Transaction>2017/05/03 00:59:34.000.355,=C:\DTOUR-Tokyo\06-Linux\ldatasnap101\css\serverfunctioninvoker.css</Transaction>
+  </Transactions>
+</BorlandProject>

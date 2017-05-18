@@ -1,0 +1,106 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object SpeedButton1: TSpeedButton
+      Align = Center
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'refreshtoolbutton'
+      Text = 'SpeedButton1'
+      OnClick = SpeedButton1Click
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 519.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemrightdetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 384.000000000000000000
+    Viewport.Height = 519.000000000000000000
+  end
+  object BackendStorage1: TBackendStorage
+    Left = 288
+    Top = 64
+  end
+  object FDMemTable1: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 56
+    Top = 128
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Dataset = FDMemTable1
+    FieldDefs = <>
+    ResponseJSON = BackendQuery1
+    Left = 192
+    Top = 128
+  end
+  object BackendQuery1: TBackendQuery
+    Provider = KinveyProvider1
+    BackendClassName = 'DelphiTour2017'
+    BackendService = 'Storage'
+    Left = 176
+    Top = 64
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 56
+    Top = 200
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 52
+    Top = 261
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListBox1
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'Cidade'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'Data'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object KinveyProvider1: TKinveyProvider
+    ApiVersion = '3'
+    AppKey = 'kid_TVzaJP_2nq'
+    AppSecret = '98e0e8d378ff4f558f4b39b1176a86f5'
+    MasterSecret = '5273d85aa89b4099a953fbf47142460a'
+    UserName = 'fernando.rizzato@gmail.com'
+    Password = 'Tokyo123'
+    Left = 55
+    Top = 64
+  end
+end

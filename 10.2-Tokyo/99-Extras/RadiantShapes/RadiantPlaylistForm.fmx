@@ -1,0 +1,43 @@
+object frmPlaylist: TfrmPlaylist
+  Left = 0
+  Top = 0
+  Caption = 'Radiant Playlist'
+  ClientHeight = 530
+  ClientWidth = 400
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object lvwPlaylist: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    OnUpdateObjects = lvwPlaylistUpdateObjects
+    Align = Client
+    Size.Width = 400.000000000000000000
+    Size.Height = 530.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ItemAppearanceObjects.ItemObjects.Text.Font.Size = 15.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Text.Font.StyleExt = {00070000000000000004000000}
+    ItemAppearanceObjects.ItemObjects.Text.TextVertAlign = Leading
+    ItemAppearanceObjects.ItemObjects.Text.PlaceOffset.Y = 2.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+    ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 10.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Detail.Font.StyleExt = {00070000000000000004000000}
+    ItemAppearanceObjects.ItemObjects.Detail.TextAlign = Leading
+    ItemAppearanceObjects.ItemObjects.Detail.TextVertAlign = Trailing
+    ItemAppearanceObjects.ItemObjects.Detail.Align = Leading
+    ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.X = 1.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.Y = -7.000000000000000000
+  end
+  object cdsPlaylist: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 224
+    Top = 88
+  end
+end

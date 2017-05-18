@@ -1,0 +1,517 @@
+object frmFlowchart: TfrmFlowchart
+  Left = 0
+  Top = 0
+  Caption = 'Radiant Flowchart'
+  ClientHeight = 539
+  ClientWidth = 741
+  Fill.Bitmap.Bitmap.PNG = {
+    89504E470D0A1A0A0000000D49484452000000A4000000A4080600000019B585
+    41000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+    033149444154785EEDD8318A64491044C1DEB9FF25FB243B048CECD24F788219
+    1425B8E282F313E2BFDFDFDFFF7F20E2CFBF7F68B82FE4FD96425EE8B05C5EE8
+    B05C5EE8B0F842926290A418242906498A41926290A4388CD372837C7D5BFA22
+    2F74582E2F74582E2F74583CD9A418242906498A41926290A4182429EE90B4DC
+    205FDF96BEC80B1D96CB0B1D96CB0B1D164F362906498A41926290A418242906
+    498A3B242D37C8D7B7A52FF24287E5F24287E5F24287C5934D8A41926290A418
+    242906498A4192E20E49CB0DF2F56DE98BBCD061B9BCD061B9BCD061F1649362
+    90A418242906498A41926290A4B84392E20B49CB7D215F1F3BBFC80B1D96CB0B
+    1D96CB0B1D165F48520C92148324C520493148520C921487715A6E90AF6F4B5F
+    E4850ECBE5850ECBE5850E8B279B148324C520493148520C92148324C51D9296
+    1BE4EBDBD21779A1C37279A1C37279A1C3E2C926C520493148520C92148324C5
+    20497187A4E506F9FAB6F4455EE8B05C5EE8B05C5EE8B078B2493148520C9214
+    8324C52049314852DC2169B941BEBE2D7D91173A2C97173A2C97173A2C9E6C52
+    0C92148324C520493148520C92147748527C2169B92FE4EB63E71779A1C37279
+    A1C37279A1C3E20B498A41926290A418242906498A4192E2304ECB0DF2F56DE9
+    8BBCD061B9BCD061B9BCD061F164936290A418242906498A41926290A4B843D2
+    72837C7D5BFA222F74582E2F74582E2F74583CD9A418242906498A41926290A4
+    182429EE90B4DC205FDF96BEC80B1D96CB0B1D96CB0B1D164F362906498A4192
+    6290A418242906498A3B242D37C8D7B7A52FF24287E5F24287E5F24287C5934D
+    8A41926290A418242906498A4192E20E498A2F242DF7857C7DECFC222F74582E
+    2F74582E2F74587C21493148520C92148324C520493148521CC669B941BEBE2D
+    7D91173A2C97173A2C97173A2C9E6C520C92148324C520493148520C92147748
+    5A6E90AF6F4B5FE4850ECBE5850ECBE5850E8B279B148324C520493148520C92
+    148324C51D92961BE4EBDBD21779A1C37279A1C37279A1C3E2C926C520493148
+    520C92148324C520497187A4E506F9FAB6F4455EE8B05C5EE8B05C5EE8B078B2
+    493148520C92148324C520493148427E7EFE02AF07B0A3AFEA5B8E0000000049
+    454E44AE426082}
+  Fill.Bitmap.WrapMode = Tile
+  Fill.Kind = Bitmap
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object txtTitle: TText
+    Align = Top
+    Size.Width = 741.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Processing a Credit Card'
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  object lytFlowchart: TLayout
+    Align = Client
+    Size.Width = 741.000000000000000000
+    Size.Height = 489.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    OnResize = lytFlowchartResize
+    object RadiantCapsule1: TRadiantCapsule
+      ScaleStrokeThickness = True
+      Fill.Color = claPlum
+      Position.X = 31.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 99.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claDarkviolet
+      Stroke.Thickness = 2.000000000000000000
+      object Text1: TText
+        Align = Contents
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Start'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantLine1: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 38.000000000000000000
+      Position.Y = 44.000000000000000000
+      Size.Width = 84.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Vertical
+      ShowArrows = Start
+    end
+    object RadiantLine11: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 431.000000000000000000
+      Position.Y = 165.000000000000000000
+      Size.Width = 88.000000000000000000
+      Size.Height = 146.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Vertical
+      ShowArrows = Start
+      object Text11: TText
+        Align = Contents
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 45.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Size.Width = 43.000000000000000000
+        Size.Height = 106.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Retry'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.VertAlign = Leading
+      end
+    end
+    object RadiantLine3: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 520.000000000000000000
+      Position.Y = 311.000000000000000000
+      Size.Width = 66.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Horizontal
+      ShowArrows = Finish
+    end
+    object RadiantLine4: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 617.000000000000000000
+      Position.Y = 385.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Vertical
+      ShowArrows = Start
+      object Text9: TText
+        Align = Contents
+        Margins.Left = 30.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Yes'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.VertAlign = Leading
+      end
+    end
+    object RadiantLine6: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 622.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 144.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Vertical
+      ShowArrows = Finish
+      object Text10: TText
+        Align = Contents
+        Margins.Left = 30.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 114.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'No'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.VertAlign = Trailing
+      end
+    end
+    object RadiantLine8: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 331.000000000000000000
+      Position.Y = 95.000000000000000000
+      Size.Width = 77.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Horizontal
+      ShowArrows = Start
+      object Text12: TText
+        Align = Contents
+        Margins.Left = 20.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 30.000000000000000000
+        Size.Width = 52.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'New'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Trailing
+      end
+    end
+    object RadiantRectangle3: TRadiantRectangle
+      ScaleStrokeThickness = True
+      Fill.Color = claDarkseagreen
+      Position.X = 426.000000000000000000
+      Position.Y = 311.000000000000000000
+      Size.Width = 99.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claDarkgreen
+      Stroke.Thickness = 2.000000000000000000
+      object Text5: TText
+        Align = Contents
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 91.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Submit Credit Card Charge'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantDiamond3: TRadiantDiamond
+      ScaleStrokeThickness = True
+      Fill.Color = claLightblue
+      Position.X = 201.000000000000000000
+      Position.Y = 284.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claSteelblue
+      Stroke.Thickness = 2.099999904632568000
+      object Text13: TText
+        Align = Contents
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Credit Card Number Valid?'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantRectangle4: TRadiantRectangle
+      ScaleStrokeThickness = True
+      Fill.Color = claDarkseagreen
+      Position.X = 220.000000000000000000
+      Position.Y = 187.000000000000000000
+      Size.Width = 99.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claDarkgreen
+      Stroke.Thickness = 2.000000000000000000
+      object Text14: TText
+        Align = Contents
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 91.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Validate Credit Card Number'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantLine9: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 227.000000000000000000
+      Position.Y = 235.000000000000000000
+      Size.Width = 84.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Vertical
+      ShowArrows = Start
+    end
+    object RadiantLine12: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 227.000000000000000000
+      Position.Y = 140.000000000000000000
+      Size.Width = 84.000000000000000000
+      Size.Height = 47.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Vertical
+      ShowArrows = Start
+    end
+    object RadiantLine13: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 129.000000000000000000
+      Position.Y = 311.000000000000000000
+      Size.Width = 75.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Horizontal
+      ShowArrows = Start
+      object Text15: TText
+        Align = Contents
+        Margins.Left = 20.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 30.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'No'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Trailing
+      end
+    end
+    object RadiantRectangle5: TRadiantRectangle
+      ScaleStrokeThickness = True
+      Fill.Color = claDarkseagreen
+      Position.X = 30.000000000000000000
+      Position.Y = 311.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claDarkgreen
+      Stroke.Thickness = 2.000000000000000000
+      object Text16: TText
+        Align = Contents
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 92.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Display Error Message'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantLine16: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 128.000000000000000000
+      Position.Y = 95.000000000000000000
+      Size.Width = 78.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Horizontal
+      ShowArrows = Finish
+    end
+    object RadiantRectangle1: TRadiantRectangle
+      ScaleStrokeThickness = True
+      Fill.Color = claDarkseagreen
+      Position.X = 30.000000000000000000
+      Position.Y = 95.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claDarkgreen
+      Stroke.Thickness = 2.000000000000000000
+      object Text3: TText
+        Align = Contents
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 92.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Prompt for Card Number'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantLine5: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 63.000000000000000000
+      Position.Y = 145.000000000000000000
+      Size.Width = 35.000000000000000000
+      Size.Height = 167.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Vertical
+      ShowArrows = Finish
+    end
+    object RadiantParallelogram1: TRadiantParallelogram
+      ScaleStrokeThickness = True
+      Fill.Color = claLightcoral
+      Position.X = 193.000000000000000000
+      Position.Y = 95.000000000000000000
+      Size.Width = 152.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claFirebrick
+      Stroke.Thickness = 2.000000000000000000
+      object Text2: TText
+        Align = Contents
+        Margins.Left = 25.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 25.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 102.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Read Credit Card Number'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantLine7: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 541.000000000000000000
+      Position.Y = 95.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Horizontal
+      ShowArrows = Start
+    end
+    object RadiantDiamond2: TRadiantDiamond
+      ScaleStrokeThickness = True
+      Fill.Color = claLightblue
+      Position.X = 406.000000000000000000
+      Position.Y = 68.000000000000000000
+      Size.Width = 138.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claSteelblue
+      Stroke.Thickness = 2.099999904632568000
+      object Text8: TText
+        Align = Contents
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 98.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'New Card or Retry?'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantRectangle2: TRadiantRectangle
+      ScaleStrokeThickness = True
+      Fill.Color = claDarkseagreen
+      Position.X = 602.000000000000000000
+      Position.Y = 95.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claDarkgreen
+      Stroke.Thickness = 2.000000000000000000
+      object Text4: TText
+        Align = Contents
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 92.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Display Error Message'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantDiamond1: TRadiantDiamond
+      ScaleStrokeThickness = True
+      Fill.Color = claLightblue
+      Position.X = 584.000000000000000000
+      Position.Y = 284.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claSteelblue
+      Stroke.Thickness = 2.099999904632568000
+      object Text6: TText
+        Align = Contents
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Submitted Successfully?'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantCapsule2: TRadiantCapsule
+      ScaleStrokeThickness = True
+      Fill.Color = claPlum
+      Position.X = 602.000000000000000000
+      Position.Y = 435.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claDarkviolet
+      Stroke.Thickness = 2.000000000000000000
+      object Text7: TText
+        Align = Contents
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 90.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'End'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object RadiantLine10: TRadiantLine
+      Fill.Color = claLightsteelblue
+      Position.X = 335.000000000000000000
+      Position.Y = 311.000000000000000000
+      Size.Width = 91.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      LineSlope = Horizontal
+      ShowArrows = Finish
+      object Text17: TText
+        Align = Contents
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 30.000000000000000000
+        Size.Width = 66.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Yes'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+      end
+    end
+  end
+end

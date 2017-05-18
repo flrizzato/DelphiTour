@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/07/02 15:30:45.000.741,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/07/02 15:30:45.000.266,=emsserverapi.dcp</Transaction>
+    <Transaction>2016/07/02 15:31:48.000.852,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\uMainResource.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2016/07/02 15:31:48.000.852,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\uMainResource.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/07/02 15:34:13.000.513,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\EMSSample102.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/07/02 15:34:36.000.035,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\AtendeCliente1.pas</Transaction>
+    <Transaction>2016/07/02 15:46:33.000.458,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\Unit1.pas</Transaction>
+    <Transaction>2016/07/02 15:46:42.000.685,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\uCEPManager.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\Unit1.pas</Transaction>
+    <Transaction>2016/07/02 16:09:03.000.194,=xmlrtl.dcp</Transaction>
+    <Transaction>2016/07/02 16:09:03.000.230,=inet.dcp</Transaction>
+    <Transaction>2016/07/02 16:09:03.000.216,=dbrtl.dcp</Transaction>
+    <Transaction>2016/07/02 16:09:03.000.205,=soaprtl.dcp</Transaction>
+    <Transaction>2016/07/04 15:49:25.000.328,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\RSSample102\RSSample102.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\RSSample102\EMSSample102.dproj</Transaction>
+    <Transaction>2017/05/02 23:26:31.000.220,C:\DTOUR-Tokyo\08-RADServer\RS103\RSSample102.dproj=C:\DTOUR-Tokyo\08-RADServer\RS103\RS103.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

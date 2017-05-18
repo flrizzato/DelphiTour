@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/04/05 17:57:29.000.221,C:\POCs\Barcode\ProjectGroupBarcode.groupproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\POCs\Barcode\BarcodeTransfer\BarcodeTransfer.dproj"/>
+	</Default.Personality>
+</BorlandProject>

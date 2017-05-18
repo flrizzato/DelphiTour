@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0F37BCB2-DA2A-49E1-AFCE-3D9B193E1A26}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="BarcodeTransfer\BarcodeTransfer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BarcodeHost\BarcodeHost.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BarcodeTransfer">
+        <MSBuild Projects="BarcodeTransfer\BarcodeTransfer.dproj"/>
+    </Target>
+    <Target Name="BarcodeTransfer:Clean">
+        <MSBuild Projects="BarcodeTransfer\BarcodeTransfer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BarcodeTransfer:Make">
+        <MSBuild Projects="BarcodeTransfer\BarcodeTransfer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BarcodeHost">
+        <MSBuild Projects="BarcodeHost\BarcodeHost.dproj"/>
+    </Target>
+    <Target Name="BarcodeHost:Clean">
+        <MSBuild Projects="BarcodeHost\BarcodeHost.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BarcodeHost:Make">
+        <MSBuild Projects="BarcodeHost\BarcodeHost.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BarcodeTransfer;BarcodeHost"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BarcodeTransfer:Clean;BarcodeHost:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BarcodeTransfer:Make;BarcodeHost:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/05/03 01:20:41.000.953,C:\DTOUR-Tokyo\06-Linux\linuxdata\Unit14.pas=C:\DTOUR-Tokyo\06-Linux\linuxdata\uMainDM.pas</Transaction>
+    <Transaction>2017/05/03 01:20:41.000.953,C:\DTOUR-Tokyo\06-Linux\linuxdata\Unit14.dfm=C:\DTOUR-Tokyo\06-Linux\linuxdata\uMainDM.dfm</Transaction>
+    <Transaction>2017/05/03 01:20:52.000.568,C:\DTOUR-Tokyo\06-Linux\linuxdata\LinuxData.dproj=C:\DTOUR-Tokyo\06-Linux\linuxdata\linuxdata101.dproj</Transaction>
+    <Transaction>2017/05/03 01:23:01.000.099,=C:\DTOUR-Tokyo\06-Linux\employee.fds</Transaction>
+  </Transactions>
+</BorlandProject>

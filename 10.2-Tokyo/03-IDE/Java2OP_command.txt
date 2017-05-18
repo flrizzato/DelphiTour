@@ -1,0 +1,1 @@
+C:\Java2OP\java2op.exe -jar C:\DTOUR-Tokyo\03-IDE\base64coder.jar -unit C:\DTOUR-Tokyo\03-IDE\Androidapi.JNI.base64coder

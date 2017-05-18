@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/04/05 17:55:29.000.256,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/05 17:55:47.000.053,C:\POCs\Barcode\HostApp\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017/04/05 17:55:47.000.053,C:\POCs\Barcode\HostApp\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/05 17:56:05.000.225,C:\POCs\Barcode\HostApp\BarcodeHost.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<POSX iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf" iOSDevice32="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

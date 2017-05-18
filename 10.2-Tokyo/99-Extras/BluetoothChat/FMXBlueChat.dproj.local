@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/03/27 12:23:46.000.575,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 12:40:51.000.793,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\uMainForm.pas</Transaction>
+    <Transaction>2017/03/27 12:40:51.000.793,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\uMainForm.fmx</Transaction>
+    <Transaction>2017/03/27 12:41:04.000.763,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\FMXBlueChat.dproj</Transaction>
+    <Transaction>2017/03/27 12:41:30.000.425,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 12:41:51.000.253,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\uBlueChat.pas</Transaction>
+    <Transaction>2017/03/27 15:09:02.000.400,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 15:09:08.000.787,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\uMainDM.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\Unit1.dfm</Transaction>
+    <Transaction>2017/03/27 15:09:08.000.787,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\uMainDM.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 15:11:21.000.801,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\uBlueChat.pas=</Transaction>
+    <Transaction>2017/03/27 17:49:35.000.039,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 17:50:23.000.519,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\uBTSend.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 17:50:34.000.975,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 17:52:37.000.118,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 17:52:44.000.966,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\uBlueChat.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\Unit1.pas</Transaction>
+    <Transaction>2017/03/27 18:23:09.000.203,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\BluetoothChat\uMainDM.pas=</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="_iossimulator_7760496F-DBBF-4728-AE40-F63AE9661FA5"/>
+		<NoProfile Android="0022831207"/>
+		<POSX iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/05/07 00:20:45.000.881,C:\DTOURXE8\10b-BeaconVCLTethering\MobilePhotoAppBeacon.dproj=C:\DTOURXE8\10b-BeaconVCLTethering\MobilePhotoApp.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3-Android</MobileDevice>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="_iossimulator_53C7CAB4-C4CA-478E-89FF-67657FD552FC" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

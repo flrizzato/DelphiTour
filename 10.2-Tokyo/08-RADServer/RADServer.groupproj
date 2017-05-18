@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2BBD8986-CF05-4925-B37B-FD962901F115}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="RS101\RS101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS101\RS101client.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS102\RS102.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS102\RS102client.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS103\RS103.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS103\RS103client.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RS101">
+        <MSBuild Projects="RS101\RS101.dproj"/>
+    </Target>
+    <Target Name="RS101:Clean">
+        <MSBuild Projects="RS101\RS101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RS101:Make">
+        <MSBuild Projects="RS101\RS101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RS101client">
+        <MSBuild Projects="RS101\RS101client.dproj"/>
+    </Target>
+    <Target Name="RS101client:Clean">
+        <MSBuild Projects="RS101\RS101client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RS101client:Make">
+        <MSBuild Projects="RS101\RS101client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RS102">
+        <MSBuild Projects="RS102\RS102.dproj"/>
+    </Target>
+    <Target Name="RS102:Clean">
+        <MSBuild Projects="RS102\RS102.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RS102:Make">
+        <MSBuild Projects="RS102\RS102.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RS102client">
+        <MSBuild Projects="RS102\RS102client.dproj"/>
+    </Target>
+    <Target Name="RS102client:Clean">
+        <MSBuild Projects="RS102\RS102client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RS102client:Make">
+        <MSBuild Projects="RS102\RS102client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RS103">
+        <MSBuild Projects="RS103\RS103.dproj"/>
+    </Target>
+    <Target Name="RS103:Clean">
+        <MSBuild Projects="RS103\RS103.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RS103:Make">
+        <MSBuild Projects="RS103\RS103.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RS103client">
+        <MSBuild Projects="RS103\RS103client.dproj"/>
+    </Target>
+    <Target Name="RS103client:Clean">
+        <MSBuild Projects="RS103\RS103client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RS103client:Make">
+        <MSBuild Projects="RS103\RS103client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RS101;RS101client;RS102;RS102client;RS103;RS103client"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RS101:Clean;RS101client:Clean;RS102:Clean;RS102client:Clean;RS103:Clean;RS103client:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RS101:Make;RS101client:Make;RS102:Make;RS102client:Make;RS103:Make;RS103client:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

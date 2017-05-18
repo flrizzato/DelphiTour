@@ -1,0 +1,93 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 284
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Cursor = crDefault
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 274.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 274.000000000000000000
+    Viewport.Height = 430.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 284.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object butStart: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listitembutton'
+      TabOrder = 6
+      Text = 'Start'
+      OnClick = butStartClick
+    end
+    object butStop: TButton
+      Align = Left
+      Enabled = False
+      Margins.Left = 5.000000000000000000
+      Position.X = 90.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listitembutton'
+      TabOrder = 5
+      Text = 'Stop'
+      OnClick = butStopClick
+    end
+  end
+  object Beacon1: TBeacon
+    Mode = Alternative
+    ModeExtended = [iBeacons, AltBeacons, Eddystones]
+    MonitorizedRegions = <
+      item
+        UUID = '{B9407F30-F5F8-466E-AFF9-25556B57FE6D}'
+        EddyNamespace = '00000000000000000000'
+        EddyInstance = '000000000000'
+        IDManufacturer = '-1'
+      end
+      item
+        UUID = '{2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6}'
+        EddyNamespace = '00000000000000000000'
+        EddyInstance = '000000000000'
+        IDManufacturer = '-1'
+      end
+      item
+        UUID = '{699EBC80-E1F3-11E3-9A0F-0CF3EE3BC012}'
+        EddyNamespace = '00000000000000000000'
+        EddyInstance = '000000000000'
+        IDManufacturer = '-1'
+      end
+      item
+        UUID = '{BFC8442B-819F-40C9-B56A-8B37FB9421E0}'
+        EddyNamespace = '00000000000000000000'
+        EddyInstance = '000000000000'
+        IDManufacturer = '-1'
+      end>
+    BeaconDeathTime = 5
+    SPC = 0.500000000000000000
+    OnBeaconEnter = Beacon1BeaconEnter
+    OnBeaconExit = Beacon1BeaconExit
+    Left = 32
+    Top = 64
+  end
+end
