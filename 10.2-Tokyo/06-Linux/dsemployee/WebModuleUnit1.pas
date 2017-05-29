@@ -48,7 +48,7 @@ implementation
 
 {$R *.dfm}
 
-uses ServerMethodsUnit1, ServerContainerUnit1, Web.WebReq;
+uses ServerContainerUnit1, Web.WebReq;
 
 procedure TWebModule1.DSRESTWebDispatcher1FormatResult(Sender: TObject;
   var ResultVal: TJSONValue; const Command: TDBXCommand; var Handled: Boolean);
@@ -73,8 +73,6 @@ begin
     ReplaceText := IntToStr(Request.ServerPort)
   else if SameText(TagString, 'host') then
     ReplaceText := string(Request.Host)
-  else if SameText(TagString, 'classname') then
-    ReplaceText := ServerMethodsUnit1.TServerMethods1.ClassName
   else if SameText(TagString, 'loginrequired') then
     if DSRESTWebDispatcher1.AuthenticationManager <> nil then
       ReplaceText := 'true'

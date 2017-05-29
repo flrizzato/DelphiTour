@@ -4,6 +4,6 @@
     <Transaction>2017/05/03 00:58:17.000.252,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\DTOUR-Tokyo\06-Linux\DelphiLinux.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="C:\DTOUR-Tokyo\06-Linux\dsemployee\dsemployee.dproj"/>
+		<Projects ActiveProject="C:\DTOUR-Tokyo\06-Linux\dsemployee\mod_dsemployee.dproj"/>
 	</Default.Personality>
 </BorlandProject>

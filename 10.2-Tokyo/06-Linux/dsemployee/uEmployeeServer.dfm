@@ -5,12 +5,13 @@ object DSEmployeeServer: TDSEmployeeServer
   object EmployeeConnection: TFDConnection
     Params.Strings = (
       
-        'Database=127.0.0.1:C:\Users\Public\Documents\Embarcadero\Studio\' +
-        '19.0\Samples\Data\EMPLOYEE.GDB'
+        'Database=C:\Users\Public\Documents\Embarcadero\Studio\19.0\Sampl' +
+        'es\Data\EMPLOYEE.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Protocol=TCPIP'
       'Server=127.0.0.1'
+      'Port=3050'
       'DriverID=IB')
     LoginPrompt = False
     BeforeConnect = EmployeeConnectionBeforeConnect
@@ -23,7 +24,9 @@ object DSEmployeeServer: TDSEmployeeServer
     Connection = EmployeeConnection
     UpdateObject = updEmployee
     SQL.Strings = (
-      'SELECT * FROM EMPLOYEE ORDER BY EMP_NO')
+      'SELECT *'
+      'FROM EMPLOYEE EMP'
+      'ORDER BY EMP.EMP_NO  ')
     Left = 56
     Top = 72
     object EmployeeTableEMP_NO: TSmallintField

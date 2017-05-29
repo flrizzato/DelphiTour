@@ -6,7 +6,7 @@
     <PropertyGroup/>
     <ItemGroup Condition="'$(Platform)'=='Win64'">
         <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -15,7 +15,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctioninvoker.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -24,7 +24,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -33,7 +33,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\connection.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>connection.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -42,7 +42,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -51,7 +51,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -60,7 +60,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -69,7 +69,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -78,7 +78,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\main.css" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>main.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -87,7 +87,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -96,7 +96,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>serverfunctioninvoker.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -105,7 +105,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctioninvoker.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -114,7 +114,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>expand.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -123,7 +123,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -132,7 +132,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -141,7 +141,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\connection.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>connection.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -150,7 +150,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctions.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -159,7 +159,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="images\collapse.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>collapse.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -168,7 +168,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -177,7 +177,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>reversestring.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -186,7 +186,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\main.css" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>main.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -195,7 +195,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>expand.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -204,7 +204,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -213,7 +213,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>serverfunctioninvoker.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -222,7 +222,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -231,7 +231,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -240,7 +240,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctions.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -249,7 +249,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>serverfunctioninvoker.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -258,7 +258,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>serverfunctioninvoker.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -267,7 +267,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -276,7 +276,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -285,7 +285,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>reversestring.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -294,7 +294,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -303,7 +303,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="images\collapse.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>collapse.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -316,7 +316,7 @@
     <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
     <ItemGroup Condition="'$(Platform)'=='Win32'">
         <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>reversestring.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -324,18 +324,8 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Win32\Debug\dsemployee.exe" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\</RemoteDir>
-            <RemoteName>dsemployee.exe</RemoteName>
-            <DeployClass>ProjectOutput</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-            <Required>True</Required>
-        </DeployFile>
         <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -344,7 +334,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>reversestring.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -353,7 +343,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -362,7 +352,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -371,7 +361,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>expand.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -380,7 +370,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -389,7 +379,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="images\collapse.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>collapse.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -398,7 +388,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -407,7 +397,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctioninvoker.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -416,7 +406,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>serverfunctioninvoker.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -425,7 +415,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctions.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -434,7 +424,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\connection.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>connection.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -443,7 +433,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\main.css" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>main.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -452,7 +442,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>serverfunctioninvoker.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -461,7 +451,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctioninvoker.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -470,7 +460,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -479,7 +469,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -488,7 +478,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -497,7 +487,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -506,7 +496,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -514,17 +504,8 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
-            <RemoteName>expand.png</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="js\connection.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>connection.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -532,8 +513,17 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
+            <RemoteName>expand.png</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctions.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -542,7 +532,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -551,7 +541,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -560,7 +550,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -568,8 +558,18 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="Win32\Debug\mod_dsemployee.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>mod_dsemployee\</RemoteDir>
+            <RemoteName>mod_dsemployee.dll</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
         <DeployFile Include="css\main.css" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>main.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -578,7 +578,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>serverfunctioninvoker.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -587,7 +587,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="images\collapse.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>collapse.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -596,7 +596,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -605,7 +605,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -614,7 +614,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>serverfunctioninvoker.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -623,7 +623,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -634,7 +634,7 @@
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='Linux64'">
         <DeployFile Include="js\serverfunctionexecutor-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -643,7 +643,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -652,7 +652,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -661,7 +661,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctioninvoker.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -670,7 +670,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -679,7 +679,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\main.css" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>main.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -688,7 +688,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -697,7 +697,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>expand.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -706,7 +706,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -715,7 +715,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>serverfunctioninvoker.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -724,7 +724,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctions.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -733,7 +733,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -742,7 +742,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -751,7 +751,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>serverfunctioninvoker.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -760,7 +760,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="images\collapse.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>collapse.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -769,7 +769,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -778,7 +778,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>json2-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -787,7 +787,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="images\collapse.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>collapse.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -796,7 +796,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>serverfunctioninvoker.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -804,8 +804,18 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="Linux64\Release\libmod_dsemployee.so" Condition="'$(Config)'=='Release'">
+            <RemoteDir>mod_dsemployee\</RemoteDir>
+            <RemoteName>libmod_dsemployee.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
         <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctioninvoker.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -814,7 +824,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -823,7 +833,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>callbackframework.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -832,7 +842,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\connection.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>connection.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -841,7 +851,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -850,7 +860,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>reversestring.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -858,8 +868,18 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="Linux64\Debug\libmod_dsemployee.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>mod_dsemployee\</RemoteDir>
+            <RemoteName>libmod_dsemployee.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -868,7 +888,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>serverfunctions.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -877,7 +897,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\connection.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>connection.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -886,7 +906,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>serverfunctioninvoker.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -895,7 +915,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -904,7 +924,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="css\main.css" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\css\</RemoteDir>
+            <RemoteDir>mod_dsemployee\css\</RemoteDir>
             <RemoteName>main.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -913,7 +933,7 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\templates\</RemoteDir>
+            <RemoteDir>mod_dsemployee\templates\</RemoteDir>
             <RemoteName>reversestring.html</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -921,18 +941,8 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Linux64\Debug\dsemployee" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>dsemployee\</RemoteDir>
-            <RemoteName>dsemployee</RemoteName>
-            <DeployClass>ProjectOutput</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-            <Required>True</Required>
-        </DeployFile>
         <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\js\</RemoteDir>
+            <RemoteDir>mod_dsemployee\js\</RemoteDir>
             <RemoteName>base64-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
@@ -940,18 +950,8 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="Linux64\Release\dsemployee" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\</RemoteDir>
-            <RemoteName>dsemployee</RemoteName>
-            <DeployClass>ProjectOutput</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-            <Required>True</Required>
-        </DeployFile>
         <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>dsemployee\images\</RemoteDir>
+            <RemoteDir>mod_dsemployee\images\</RemoteDir>
             <RemoteName>expand.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>

@@ -5,7 +5,7 @@
         <FrameworkType>VCL</FrameworkType>
         <MainSource>mod_dsemployee.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <Platform Condition="'$(Platform)'==''">Linux64</Platform>
         <TargetedPlatforms>129</TargetedPlatforms>
         <AppType>Library</AppType>
@@ -97,30 +97,22 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="ServerMethodsUnit1.pas">
-            <Form>ServerMethods1</Form>
-            <FormType>dfm</FormType>
-            <DesignClass>TDataModule</DesignClass>
-        </DCCReference>
         <DCCReference Include="ServerContainerUnit1.pas">
             <Form>ServerContainer1</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="WebModuleUnit1.pas">
             <Form>WebModule1</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TWebModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="uEmployeeServer.pas">
+            <Form>DSEmployeeServer</Form>
+            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="Lib\DataSetConverter4D.Util.pas"/>
         <DCCReference Include="Lib\DataSetConverter4D.Helper.pas"/>
         <DCCReference Include="Lib\DataSetConverter4D.Impl.pas"/>
         <DCCReference Include="Lib\DataSetConverter4D.pas"/>
-        <DCCReference Include="uEmployeeServer.pas">
-            <Form>DSEmployeeServer</Form>
-            <FormType>dfm</FormType>
-            <DesignClass>TDataModule</DesignClass>
-        </DCCReference>
         <None Include="js\base64.js"/>
         <None Include="js\serverfunctionexecutor.js"/>
         <None Include="js\json2.js"/>
@@ -513,6 +505,12 @@ $(PostBuildEvent)]]></PostBuildEvent>
                     <Platform Name="Win32">
                         <RemoteDir>.\js\</RemoteDir>
                         <RemoteName>connection.js</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Linux64\Release\libmod_dsemployee.so" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Linux64">
+                        <RemoteName>libmod_dsemployee.so</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

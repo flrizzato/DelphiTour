@@ -12,7 +12,6 @@ uses
   Web.WebReq,
   Web.WebBroker,
   Datasnap.DSSession,
-  ServerMethodsUnit1 in 'ServerMethodsUnit1.pas' {ServerMethods1: TDataModule},
   ServerContainerUnit1 in 'ServerContainerUnit1.pas' {ServerContainer1: TDataModule},
   WebModuleUnit1 in 'WebModuleUnit1.pas' {WebModule1: TWebModule},
   ServerConst1 in 'ServerConst1.pas',

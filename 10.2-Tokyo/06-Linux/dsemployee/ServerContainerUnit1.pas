@@ -10,10 +10,7 @@ type
   TServerContainer1 = class(TDataModule)
     DSServer1: TDSServer;
     DSServerClass1: TDSServerClass;
-    DSServerClass2: TDSServerClass;
     procedure DSServerClass1GetClass(DSServerClass: TDSServerClass;
-      var PersistentClass: TPersistentClass);
-    procedure DSServerClass2GetClass(DSServerClass: TDSServerClass;
       var PersistentClass: TPersistentClass);
   private
     { Private declarations }
@@ -29,8 +26,7 @@ implementation
 
 {$R *.dfm}
 
-uses
-  ServerMethodsUnit1, uEmployeeServer;
+uses uEmployeeServer;
 
 var
   FModule: TComponent;
@@ -54,12 +50,6 @@ begin
 end;
 
 procedure TServerContainer1.DSServerClass1GetClass(
-  DSServerClass: TDSServerClass; var PersistentClass: TPersistentClass);
-begin
-  PersistentClass := ServerMethodsUnit1.TServerMethods1;
-end;
-
-procedure TServerContainer1.DSServerClass2GetClass(
   DSServerClass: TDSServerClass; var PersistentClass: TPersistentClass);
 begin
   PersistentClass := uEmployeeServer.TDSEmployeeServer;

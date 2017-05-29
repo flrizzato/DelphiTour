@@ -18,6 +18,9 @@ type
   TDSEmployeeServer = class(TDataModule)
     EmployeeConnection: TFDConnection;
     EmployeeTable: TFDQuery;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    FDPhysIBDriverLink1: TFDPhysIBDriverLink;
+    updEmployee: TFDUpdateSQL;
     EmployeeTableEMP_NO: TSmallintField;
     EmployeeTableFIRST_NAME: TStringField;
     EmployeeTableLAST_NAME: TStringField;
@@ -29,9 +32,6 @@ type
     EmployeeTableJOB_COUNTRY: TStringField;
     EmployeeTableSALARY: TBCDField;
     EmployeeTableFULL_NAME: TStringField;
-    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
-    FDPhysIBDriverLink1: TFDPhysIBDriverLink;
-    updEmployee: TFDUpdateSQL;
     procedure EmployeeConnectionBeforeConnect(Sender: TObject);
   private
     { Private declarations }
@@ -51,6 +51,7 @@ implementation
 uses DataSetConverter4D.Helper, DataSetConverter4D.Impl, System.IOUtils;
 
 {$R *.dfm}
+
 { TDSEmployeeServer }
 
 procedure TDSEmployeeServer.acceptEmployee(const Key: string;
@@ -94,17 +95,22 @@ begin
     sSQL := sSQL + ' WHERE EMP_NO = ' + Key;
   sSQL := sSQL + ' ORDER BY EMP_NO';
 
-  EmployeeTable.SQL.Text := sSQL;
-  EmployeeTable.Open;
+  try
+    EmployeeTable.SQL.Text := sSQL;
+    EmployeeTable.Open;
 
-  Result := EmployeeTable.AsJSONArray;
+    FSetExceptMask($32);
+    Result := EmployeeTable.AsJSONArray;
+  except
+    on E: Exception do
+      raise Exception.Create('Employee: ' + E.Message);
+  end;
 end;
 
 procedure TDSEmployeeServer.EmployeeConnectionBeforeConnect(Sender: TObject);
 begin
 {$IFDEF LINUX}
-  EmployeeConnection.Params.Database := TPath.GetHomePath + PathDelim +
-    'employee.gdb';
+  EmployeeConnection.Params.Database := '/data/employee.gdb';
 {$ENDIF}
 end;
 
