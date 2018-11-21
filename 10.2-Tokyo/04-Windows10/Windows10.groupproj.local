@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2017/05/02 20:54:17.000.738,C:\DTOUR-Tokyo\04-Windows10\Windows10.groupproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2017/05/02 20:54:17.000.738,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\DTOUR-Tokyo\04-Windows10\Windows10.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="C:\DTOUR-Tokyo\04-Windows10\Windows 10 SharingContract\ShareContractFramework.dproj"/>
+		<Projects ActiveProject="C:\DTOUR-Tokyo\04-Windows10\ActivityIndicator\ActivityIndicator.dproj"/>
 	</Default.Personality>
 </BorlandProject>

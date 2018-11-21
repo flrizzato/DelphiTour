@@ -2,10 +2,10 @@
 <BorlandProject>
 	<ActiveMobileDevice>
 		<POSX iOSSimulator="iPhone5"/>
-		<PmacOS iOSSimulator="_iossimulator_9BD394AC-6468-45E9-AE3D-72301BAC453F" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<PmacOS iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
 		<NoProfile Android="0022831207"/>
 	</ActiveMobileDevice>
 	<Transactions>
-    <Transaction>2017/05/02 21:12:37.000.920,C:\DTOUR-Tokyo\04-Windows10\FMXStyles\NavigationPaneDemo.dproj=C:\DTOUR-Tokyo\04-Windows10\FMXStyles\FMXStyles.dproj</Transaction>
+    <Transaction>2017/05/02 21:12:37.000.920,C:\DTOUR-Tokyo\04-Windows10\FMXStyles\FMXStyles.dproj=C:\DTOUR-Tokyo\04-Windows10\FMXStyles\NavigationPaneDemo.dproj</Transaction>
   </Transactions>
 </BorlandProject>

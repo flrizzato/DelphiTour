@@ -1,0 +1,144 @@
+inherited HRManagerForm_LgXhdpiPh: THRManagerForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  FormFactor.Orientations = [Portrait]
+  FormFactor.Devices = [iPhone]
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    Sizes = (
+      450s
+      646s
+      450s
+      646s
+      450s
+      646s
+      450s
+      646s)
+    inherited Employees: TTabItem
+      Size.Width = 112.000000000000000000
+      ExplicitSize.cx = 170.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited EmployeesTabToolbar: TToolBar
+        Size.Width = 450.000000000000000000
+        Size.Height = 48.000000000000000000
+        inherited EmployeeProfile: TLabel
+          Size.Width = 450.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+        inherited RefreshBtn: TSpeedButton
+          Position.X = 397.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+        inherited MultiViewBtn: TSpeedButton
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+      inherited Namebadge: TButton
+        Position.Y = 63.000000000000000000
+        Size.Width = 430.000000000000000000
+        inherited EmployeeTitle: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited HireDate: TLabel
+          Position.X = 324.000000000000000000
+        end
+      end
+      inherited EmploymentHistoryList: TListBox
+        Position.Y = 160.000000000000000000
+        Size.Width = 450.000000000000000000
+        Viewport.Width = 450.000000000000000000
+        Viewport.Height = 173.000000000000000000
+        inherited ListBoxGroupHeader1: TListBoxGroupHeader
+          Size.Width = 450.000000000000000000
+          Size.Height = 56.000000000000000000
+        end
+        inherited Position1: TListBoxItem
+          Position.Y = 56.000000000000000000
+          Size.Width = 450.000000000000000000
+        end
+        inherited Position2: TListBoxItem
+          Position.Y = 100.000000000000000000
+          Size.Width = 450.000000000000000000
+        end
+      end
+      inherited EmployeeRecordNotes: TMemo
+        Position.Y = 328.000000000000000000
+        Size.Width = 450.000000000000000000
+        Viewport.Width = 450.000000000000000000
+        Viewport.Height = 65.000000000000000000
+      end
+      inherited TabletHRList: TListBox
+        Position.Y = 380.000000000000000000
+        Size.Width = 450.000000000000000000
+        Viewport.Width = 450.000000000000000000
+        Viewport.Height = 261.000000000000000000
+        inherited HRPanelHeader: TListBoxGroupHeader
+          Size.Width = 450.000000000000000000
+          Size.Height = 56.000000000000000000
+        end
+        inherited PayrollInfoHeader: TListBoxGroupHeader
+          Position.Y = 56.000000000000000000
+          Size.Width = 450.000000000000000000
+          Size.Height = 56.000000000000000000
+        end
+        inherited DirectDepositItem: TListBoxItem
+          Position.Y = 112.000000000000000000
+          Size.Width = 450.000000000000000000
+          inherited DirectDepositSwitch: TSwitch
+            Position.X = 401.000000000000000000
+            Position.Y = 7.000000000000000000
+            Size.Height = 26.000000000000000000
+          end
+        end
+        inherited FileAttachmentsHeader: TListBoxGroupHeader
+          Position.Y = 152.000000000000000000
+          Size.Width = 450.000000000000000000
+          Size.Height = 56.000000000000000000
+        end
+        inherited UploadListItem: TListBoxItem
+          Position.Y = 208.000000000000000000
+          Size.Width = 450.000000000000000000
+          inherited Edit1: TEdit
+            Position.X = 98.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Height = 32.000000000000000000
+          end
+          inherited UploadBtn: TSpeedButton
+            Position.X = 372.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Height = 30.000000000000000000
+          end
+          inherited UploadIcon: TImage
+            Position.X = 320.000000000000000000
+          end
+        end
+      end
+    end
+    inherited Files: TTabItem
+      Size.Width = 112.000000000000000000
+      ExplicitSize.cx = 171.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+    inherited Search: TTabItem
+      Size.Width = 112.000000000000000000
+      ExplicitSize.cx = 170.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+    inherited Recent: TTabItem
+      Size.Width = 114.000000000000000000
+      ExplicitSize.cx = 168.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+  end
+  inherited MultiView1: TMultiView
+    Size.Width = 249.000000000000000000
+    Visible = False
+    inherited EmployeeListview: TListView
+      Size.Width = 249.000000000000000000
+    end
+  end
+end

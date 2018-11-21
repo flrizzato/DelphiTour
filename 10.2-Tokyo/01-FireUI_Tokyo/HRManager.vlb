@@ -46,7 +46,7 @@ Coordinates=314,646,40,33
 Visible=False
 
 []
-Coordinates=90,510,65,51
+Coordinates=822,587,58,33
 Visible=False
 
 [BindingsList1]
@@ -54,14 +54,6 @@ Coordinates=28,187,91,36
 
 [EmploymentHistoryList]
 Coordinates=501,10,89,195
-Visible=False
-
-[LeftToolbar]
-Coordinates=822,587,58,33
-Visible=False
-
-[ToolbarTitle]
-Coordinates=329,510,46,51
 Visible=False
 
 [EmployeesTabToolbar]

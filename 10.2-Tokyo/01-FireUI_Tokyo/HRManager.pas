@@ -42,8 +42,6 @@ type
     Recent: TTabItem;
     EmployeeRecordNotes: TMemo;
     MultiView1: TMultiView;
-    LeftToolbar: TToolBar;
-    ToolbarTitle: TLabel;
     TabletHRList: TListBox;
     HRPanelHeader: TListBoxGroupHeader;
     DirectDepositItem: TListBoxItem;
@@ -67,7 +65,9 @@ type
     LinkPropertyToFieldText: TLinkPropertyToField;
     LinkPropertyToFieldText2: TLinkPropertyToField;
     LinkPropertyToFieldText3: TLinkPropertyToField;
-    procedure FormShow(Sender: TObject);
+    procedure EmployeeListviewItemClick(const Sender: TObject;
+      const AItem: TListViewItem);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -82,16 +82,18 @@ implementation
 uses System.IOUtils;
 
 {$R *.fmx}
+{$R *.LgXhdpiPh.fmx ANDROID}
 {$R *.iPad.fmx IOS}
-{$R *.NmXhdpiPh.fmx ANDROID}
-{$R *.Macintosh.fmx MACOS}
-{$R *.Windows.fmx MSWINDOWS}
-{$R *.iPhone55in.fmx IOS}
 
-procedure THRManagerForm.FormShow(Sender: TObject);
+procedure THRManagerForm.EmployeeListviewItemClick(const Sender: TObject;
+  const AItem: TListViewItem);
 begin
-  if TDirectory.Exists('/sdcard/windows/BstSharedFolder') then
-    Padding.Top := 20;
+  MultiView1.HideMaster;
+end;
+
+procedure THRManagerForm.FormCreate(Sender: TObject);
+begin
+  TabControl1.ActiveTab := Employees;
 end;
 
 end.

@@ -2,12 +2,12 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2016/07/02 16:39:29.000.831,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/07/02 16:40:14.000.567,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2016/07/02 16:40:14.000.567,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/07/02 16:40:24.000.911,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\EMSClient102.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/07/02 16:40:14.000.567,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\uMainForm.pas</Transaction>
+    <Transaction>2016/07/02 16:40:14.000.567,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\uMainForm.fmx</Transaction>
+    <Transaction>2016/07/02 16:40:24.000.911,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\EMSClient102.dproj</Transaction>
     <Transaction>2016/07/02 16:45:59.000.938,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\EMSSample102\uCEPManager.pas</Transaction>
-    <Transaction>2016/07/04 15:49:37.000.281,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\RSSample102\EMSClient102.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\RSSample102\RSClient102.dproj</Transaction>
-    <Transaction>2017/05/02 23:27:29.000.664,C:\DTOUR-Tokyo\08-RADServer\RS103\RS103client.dproj=C:\DTOUR-Tokyo\08-RADServer\RS103\RSClient102.dproj</Transaction>
+    <Transaction>2016/07/04 15:49:37.000.281,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\RSSample102\RSClient102.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\RSSample102\EMSClient102.dproj</Transaction>
+    <Transaction>2017/05/02 23:27:29.000.664,C:\DTOUR-Tokyo\08-RADServer\RS103\RSClient102.dproj=C:\DTOUR-Tokyo\08-RADServer\RS103\RS103client.dproj</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<PMAC iOSSimulator="iPhone5"/>

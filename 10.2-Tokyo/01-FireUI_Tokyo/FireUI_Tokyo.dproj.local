@@ -2,11 +2,11 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2017/05/03 15:02:57.000.059,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/05/03 15:03:23.000.991,C:\DTOUR-Tokyo\01-FireUI_AppPreview\FireUI_Tokyo.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/05/03 15:03:23.000.991,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DTOUR-Tokyo\01-FireUI_AppPreview\FireUI_Tokyo.dproj</Transaction>
     <Transaction>2017/05/03 15:03:34.000.573,=C:\DTOUR-Tokyo\01-FireUI_AppPreview\HRManager.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<PmacOS iOSSimulator="_iossimulator_53C7CAB4-C4CA-478E-89FF-67657FD552FC" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
-		<NoProfile Android="0022831207"/>
+		<PmacOS iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="0042349368"/>
 	</ActiveMobileDevice>
 </BorlandProject>
