@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/11/07 11:41:01.000.202,=emsserverapi.dcp</Transaction>
+    <Transaction>2018/11/07 11:41:02.000.249,=C:\Users\Al\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/07 11:49:56.000.063,C:\Users\Al\Documents\Embarcadero\Studio\Projects\RS10_3\Unit1.dfm=C:\Users\Al\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2018/11/07 11:49:56.000.063,C:\Users\Al\Documents\Embarcadero\Studio\Projects\RS10_3\Unit1.pas=C:\Users\Al\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/11/07 11:50:12.000.237,C:\Users\Al\Documents\Embarcadero\Studio\Projects\RS10_3\Project1.dproj=C:\Users\Al\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018/11/08 11:28:44.000.053,C:\Users\Al\Documents\Embarcadero\Studio\Projects\RS10_3\Project1.dproj=C:\Users\Al\Documents\Embarcadero\Studio\Projects\RS10_3\RioRadServer\Rio_EMS_Server_EMSDataSetResource.dproj</Transaction>
+    <Transaction>2018/11/08 11:40:58.000.587,=FireDACIBDriver.dcp</Transaction>
+    <Transaction>2018/11/08 11:40:58.000.571,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2018/11/08 11:40:58.000.555,=dbrtl.dcp</Transaction>
+    <Transaction>2018/11/08 11:40:58.000.571,=emsserverresource.dcp</Transaction>
+    <Transaction>2018/11/08 11:40:58.000.571,=FireDAC.dcp</Transaction>
+    <Transaction>2018/11/08 11:40:58.000.587,=FireDACCommon.dcp</Transaction>
+    <Transaction>2018/11/27 07:38:01.110,=C:\DTOUR-Rio\Rio_EMS_Server_EMSDataSetResource\Unit1.pas</Transaction>
+    <Transaction>2018/11/27 07:38:12.390,C:\DTOUR-Rio\Rio_EMS_Server_EMSDataSetResource\uRIOResource.dfm=C:\DTOUR-Rio\Rio_EMS_Server_EMSDataSetResource\Unit1.dfm</Transaction>
+    <Transaction>2018/11/27 07:38:12.390,C:\DTOUR-Rio\Rio_EMS_Server_EMSDataSetResource\uRIOResource.pas=C:\DTOUR-Rio\Rio_EMS_Server_EMSDataSetResource\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
