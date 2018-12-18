@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions/>
-  <Default.Personality>
-    <Projects ActiveProject="C:\DTOUR-Rio\Rio_EMS_Server_Master\rs103b\RADServer103b.dproj"/>
-  </Default.Personality>
+	<Transactions/>
+	<Default.Personality>
+		<Projects ActiveProject="C:\DTOUR-Rio\Rio_EMS_Server_Master\rs103b\RADServer103b.dproj"/>
+	</Default.Personality>
 </BorlandProject>

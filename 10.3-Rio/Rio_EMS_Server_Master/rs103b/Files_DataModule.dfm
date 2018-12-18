@@ -4,8 +4,8 @@ object FilesResource1: TFilesResource1
   Width = 260
   object EMSFileResource1: TEMSFileResource
     AllowedActions = [List, Get]
-    PathTemplate = 'c:\temp\{id}'
-    Left = 80
-    Top = 72
+    PathTemplate = 'c:\web\{id}'
+    Left = 56
+    Top = 24
   end
 end

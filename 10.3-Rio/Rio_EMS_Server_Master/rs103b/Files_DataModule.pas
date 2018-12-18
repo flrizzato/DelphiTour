@@ -13,7 +13,6 @@ type
   TFilesResource1 = class(TDataModule)
     [ResourceSuffix('list', '/')]
     [ResourceSuffix('get', '/{id}')]
-    // [EndpointProduce('get', 'image/png')]
     EMSFileResource1: TEMSFileResource;
   published
   end;

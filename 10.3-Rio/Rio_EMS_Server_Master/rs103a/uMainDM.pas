@@ -40,6 +40,23 @@ type
     CustomerTablePOSTAL_CODE: TStringField;
     CustomerTableON_HOLD: TStringField;
     FDUpdateSQL1: TFDUpdateSQL;
+    SalesTable: TFDQuery;
+    [ResourceSuffix('list', '/{CUST_NO}/sales')]
+    EMSDataSetResource2: TEMSDataSetResource;
+    FDUpdateSQL2: TFDUpdateSQL;
+    SalesTablePO_NUMBER: TStringField;
+    SalesTableCUST_NO: TIntegerField;
+    SalesTableSALES_REP: TSmallintField;
+    SalesTableORDER_STATUS: TStringField;
+    SalesTableORDER_DATE: TDateTimeField;
+    SalesTableSHIP_DATE: TDateTimeField;
+    SalesTableDATE_NEEDED: TDateTimeField;
+    SalesTablePAID: TStringField;
+    SalesTableQTY_ORDERED: TIntegerField;
+    SalesTableTOTAL_VALUE: TCurrencyField;
+    SalesTableDISCOUNT: TSingleField;
+    SalesTableITEM_TYPE: TStringField;
+    SalesTableAGED: TFloatField;
   published
   end;
 

@@ -9,7 +9,6 @@ uses
   EMS.Services, EMS.ResourceAPI, EMS.ResourceTypes;
 
 type
-
   [ResourceName('content')]
   TContentResource1 = class(TDataModule)
   published
