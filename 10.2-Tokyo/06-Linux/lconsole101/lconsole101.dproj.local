@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2017/05/03 00:43:09.000.948,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DTOUR-Tokyo\06-Linux\LinuxConsole\LConsole.dproj</Transaction>
-    <Transaction>2017/05/03 00:51:02.000.047,C:\DTOUR-Tokyo\06-Linux\LinuxConsole\lconsole101.dproj=C:\DTOUR-Tokyo\06-Linux\LinuxConsole\LConsole.dproj</Transaction>
+    <Transaction>2017/05/03 00:43:09.000.948,C:\DTOUR-Tokyo\06-Linux\LinuxConsole\LConsole.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/05/03 00:51:02.000.047,C:\DTOUR-Tokyo\06-Linux\LinuxConsole\LConsole.dproj=C:\DTOUR-Tokyo\06-Linux\LinuxConsole\lconsole101.dproj</Transaction>
   </Transactions>
 </BorlandProject>

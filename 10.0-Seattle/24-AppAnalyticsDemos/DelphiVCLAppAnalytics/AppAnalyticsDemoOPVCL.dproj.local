@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/04/28 13:24:10.000.821,=C:\Users\davidi\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/04/28 13:26:44.000.330,C:\Users\davidi\Documents\Embarcadero\Studio\Projects\AppAnalyticsDemos\DelphiVCLAppAnalytics\MainUnit.dfm=C:\Users\davidi\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2015/04/28 13:26:44.000.330,C:\Users\davidi\Documents\Embarcadero\Studio\Projects\AppAnalyticsDemos\DelphiVCLAppAnalytics\MainUnit.pas=C:\Users\davidi\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/04/28 13:27:07.000.742,C:\Users\davidi\Documents\Embarcadero\Studio\Projects\AppAnalyticsDemos\DelphiVCLAppAnalytics\AppAnalyticsDemoOPVCL.dproj=C:\Users\davidi\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

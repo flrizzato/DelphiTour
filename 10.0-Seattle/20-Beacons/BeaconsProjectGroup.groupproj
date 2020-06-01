@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4DD9350D-AEB2-4EEB-9E23-00658088C2C0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SimpleBeaconDemo\BeaconComponent.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BeaconAreaDemo\BeaconAreaDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="HeartrateBluetooth\HeartRateMonitorLE.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BeaconComponent">
+        <MSBuild Projects="SimpleBeaconDemo\BeaconComponent.dproj"/>
+    </Target>
+    <Target Name="BeaconComponent:Clean">
+        <MSBuild Projects="SimpleBeaconDemo\BeaconComponent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BeaconComponent:Make">
+        <MSBuild Projects="SimpleBeaconDemo\BeaconComponent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BeaconAreaDemo">
+        <MSBuild Projects="BeaconAreaDemo\BeaconAreaDemo.dproj"/>
+    </Target>
+    <Target Name="BeaconAreaDemo:Clean">
+        <MSBuild Projects="BeaconAreaDemo\BeaconAreaDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BeaconAreaDemo:Make">
+        <MSBuild Projects="BeaconAreaDemo\BeaconAreaDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HeartRateMonitorLE">
+        <MSBuild Projects="HeartrateBluetooth\HeartRateMonitorLE.dproj"/>
+    </Target>
+    <Target Name="HeartRateMonitorLE:Clean">
+        <MSBuild Projects="HeartrateBluetooth\HeartRateMonitorLE.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HeartRateMonitorLE:Make">
+        <MSBuild Projects="HeartrateBluetooth\HeartRateMonitorLE.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BeaconComponent;BeaconAreaDemo;HeartRateMonitorLE"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BeaconComponent:Clean;BeaconAreaDemo:Clean;HeartRateMonitorLE:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BeaconComponent:Make;BeaconAreaDemo:Make;HeartRateMonitorLE:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

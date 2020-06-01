@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/04/30 15:07:33.000.880,=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2014/06/06 11:02:14.000.478,=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2014/06/14 17:26:35.000.411,=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2014/06/16 17:26:16.000.276,=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2014/06/16 18:58:15.000.255,=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2014/06/17 14:07:32.000.817,=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2014/06/17 15:50:04.000.654,Z:\Shared\Training\DelphiXE6AndroidPower\Source\LocalDatabase\Stap1\UnitFormMain.fmx=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit3.fmx</Transaction>
+    <Transaction>2014/06/17 15:50:04.000.654,Z:\Shared\Training\DelphiXE6AndroidPower\Source\LocalDatabase\Stap1\UnitFormMain.pas=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2014/06/17 15:50:11.000.044,Z:\Shared\Training\DelphiXE6AndroidPower\Source\LocalDatabase\Stap1\LocalDatabase.dproj=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2014/06/17 15:53:08.000.347,=Z:\Shared\Training\DelphiXE6AndroidPower\Source\LocalDatabase\Stap1\Unit1.pas</Transaction>
+    <Transaction>2014/06/17 15:53:18.000.610,Z:\Shared\Training\DelphiXE6AndroidPower\Source\LocalDatabase\Stap1\Unit1.dfm=Z:\Shared\Training\DelphiXE6AndroidPower\Source\LocalDatabase\Stap1\UnitDataMain.dfm</Transaction>
+    <Transaction>2014/06/17 15:53:18.000.610,Z:\Shared\Training\DelphiXE6AndroidPower\Source\LocalDatabase\Stap1\Unit1.pas=Z:\Shared\Training\DelphiXE6AndroidPower\Source\LocalDatabase\Stap1\UnitDataMain.pas</Transaction>
+    <Transaction>2014/10/19 17:01:08.000.969,Z:\Shared\Training\Workshops\Coderage9_DelphiParallelLibrary\Source\ThreadedDatabase\ThreadedDatabase.dproj=Z:\Shared\Training\Workshops\Coderage9_DelphiParallelLibrary\Source\ThreadedDatabase\LocalDatabase.dproj</Transaction>
+    <Transaction>2014/10/19 20:33:12.000.003,=Z:\Shared\Training\Workshops\Coderage9_DelphiParallelLibrary\Source\ThreadedDatabase\Unit1.pas</Transaction>
+    <Transaction>2014/10/19 20:33:22.000.273,Z:\Shared\Training\Workshops\Coderage9_DelphiParallelLibrary\Source\ThreadedDatabase\Unit1.dfm=Z:\Shared\Training\Workshops\Coderage9_DelphiParallelLibrary\Source\ThreadedDatabase\UnitDataThread.dfm</Transaction>
+    <Transaction>2014/10/19 20:33:22.000.273,Z:\Shared\Training\Workshops\Coderage9_DelphiParallelLibrary\Source\ThreadedDatabase\Unit1.pas=Z:\Shared\Training\Workshops\Coderage9_DelphiParallelLibrary\Source\ThreadedDatabase\UnitDataThread.pas</Transaction>
+  </Transactions>
+	<MobileDevice>015d41d441200211</MobileDevice>
+	<ProjectSortOrder AutoSort="-1" SortType="1"/>
+</BorlandProject>

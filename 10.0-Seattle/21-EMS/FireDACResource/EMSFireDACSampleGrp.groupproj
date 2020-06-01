@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E9C73C2A-B322-40DF-8B99-172CE3C7F7E2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SampleEMSFireDACResourcePackage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SampleEMSFireDACClient.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SampleEMSFireDACResourcePackage">
+        <MSBuild Projects="SampleEMSFireDACResourcePackage.dproj"/>
+    </Target>
+    <Target Name="SampleEMSFireDACResourcePackage:Clean">
+        <MSBuild Projects="SampleEMSFireDACResourcePackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SampleEMSFireDACResourcePackage:Make">
+        <MSBuild Projects="SampleEMSFireDACResourcePackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SampleEMSFireDACClient">
+        <MSBuild Projects="SampleEMSFireDACClient.dproj"/>
+    </Target>
+    <Target Name="SampleEMSFireDACClient:Clean">
+        <MSBuild Projects="SampleEMSFireDACClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SampleEMSFireDACClient:Make">
+        <MSBuild Projects="SampleEMSFireDACClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SampleEMSFireDACResourcePackage;SampleEMSFireDACClient"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SampleEMSFireDACResourcePackage:Clean;SampleEMSFireDACClient:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SampleEMSFireDACResourcePackage:Make;SampleEMSFireDACClient:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

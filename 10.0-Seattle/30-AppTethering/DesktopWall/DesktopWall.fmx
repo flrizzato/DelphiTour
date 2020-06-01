@@ -1,0 +1,61 @@
+object Form48: TForm48
+  Left = 0
+  Top = 0
+  Caption = 'Media Receiver App'
+  ClientHeight = 609
+  ClientWidth = 432
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object CalloutPanel1: TCalloutPanel
+    Padding.Top = 11.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 521.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    CalloutWidth = 23.000000000000000000
+    CalloutLength = 11.000000000000000000
+    CalloutPosition = Bottom
+    object Image1: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Position.X = 17.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 353.000000000000000000
+      Size.Height = 497.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 141.000000000000000000
+    Position.Y = 543.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.Font.Style = [fsBold]
+    Text = 'Photo Frame'
+  end
+  object MediaReceiverManager: TTetheringManager
+    OnRequestManagerPassword = MediaReceiverManagerRequestManagerPassword
+    Password = '1234'
+    Text = 'MediaReceiverManager'
+    AllowedAdapters = 'Bluetooth'
+    Left = 112
+    Top = 408
+  end
+  object MediaReceiverProfile: TTetheringAppProfile
+    Manager = MediaReceiverManager
+    Text = 'MediaReceiverApp'
+    Actions = <>
+    Resources = <>
+    OnResourceReceived = MediaReceiverProfileResourceReceived
+    Left = 264
+    Top = 408
+  end
+end

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FF189AB4-2DBB-4B0E-8F13-9CF824CB1FAE}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DelphiVCLAppAnalytics\AppAnalyticsDemoOPVCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DelphiFMXAppAnalytics\AppAnalyticsExceptionOPFMX.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AppAnalyticsDemoOPVCL">
+        <MSBuild Projects="DelphiVCLAppAnalytics\AppAnalyticsDemoOPVCL.dproj"/>
+    </Target>
+    <Target Name="AppAnalyticsDemoOPVCL:Clean">
+        <MSBuild Projects="DelphiVCLAppAnalytics\AppAnalyticsDemoOPVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AppAnalyticsDemoOPVCL:Make">
+        <MSBuild Projects="DelphiVCLAppAnalytics\AppAnalyticsDemoOPVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AppAnalyticsExceptionOPFMX">
+        <MSBuild Projects="DelphiFMXAppAnalytics\AppAnalyticsExceptionOPFMX.dproj"/>
+    </Target>
+    <Target Name="AppAnalyticsExceptionOPFMX:Clean">
+        <MSBuild Projects="DelphiFMXAppAnalytics\AppAnalyticsExceptionOPFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AppAnalyticsExceptionOPFMX:Make">
+        <MSBuild Projects="DelphiFMXAppAnalytics\AppAnalyticsExceptionOPFMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AppAnalyticsDemoOPVCL;AppAnalyticsExceptionOPFMX"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AppAnalyticsDemoOPVCL:Clean;AppAnalyticsExceptionOPFMX:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AppAnalyticsDemoOPVCL:Make;AppAnalyticsExceptionOPFMX:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/05/06 15:00:17.000.174,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/05/06 15:10:44.000.911,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/05/13 19:37:12.000.104,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/05/13 19:37:50.000.416,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DTOURXE8\10-Beacons\AreaDemo\uMainForm.pas</Transaction>
+    <Transaction>2015/05/13 19:37:50.000.416,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\DTOURXE8\10-Beacons\AreaDemo\uMainForm.fmx</Transaction>
+    <Transaction>2015/05/13 19:37:56.000.126,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DTOURXE8\10-Beacons\AreaDemo\AreaDemo.dproj</Transaction>
+    <Transaction>2015/05/18 15:18:01.000.712,C:\DTOURXE8\10-Beacons\BeaconAreaDemo\AreaDemo.dproj=C:\DTOURXE8\10-Beacons\BeaconAreaDemo\BeaconAreaDemo.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3-Android</MobileDevice>
+	<ActiveMobileDevice>
+		<PRIZZATO iOSSimulator="_iossimulator_CFC2B974-8ABE-4659-B804-2B98229C831D" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="04db9f214811d5d3"/>
+	</ActiveMobileDevice>
+</BorlandProject>

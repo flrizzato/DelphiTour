@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A22FBC2E-C212-4840-9D8E-64828C61C1EB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="NativeControls\NativeControlsDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TListView iOS Platform Options\Platform_ListView_Options.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CustomListViewiOS_Sarina\CustomListViewMeetings.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WindowsPlatformControls\PlatformControlsWindows.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="NativeControlsDemo">
+        <MSBuild Projects="NativeControls\NativeControlsDemo.dproj"/>
+    </Target>
+    <Target Name="NativeControlsDemo:Clean">
+        <MSBuild Projects="NativeControls\NativeControlsDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativeControlsDemo:Make">
+        <MSBuild Projects="NativeControls\NativeControlsDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Platform_ListView_Options">
+        <MSBuild Projects="TListView iOS Platform Options\Platform_ListView_Options.dproj"/>
+    </Target>
+    <Target Name="Platform_ListView_Options:Clean">
+        <MSBuild Projects="TListView iOS Platform Options\Platform_ListView_Options.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Platform_ListView_Options:Make">
+        <MSBuild Projects="TListView iOS Platform Options\Platform_ListView_Options.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CustomListViewMeetings">
+        <MSBuild Projects="CustomListViewiOS_Sarina\CustomListViewMeetings.dproj"/>
+    </Target>
+    <Target Name="CustomListViewMeetings:Clean">
+        <MSBuild Projects="CustomListViewiOS_Sarina\CustomListViewMeetings.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomListViewMeetings:Make">
+        <MSBuild Projects="CustomListViewiOS_Sarina\CustomListViewMeetings.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PlatformControlsWindows">
+        <MSBuild Projects="WindowsPlatformControls\PlatformControlsWindows.dproj"/>
+    </Target>
+    <Target Name="PlatformControlsWindows:Clean">
+        <MSBuild Projects="WindowsPlatformControls\PlatformControlsWindows.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PlatformControlsWindows:Make">
+        <MSBuild Projects="WindowsPlatformControls\PlatformControlsWindows.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="NativeControlsDemo;Platform_ListView_Options;CustomListViewMeetings;PlatformControlsWindows"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="NativeControlsDemo:Clean;Platform_ListView_Options:Clean;CustomListViewMeetings:Clean;PlatformControlsWindows:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="NativeControlsDemo:Make;Platform_ListView_Options:Make;CustomListViewMeetings:Make;PlatformControlsWindows:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

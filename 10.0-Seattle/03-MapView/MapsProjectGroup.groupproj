@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F59A4A5B-3F92-44A4-B2B1-CFBE600033C3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Maps\TabbedMapProject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Map Type Selector\Map_ObjectPascal.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CurrentLocationDemo\CurrentLocationMap.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TabbedMapProject">
+        <MSBuild Projects="Maps\TabbedMapProject.dproj"/>
+    </Target>
+    <Target Name="TabbedMapProject:Clean">
+        <MSBuild Projects="Maps\TabbedMapProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TabbedMapProject:Make">
+        <MSBuild Projects="Maps\TabbedMapProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Map_ObjectPascal">
+        <MSBuild Projects="Map Type Selector\Map_ObjectPascal.dproj"/>
+    </Target>
+    <Target Name="Map_ObjectPascal:Clean">
+        <MSBuild Projects="Map Type Selector\Map_ObjectPascal.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Map_ObjectPascal:Make">
+        <MSBuild Projects="Map Type Selector\Map_ObjectPascal.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CurrentLocationMap">
+        <MSBuild Projects="CurrentLocationDemo\CurrentLocationMap.dproj"/>
+    </Target>
+    <Target Name="CurrentLocationMap:Clean">
+        <MSBuild Projects="CurrentLocationDemo\CurrentLocationMap.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CurrentLocationMap:Make">
+        <MSBuild Projects="CurrentLocationDemo\CurrentLocationMap.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TabbedMapProject;Map_ObjectPascal;CurrentLocationMap"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TabbedMapProject:Clean;Map_ObjectPascal:Clean;CurrentLocationMap:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TabbedMapProject:Make;Map_ObjectPascal:Make;CurrentLocationMap:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

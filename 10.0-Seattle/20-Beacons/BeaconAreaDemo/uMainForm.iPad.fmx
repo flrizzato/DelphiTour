@@ -1,0 +1,35 @@
+inherited MainForm_iPad: TMainForm_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 768.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited butStart: TButton
+      Size.Height = 44.000000000000000000
+      StyleLookup = 'cornerbuttonstyle'
+    end
+    inherited butStop: TButton
+      Size.Height = 44.000000000000000000
+      StyleLookup = 'cornerbuttonstyle'
+    end
+  end
+  inherited panArea: TColorBox
+    Size.Width = 768.000000000000000000
+    Size.Height = 860.000000000000000000
+  end
+  inherited labelArea: TLabel
+    Size.Width = 768.000000000000000000
+    Size.Height = 860.000000000000000000
+  end
+  inherited memArea: TMemo
+    Position.Y = 904.000000000000000000
+    Size.Width = 768.000000000000000000
+    Viewport.Width = 760.000000000000000000
+    Viewport.Height = 92.000000000000000000
+  end
+  inherited BeaconArea: TBeacon
+    OnBeaconEnter = nil
+    OnBeaconProximity = nil
+  end
+end

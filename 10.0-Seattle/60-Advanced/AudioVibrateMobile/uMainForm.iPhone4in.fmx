@@ -1,0 +1,22 @@
+inherited MainForm_iPhone4in: TMainForm_iPhone4in
+  ClientHeight = 548
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited Button1: TButton
+      Size.Height = 34.000000000000000000
+    end
+    inherited Button2: TButton
+      Size.Height = 34.000000000000000000
+    end
+    inherited Button3: TButton
+      Size.Height = 34.000000000000000000
+    end
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 320.000000000000000000
+    Size.Height = 504.000000000000000000
+  end
+end
