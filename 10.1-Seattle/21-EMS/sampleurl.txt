@@ -1,3 +1,0 @@
-http://localhost:8080/MyTest
-http://localhost:8080/MyTest/1
-http://localhost:8080/test

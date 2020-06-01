@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>2015/05/18 15:19:48.000.106,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\DTOURXE8\10-Beacons\BeaconsProjectGroup.groupproj</Transaction>
-  </Transactions>
-	<Default.Personality>
-		<Projects ActiveProject="C:\DTOUR-Seatle\20-Beacons\BeaconAreaDemo\BeaconAreaDemo.dproj"/>
-	</Default.Personality>
-</BorlandProject>

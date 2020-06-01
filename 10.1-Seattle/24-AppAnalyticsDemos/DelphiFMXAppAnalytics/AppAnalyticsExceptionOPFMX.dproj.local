@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>2015/04/28 14:47:13.000.752,=C:\Users\davidi\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2015/04/28 14:48:43.000.178,C:\Users\davidi\Documents\Embarcadero\Studio\Projects\Unit2.fmx=C:\Users\davidi\Documents\Embarcadero\Studio\Projects\AppAnalyticsDemos\DelphiFMXAppAnalytics\ExceptTestUnit.fmx</Transaction>
-    <Transaction>2015/04/28 14:48:43.000.178,C:\Users\davidi\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\davidi\Documents\Embarcadero\Studio\Projects\AppAnalyticsDemos\DelphiFMXAppAnalytics\ExceptTestUnit.pas</Transaction>
-    <Transaction>2015/04/28 14:49:00.000.547,C:\Users\davidi\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\davidi\Documents\Embarcadero\Studio\Projects\AppAnalyticsDemos\DelphiFMXAppAnalytics\AppAnalyticsExceptionOPFMX.dproj</Transaction>
-  </Transactions>
-</BorlandProject>

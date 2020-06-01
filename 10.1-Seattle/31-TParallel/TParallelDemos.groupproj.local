@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>2014/12/10 22:35:58.000.266,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\DTOURXE7\12 TParallel\TParallelDemos.groupproj</Transaction>
-  </Transactions>
-	<Default.Personality>
-		<Projects ActiveProject="C:\DTOURXE8\08-TParallel\ConwaysLife\ConwaysLifeFmx.dproj"/>
-	</Default.Personality>
-</BorlandProject>

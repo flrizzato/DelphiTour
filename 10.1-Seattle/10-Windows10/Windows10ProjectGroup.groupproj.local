@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>2015/09/02 09:35:32.000.685,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\DTOUR-Seatle\10-Windows10\Windows10ProjectGroup.groupproj</Transaction>
-  </Transactions>
-	<Default.Personality>
-		<Projects ActiveProject="C:\DTOUR-Seatle\10-Windows10\Windows 10 SharingContract\Component\ShareContractComponent.dproj"/>
-	</Default.Personality>
-</BorlandProject>
