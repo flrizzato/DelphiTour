@@ -1,0 +1,9 @@
+{
+  "images" : [
+    <%LaunchScreenImage%>
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "RAD Studio"
+  }
+}
