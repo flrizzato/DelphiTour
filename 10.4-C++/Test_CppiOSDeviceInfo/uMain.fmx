@@ -1,0 +1,82 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 317
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object ToolBar1: TToolBar
+    Size.Width = 317.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnGetDeviceInfo: TButton
+      Align = Right
+      Position.X = 273.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'refreshtoolbuttonbordered'
+      TabOrder = 0
+      Text = 'Button1'
+      OnClick = btnGetDeviceInfoClick
+    end
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family, FontColor]
+      Size.Width = 317.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = '                Device Information'
+      TabOrder = 1
+    end
+  end
+  object ListBox1: TListBox
+    Align = Top
+    Position.Y = 44.000000000000000000
+    Size.Width = 317.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 317.000000000000000000
+    Viewport.Height = 200.000000000000000000
+    object lbOSName: TListBoxItem
+      TextSettings.Font.Size = 20.000000000000000000
+      StyledSettings = [Family, FontColor, Other]
+      Size.Width = 317.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'OS Name:'
+    end
+    object lbDeviceType: TListBoxItem
+      TextSettings.Font.Size = 22.000000000000000000
+      StyledSettings = [Family, FontColor, Other]
+      Position.Y = 44.000000000000000000
+      Size.Width = 317.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Device Type:'
+    end
+    object lbOSVersion: TListBoxItem
+      TextSettings.Font.Size = 20.000000000000000000
+      StyledSettings = [Family, FontColor, Other]
+      Position.Y = 88.000000000000000000
+      Size.Width = 317.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'OS Version:'
+    end
+  end
+end
