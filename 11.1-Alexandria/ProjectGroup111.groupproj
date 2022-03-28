@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{95E64582-D197-4EA0-8892-EA515F06C9F5}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MongoDB\source\MongoDB101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="EXESecurity\AlienInvasion-1.11\AlienInvasion.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="QuickWhatsVCL\QuickWhats.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WSL2\Sign Up Screens\SignupForm1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WebBrokerDroid\WebBrokerDroid.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MongoDB101">
+        <MSBuild Projects="MongoDB\source\MongoDB101.dproj"/>
+    </Target>
+    <Target Name="MongoDB101:Clean">
+        <MSBuild Projects="MongoDB\source\MongoDB101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MongoDB101:Make">
+        <MSBuild Projects="MongoDB\source\MongoDB101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AlienInvasion">
+        <MSBuild Projects="EXESecurity\AlienInvasion-1.11\AlienInvasion.dproj"/>
+    </Target>
+    <Target Name="AlienInvasion:Clean">
+        <MSBuild Projects="EXESecurity\AlienInvasion-1.11\AlienInvasion.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AlienInvasion:Make">
+        <MSBuild Projects="EXESecurity\AlienInvasion-1.11\AlienInvasion.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="QuickWhats">
+        <MSBuild Projects="QuickWhatsVCL\QuickWhats.dproj"/>
+    </Target>
+    <Target Name="QuickWhats:Clean">
+        <MSBuild Projects="QuickWhatsVCL\QuickWhats.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="QuickWhats:Make">
+        <MSBuild Projects="QuickWhatsVCL\QuickWhats.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SignupForm1">
+        <MSBuild Projects="WSL2\Sign Up Screens\SignupForm1.dproj"/>
+    </Target>
+    <Target Name="SignupForm1:Clean">
+        <MSBuild Projects="WSL2\Sign Up Screens\SignupForm1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SignupForm1:Make">
+        <MSBuild Projects="WSL2\Sign Up Screens\SignupForm1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WebBrokerDroid">
+        <MSBuild Projects="WebBrokerDroid\WebBrokerDroid.dproj"/>
+    </Target>
+    <Target Name="WebBrokerDroid:Clean">
+        <MSBuild Projects="WebBrokerDroid\WebBrokerDroid.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebBrokerDroid:Make">
+        <MSBuild Projects="WebBrokerDroid\WebBrokerDroid.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MongoDB101;AlienInvasion;QuickWhats;SignupForm1;WebBrokerDroid"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MongoDB101:Clean;AlienInvasion:Clean;QuickWhats:Clean;SignupForm1:Clean;WebBrokerDroid:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MongoDB101:Make;AlienInvasion:Make;QuickWhats:Make;SignupForm1:Make;WebBrokerDroid:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
