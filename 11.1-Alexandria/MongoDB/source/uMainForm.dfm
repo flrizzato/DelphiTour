@@ -229,8 +229,8 @@ object Form1: TForm1
   end
   object Mongodb_demo: TFDConnection
     Params.Strings = (
-      'User_Name=flrizzato'
-      'Password=ZWadkSBsVpwOPcEJ'
+      'User_Name=to_be_defined'
+      'Password=to_be_defined'
       'Server=cluster0-shard-00-02.brkpz.gcp.mongodb.net'
       'LoginTimeout=1000'
       'ReadTimeout=1000'
