@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="s0s7urdbste_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::2g97lt0mk5o_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:HelpInsight:uMainForm.TForm1" />
+      <reference referencedUin="delphi:e_class:src:HelpInsight:uMainForm.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::nj2gxsa2k5n_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:HelpInsight:HelpInsight.@unitclass" />
+    </reference>
+  </view>
+</nodeSet>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="2g97lt0mk5o_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:HelpInsight:uMainForm.TForm1">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:HelpInsight:uMainForm.TForm1.Button1" />
+      <reference referencedUin="delphi:e_method:src:HelpInsight:uMainForm.TForm1.Button1Click(System.TObject)" />
+      <reference referencedUin="delphi:e_field:src:HelpInsight:uMainForm.TForm1.FCount" />
+      <reference referencedUin="delphi:e_method:src:HelpInsight:uMainForm.TForm1.NadaSerio(System.string)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:HelpInsight:uMainForm.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:l_ast:src:HelpInsight:uMainForm.@unitclass.Form1" />
+      <reference referencedUin="delphi:e_field:src:HelpInsight:uMainForm.@unitclass.Form1" />
+    </reference>
+  </view>
+</nodeSet>

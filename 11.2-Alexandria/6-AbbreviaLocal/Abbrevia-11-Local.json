@@ -1,0 +1,487 @@
+{
+	"Id": "Abbrevia-11-Local",
+	"Name": "AbbreviaLocal",
+	"Version": "11",
+	"Description": "Abbrevia is a compression toolkit for Delphi, C++Builder, Kylix and Free Pascal. Supported on platforms: Windows, Android, OS X, iOS.",
+	"Vendor": "TurboPack",
+	"VendorUrl": "http:\/\/www.turbopack.net",
+	"Image": "Abbrevia3.png",
+	"Tags": "Abbrevia",
+	"License": "MPL1.0.txt",
+	"Url": "Abbrevia-20200708.zip",
+	"ProjectUrl": "https:\/\/github.com\/TurboPack\/Abbrevia",
+	"Modified": "2021-10-01 00:15:15",
+	"LicenseName": "MOZILLA PUBLIC LICENSE",
+	"TargetPath": "",
+	"RequireElevation": "0",
+	"AllUsers": "0",
+	"Actions": [
+		{
+			"Id": "1",
+			"ActionId": "6",
+			"Type": "2",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "packages\\Sydney\\Delphi\\AbbreviaD.dproj"
+				},
+				{
+					"Parameter": "Win32"
+				},
+				{
+					"Parameter": "Release"
+				}
+			],
+			"ActionName": "CompileProject",
+			"Description": "Compile AbbreviaD.dproj"
+		},
+		{
+			"Id": "2",
+			"ActionId": "6",
+			"Type": "2",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "packages\\Sydney\\Delphi\\AbbreviaVCLD.dproj"
+				},
+				{
+					"Parameter": "Win32"
+				},
+				{
+					"Parameter": "Release"
+				}
+			],
+			"ActionName": "CompileProject",
+			"Description": "Compile AbbreviaVCLD.dproj"
+		},
+		{
+			"Id": "3",
+			"ActionId": "6",
+			"Type": "2",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "packages\\Sydney\\Delphi\\AbbreviaVCLDDesign.dproj"
+				},
+				{
+					"Parameter": "Win32"
+				},
+				{
+					"Parameter": "Release"
+				}
+			],
+			"ActionName": "CompileProject",
+			"Description": "Compile AbbreviaVCLDDesign.dproj"
+		},
+		{
+			"Id": "4",
+			"ActionId": "7",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "AbbreviaVCLDDesign270.bpl"
+				}
+			],
+			"ActionName": "InstallPackage",
+			"Description": "Installs AbbreviaVCLDDesign270.bpl package"
+		},
+		{
+			"Id": "5",
+			"ActionId": "1",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\"
+				},
+				{
+					"Parameter": "cPasLibraryPath"
+				},
+				{
+					"Parameter": "Delphi.Personality"
+				}
+			],
+			"ActionName": "AddOptionPath",
+			"Description": "Add library path for Delphi"
+		},
+		{
+			"Id": "6",
+			"ActionId": "1",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\Win32\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "Win32"
+				}
+			],
+			"ActionName": "AddOptionPath",
+			"Description": "Add hpp system include path for C++ Win32"
+		},
+		{
+			"Id": "7",
+			"ActionId": "1",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\Win64\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "Win64"
+				}
+			],
+			"ActionName": "AddOptionPath",
+			"Description": "Add hpp system include path for C++ Win64"
+		},
+		{
+			"Id": "8",
+			"ActionId": "1",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\Android\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "Android"
+				}
+			],
+			"ActionName": "AddOptionPath",
+			"Description": "Add hpp system include path for C++ Android"
+		},
+		{
+			"Id": "9",
+			"ActionId": "1",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\iOSDevice32\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "iOSDevice32"
+				}
+			],
+			"ActionName": "AddOptionPath",
+			"Description": "Add hpp system include path for C++ iOSDevice32"
+		},
+		{
+			"Id": "10",
+			"ActionId": "1",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\iOSDevice64\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "iOSDevice64"
+				}
+			],
+			"ActionName": "AddOptionPath",
+			"Description": "Add hpp system include path for C++ iOSDevice64"
+		},
+		{
+			"Id": "11",
+			"ActionId": "1",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\iOSSimulator\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "iOSSimulator"
+				}
+			],
+			"ActionName": "AddOptionPath",
+			"Description": "Add hpp system include path for C++ iOSSimulator"
+		},
+		{
+			"Id": "12",
+			"ActionId": "1",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\OSX32\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "OSX32"
+				}
+			],
+			"ActionName": "AddOptionPath",
+			"Description": "Add hpp system include path for C++ OSX32"
+		},
+		{
+			"Id": "13",
+			"ActionId": "1",
+			"Type": "3",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "$(BDSCatalogRepository)\\Abbrevia-10.6-Sydney\\packages\\Sydney\\cpp\\$(Platform)\\$(Config)"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				}
+			],
+			"ActionName": "AddOptionPath",
+			"Description": "Add hpp system include path for C++"
+		},
+		{
+			"Id": "14",
+			"ActionId": "8",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "AbbreviaVCLDDesign270.bpl"
+				}
+			],
+			"ActionName": "UninstallPackage",
+			"Description": "Uninstalls AbbreviaVCLDDesign270.bpl package"
+		},
+		{
+			"Id": "15",
+			"ActionId": "2",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\"
+				},
+				{
+					"Parameter": "cPasLibraryPath"
+				},
+				{
+					"Parameter": "Delphi.Personality"
+				}
+			],
+			"ActionName": "RemoveOptionPath",
+			"Description": "Remove library path for Delphi"
+		},
+		{
+			"Id": "16",
+			"ActionId": "2",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\Win32\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "Win32"
+				}
+			],
+			"ActionName": "RemoveOptionPath",
+			"Description": "Remove hpp system include path for C++ Win32"
+		},
+		{
+			"Id": "17",
+			"ActionId": "2",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\Win64\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "Win64"
+				}
+			],
+			"ActionName": "RemoveOptionPath",
+			"Description": "Remove hpp system include path for C++ Win64"
+		},
+		{
+			"Id": "18",
+			"ActionId": "2",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\Android\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "Android"
+				}
+			],
+			"ActionName": "RemoveOptionPath",
+			"Description": "Remove hpp system include path for C++ Android"
+		},
+		{
+			"Id": "19",
+			"ActionId": "2",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\iOSDevice32\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "iOSDevice32"
+				}
+			],
+			"ActionName": "RemoveOptionPath",
+			"Description": "Remove hpp system include path for C++ iOSDevice32"
+		},
+		{
+			"Id": "20",
+			"ActionId": "2",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\iOSDevice64\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "iOSDevice64"
+				}
+			],
+			"ActionName": "RemoveOptionPath",
+			"Description": "Remove hpp system include path for C++ iOSDevice64"
+		},
+		{
+			"Id": "21",
+			"ActionId": "2",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\iOSSimulator\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "iOSSimulator"
+				}
+			],
+			"ActionName": "RemoveOptionPath",
+			"Description": "Remove hpp system include path for C++ iOSSimulator"
+		},
+		{
+			"Id": "22",
+			"ActionId": "2",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "source\\hpp\\OSX32\\Release\\"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				},
+				{
+					"Parameter": "OSX32"
+				}
+			],
+			"ActionName": "RemoveOptionPath",
+			"Description": "Remove hpp system include path for C++ OSX32"
+		},
+		{
+			"Id": "23",
+			"ActionId": "2",
+			"Type": "5",
+			"RequireElevation": "0",
+			"Parameter": [
+				{
+					"Parameter": "$(BDSCatalogRepository)\\Abbrevia-10.6-Sydney\\packages\\Sydney\\cpp\\$(Platform)\\$(Config)"
+				},
+				{
+					"Parameter": "cCppIncludePath"
+				},
+				{
+					"Parameter": "CPlusPlusBuilder.Personality"
+				}
+			],
+			"ActionName": "RemoveOptionPath",
+			"Description": "Remove hpp system include path for C++"
+		}
+	]
+}

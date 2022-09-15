@@ -1,0 +1,58 @@
+inherited MainForm_LgXhdpiPh: TMainForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited memDisplay: TMemo
+    Size.Width = 440.000000000000000000
+    Size.Height = 602.000000000000000000
+    Viewport.Width = 440.000000000000000000
+    Viewport.Height = 602.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 440.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited butWrite: TButton
+      Position.X = 275.000000000000000000
+      Size.Height = 38.000000000000000000
+    end
+    inherited butLoad: TButton
+      Position.X = 387.000000000000000000
+      Size.Height = 38.000000000000000000
+    end
+    inherited butClear: TButton
+      Position.X = 331.000000000000000000
+      Size.Height = 38.000000000000000000
+    end
+    inherited SwitchLocal: TSwitch
+      Position.X = 209.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 38.000000000000000000
+    end
+    inherited lblLocal: TLabel
+      Size.Width = 64.000000000000000000
+      Size.Height = 38.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Label1: TLabel
+      Position.X = 143.000000000000000000
+      Size.Width = 56.000000000000000000
+      Size.Height = 38.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited SwitchDocsDown: TSwitch
+      Position.X = 79.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 38.000000000000000000
+    end
+  end
+  inherited lblStatus: TLabel
+    Margins.Bottom = 5.000000000000000000
+    Position.Y = 58.000000000000000000
+    Size.Width = 440.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited StyleBook1: TStyleBook
+    Left = 48
+    Top = 240
+  end
+end
